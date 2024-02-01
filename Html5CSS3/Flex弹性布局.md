@@ -248,3 +248,11 @@ Flex模型有6个属性:
 ```
 
 ![33-1](assets/33-1.png)
+
+## 布局生成器
+
+老规矩,发几个生成器的网址
+
+[Flex在线工具](http://jack.jackafan.top/zsd/css/flex/) ☆
+
+[Flexible Box Display](https://kexiaolong.gitee.io/flexible-box-display/)
