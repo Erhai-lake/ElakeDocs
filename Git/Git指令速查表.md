@@ -1,12 +1,12 @@
 # Git指令速查表
 
-`master` 默认开发分支
+`master`默认开发分支
 
-`Head` 默认开发分支
+`Head`默认开发分支
 
-`origin` 默认远程版本库
+`origin`默认远程版本库
 
-`Head^` Head的父提交
+`Head^`Head的父提交
 
 ## 创建版本库
 
