@@ -7,7 +7,7 @@
 按照以下顺序学习和编写
 
 - [x] Git
-- [ ] Html
+- [x] Html
 - [ ] CSS
 - [ ] Js
 - [ ] Vue
