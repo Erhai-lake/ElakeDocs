@@ -8,7 +8,7 @@
 
 - [x] Git
 - [x] Html
-- [ ] CSS
+- [x] CSS
 - [ ] Js
 - [ ] Vue
 - [ ] Python
