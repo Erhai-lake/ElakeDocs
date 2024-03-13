@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>洱海文档</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="icon" href="assets/logo.svg">
+  <link rel="stylesheet" href="vue.css">
+  <style>
+    /* 选项卡 */
+    :root {
+      --docsifytabs-border-color: #ededed;
+      --docsifytabs-tab-highlight-color: #80CEFF;
+    }
+
+    /* 加粗 */
+    strong {
+      color: #e51f1fb3 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">莫急,莫急,让网络飞一会儿</div>
+  <script>
+    window.$docsify = {
+      // 文档标题
+      name: '洱海文档',
+      // GitHub挂机
+      repo: 'Erhai-lake',
+      // 渲染封面
+      coverpage: '封面.md',
+      // 只在主页渲染封面
+      onlyCover: true,
+      // 加载侧边栏
+      loadSidebar: '目录.md',
+      // 自动跳转到页面顶部
+      auto2top: true,
+      // 搜索
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        depth: 6,
+        placeholder: '搜索...',
+        noData: '未找到结果,换个搜索词试试?',
+        namespace: 'web'
+      },
+      // 分页导航
+      pagination: {
+        previousText: '上一章节',
+        nextText: '下一章节',
+        crossChapter: true,
+        crossChapterText: true
+      },
+      // 选项卡
+      tabs: {
+        persist: true,
+        sync: false,
+        theme: 'classic',
+        tabComments: true,
+        tabHeadings: true
+      },
+      // Flexible Alerts
+      'flexible-alerts': {
+        note: {
+          label: "信息"
+        },
+        tip: {
+          label: "提示"
+        },
+        warning: {
+          label: "警告"
+        },
+        attention: {
+          label: "注意"
+        }
+      },
+      // 广告
+      ads: [
+        {
+          img: 'assets/ad1.png',
+          href: 'https://www.rainyun.com/ELake'
+        }
+      ],
+      // 右侧大纲
+      toc: {
+        scope: '.markdown-section',
+        headings: 'h2, h3, h4, h5, h6',
+        title: ''
+      },
+
+      // 自定义
+      plugins: [
+        // 前往GitHub编辑和最后更新时间
+        function (hook, vm) {
+          hook.beforeEach(function (html) {
+            const editUrl = `https://github.com/erhai-lake/erhaiLakeDocs/tree/main/${vm.route.file}`;
+            const lastUpdatedTime = new Date(document.lastModified).toLocaleString().replace(/\//g, '-');
+            const extraHtml = `<div align="right" style="color: gray; font-size: 14px; margin-top: 10px;">📝<a href="${editUrl}" target="_blank" rel="noopener noreferrer">前往GitHub编辑</a><br><br>最后更新时间: ${lastUpdatedTime}</div>`;
+            return html + extraHtml;
+          });
+        }
+      ]
+    }
+  </script>
+  <!-- 核心 -->
+  <script src="docsify.min.js"></script>
+  <!-- 插件 -->
+  <!-- 外链脚本 - External Script -->
+  <script src="/plugins/external-script.min.js"></script>
+  <!-- 搜索 -->
+  <script src="/plugins/search.min.js"></script>
+  <!-- 图片缩放 - Zoom image -->
+  <script src="/plugins/zoom-image.min.js"></script>
+  <!-- 复制到剪贴板 -->
+  <script src="/plugins/docsify-copy-code.min.js"></script>
+  <!-- 分页导航 -->
+  <script src="/plugins/docsify-pagination.min.js"></script>
+  <!-- 选项卡 -->
+  <script src="/plugins/docsify-tabs.js"></script>
+  <!-- Flexible Alerts -->
+  <script src="/plugins/docsify-plugin-flexible-alerts.min.js"></script>
+  <!-- 广告 -->
+  <script src="/plugins/docsify-ads.min.js"></script>
+  <!-- 回到顶部 -->
+  <script src="/plugins/docsify-backTop.min.js"></script>
+  <!-- 右侧目录 -->
+  <script src="/plugins/toc.js"></script>
+  <link rel="stylesheet" href="/plugins/toc.css">
+  <!-- Q&F问答 -->
+  <link rel="stylesheet" href="/plugins/accordion.css">
+  <script src="/plugins/accordion.js"></script>
+
+  <!-- 代码高亮工具语法支持 -->
+  <script src="/plugins/prism-java.min.js"></script>
+  <script src="/plugins/prism-json.min.js"></script>
+  <script src="/plugins/prism-json5.min.js"></script>
+</body>
+
+</html>
