@@ -97,7 +97,7 @@
         // 前往GitHub编辑和最后更新时间
         function (hook, vm) {
           hook.beforeEach(function (html) {
-            const editUrl = `https://github.com/erhai-lake/erhaiLakeDocs/tree/main/${vm.route.file}`;
+            const editUrl = `https://github.com/Erhai-lake/elake-docs/blob/master/${vm.route.file}`;
             const lastUpdatedTime = new Date(document.lastModified).toLocaleString().replace(/\//g, '-');
             const extraHtml = `<div align="right" style="color: gray; font-size: 14px; margin-top: 10px;">📝<a href="${editUrl}" target="_blank" rel="noopener noreferrer">前往GitHub编辑</a><br><br>最后更新时间: ${lastUpdatedTime}</div>`;
             return html + extraHtml;

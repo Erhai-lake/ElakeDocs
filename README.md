@@ -2,10 +2,7 @@
 
 这是一个自用的知识文档库
 
-目前是md直接存储,等有空用Vue写个知识库网页
-
 文档仓库地址
-
 
 [GitHub](https://github.com/Erhai-lake/elake-docs)
 
