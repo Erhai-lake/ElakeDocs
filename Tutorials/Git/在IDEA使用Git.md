@@ -8,4 +8,4 @@
 
 ## 其他功能的使用方法
 
-不知道有没有必要,需要的可以[告知一声](https://github.com/Erhai-lake/elake-docs/issues),要的人多的话,应该会更新
+不知道有没有必要写,需要的可以[告知一声](https://github.com/Erhai-lake/elake-docs/issues),要的人多的话,应该会更新
