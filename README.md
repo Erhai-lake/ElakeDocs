@@ -8,14 +8,16 @@
 
 [Gitee](https://gitee.com/erhai-lake/elake-docs)
 
-按照以下顺序学习和编写
+计划编写的文档
 
 - [x] Git
 - [x] Html
 - [x] CSS
-- [ ] Js
+- [ ] JavaScript
 - [ ] Vue
+- [ ] Ionic
 - [ ] Python
+- [ ] Godot
 - [ ] Java
 - [ ] SpingBoot
 - [ ] C#
