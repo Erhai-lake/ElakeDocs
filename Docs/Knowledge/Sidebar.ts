@@ -39,6 +39,16 @@ export const KnowledgeSidebar: any[] = [
                         link: '/Docs/Knowledge/ProgrammingLanguage/Java/Java'
                     }
                 ]
+            },
+            {
+                text: 'Minecraft',
+                collapsed: true,
+                items: [
+                    {
+                        text: 'NeoForge',
+                        link: '/Docs/Knowledge/Minecraft/NeoForge/NeoForge'
+                    }
+                ]
             }
         ]
     }

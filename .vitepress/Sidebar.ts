@@ -22,6 +22,10 @@ import { Html5CSS3Sidebar } from '../Docs/Knowledge/ProgrammingLanguage/Html5CSS
 import { JavaScriptSidebar } from '../Docs/Knowledge/ProgrammingLanguage/JavaScript/Sidebar'
 // Java
 import { JavaSidebar } from '../Docs/Knowledge/ProgrammingLanguage/Java/Sidebar'
+// Java
+import { NeoForgeSidebar } from '../Docs/Knowledge/Minecraft/NeoForge/Sidebar'
+// 1.21
+import { NeoForgeabaSidebar } from '../Docs/Knowledge/Minecraft/NeoForge/1.21/Sidebar'
 
 export const Sidebar: any = {
     // 洱海文档
@@ -47,5 +51,9 @@ export const Sidebar: any = {
     // JS
     '/Docs/Knowledge/ProgrammingLanguage/JavaScript/': JavaScriptSidebar,
     // Java
-    '/Docs/Knowledge/ProgrammingLanguage/Java/': JavaSidebar
+    '/Docs/Knowledge/ProgrammingLanguage/Java/': JavaSidebar,
+    // NeoForge
+    '/Docs/Knowledge/Minecraft/NeoForge/': NeoForgeSidebar,
+    // NeoForge-1.21
+    '/Docs/Knowledge/Minecraft/NeoForge/1.21/': NeoForgeabaSidebar
 }

@@ -62,7 +62,7 @@ const GetContributors: () => Promise<void> = async (): Promise<void> => {
     } catch {
         ContributorsData.value = [
             {
-                Name: '洱海工作室',
+                Name: '名字好吃捏~',
                 AvatarUrl: '//api.elake.top/Logo/'
             }
         ]

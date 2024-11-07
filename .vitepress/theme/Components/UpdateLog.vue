@@ -120,8 +120,8 @@ const GetUpdateLog: () => Promise<void> = async (): Promise<void> => {
                 ShortSha: '0000000000',
                 Name: '洱海工作室',
                 AvatarUrl: '//api.elake.top/Logo/',
-                Message: '日志被BUG酱吃掉啦~',
-                Time: '0000-00-00'
+                Message: '日志也被BUG酱吃掉啦~',
+                Time: '😋👉00-00'
             }
         ]
         LastUpdateTime.value = '时间被BUG酱吃掉啦~'
