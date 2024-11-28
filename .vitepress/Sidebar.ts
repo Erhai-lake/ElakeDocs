@@ -55,5 +55,5 @@ export const Sidebar: any = {
     // NeoForge
     '/Docs/Knowledge/Minecraft/NeoForge/': NeoForgeSidebar,
     // NeoForge-1.21
-    '/Docs/Knowledge/Minecraft/NeoForge/1.21/': NeoForgeabaSidebar
+    '/Docs/Knowledge/Minecraft/NeoForge/Minecraft1_21/': NeoForgeabaSidebar
 }
