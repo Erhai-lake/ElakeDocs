@@ -9,13 +9,13 @@
 
 ## 例子
 
-```C# [代码示例]
+```C#
 private void AuxiliaryTools()
 {
     Console.WriteLine(ElakeAuxiliaryTools.GetJavaBitness("D:/java/JDK21"));
 }
 ```
 
-``` [输出]
+```[输出]
 64
 ```
