@@ -25,7 +25,7 @@ import { JavaSidebar } from '../Docs/Knowledge/ProgrammingLanguage/Java/Sidebar'
 // Java
 import { NeoForgeSidebar } from '../Docs/Knowledge/Minecraft/NeoForge/Sidebar'
 // 1.21
-import { NeoForgeabaSidebar } from '../Docs/Knowledge/Minecraft/NeoForge/1.21/Sidebar'
+import { NeoForgeabaSidebar } from '../Docs/Knowledge/Minecraft/NeoForge/Minecraft1_21/Sidebar'
 
 export const Sidebar: any = {
     // 洱海文档
