@@ -11,8 +11,8 @@ export const GitSidebar: any[] = [
                 link: '/Docs/Knowledge/ProgrammingLanguage/Git/DownloadAndInstall'
             },
             {
-                text: '常见指令',
-                link: '/Docs/Knowledge/ProgrammingLanguage/Git/CommonInstructions'
+                text: '基本流程',
+                link: '/Docs/Knowledge/ProgrammingLanguage/Git/BasicProcess'
             },
             {
                 text: '分支',
