@@ -36,12 +36,12 @@
 
 ## 解析
 
-`width`: 宽度,数值
+`width`: 宽度, 数值
 
-`height`: 高度,数值
+`height`: 高度, 数值
 
-`background-color`: 背景颜色,颜色值
+`background-color`: 背景颜色, 颜色值
 
-将`class`为`a`的`div`标签 的宽设置为`100px`,高也设置为`100px`,并将背景颜色设置为`orange`
+将`class`为`a`的`div`标签 的宽设置为`100px`, 高也设置为`100px`, 并将背景颜色设置为`orange`
 
-将`class`为`b`的`div`标签 的宽设置为`200px`,高也设置为`200px`,并将背景颜色设置为`blue`
+将`class`为`b`的`div`标签 的宽设置为`200px`, 高也设置为`200px`, 并将背景颜色设置为`blue`

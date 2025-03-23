@@ -2,29 +2,29 @@
 
 > 工欲善其事必先利其器
 
-编辑器可以使用**VS Code**,也可以使用**IDEA**,这篇文档会使用**IDEA**进行编写
+编辑器可以使用**VS Code**, 也可以使用**IDEA**, 这篇文档会使用**IDEA**进行编写
 
-我们也十分推荐你使用**IDEA**,因为他真的很好用
+我们也十分推荐你使用**IDEA**, 因为他真的很好用
 
 ## IDEA介绍
 
-**IntelliJ IDEA**是由**JetBrains**公司开发的一款集成开发环境(IDE),主要用于Java,Groovy,Kotlin等编程语言的开发(后面简称**IDEA**或者**IJ**)
+**IntelliJ IDEA**是由**JetBrains**公司开发的一款集成开发环境(IDE), 主要用于Java, Groovy, Kotlin等编程语言的开发(后面简称**IDEA**或者**IJ**)
 
-它被认为是当前**市场上最智能的Java IDE之一**,提供了丰富的特性和工具,极大地提高了开发效率
+它被认为是当前**市场上最智能的Java IDE之一**, 提供了丰富的特性和工具, 极大地提高了开发效率
 
 ## IDEA的下载
 
 [软件的官方下载地址在这里](//www.jetbrains.com/zh-cn/idea/download/?section=windows)
 
 :::warning
-软件本体是付费的,这里也不会教你们
+软件本体是付费的, 这里也不会教你们
 
-破解资源请自行查找,出现任何问题,也与洱海工作室无关
+破解资源请自行查找, 出现任何问题, 也与洱海工作室无关
 :::
 
-如果你又不想找,还想使用IDEA,没关系
+如果你又不想找, 还想使用IDEA, 没关系
 
-还是刚刚那个下载链接,往下滑,下面有一个免费的社区版
+还是刚刚那个下载链接, 往下滑, 下面有一个免费的社区版
 
 ![dc4b5d0094ec7ebaf4bb431df31d42a453e09ee2](Assets/dc4b5d0094ec7ebaf4bb431df31d42a453e09ee2.png)
 
@@ -38,13 +38,13 @@
 
 ![72f7f8787372b7e79c7b9da0113ce8c3a54e299c](Assets/72f7f8787372b7e79c7b9da0113ce8c3a54e299c.png)
 
-安装完后,需要重启IDE
+安装完后, 需要重启IDE
 
 ![e1dd8995697a0ab1e19bcd3fc309931bc8ea17ee](Assets/e1dd8995697a0ab1e19bcd3fc309931bc8ea17ee.png)
 
 ![daac5a37f81e16b6f8f004eb2e6e5039cc220de6](Assets/daac5a37f81e16b6f8f004eb2e6e5039cc220de6.png)
 
-> 不要在意这个软件名为什么是`PhPStorm`,反正操作一样
+> 不要在意这个软件名为什么是`PhPStorm`, 反正操作一样
 
 ## 如何创建项目
 

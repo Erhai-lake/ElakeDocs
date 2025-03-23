@@ -4,7 +4,7 @@
 | :-------------: | :---------------------------------------------------------------------------------------------------: |
 |     方法名      |                                        `InitializeSearcher()`                                         |
 |      描述       |                                               选择平台                                                |
-| 参数 `Platform` | 平台 数值(默认使用0,0:[curseforge](//www.curseforge.com/minecraft),1:[modrinth](//modrinth.com/mods)) |
+| 参数 `Platform` | 平台 数值(默认使用0, 0:[curseforge](//www.curseforge.com/minecraft), 1:[modrinth](//modrinth.com/mods)) |
 |      返回       |                                                  无                                                   |
 
 ## 例子

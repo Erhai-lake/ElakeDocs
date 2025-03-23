@@ -1,20 +1,20 @@
 # 远程仓库
 
-前面我们已经知道了Git中存在两种类型的仓库,即本地仓库和远程仓库
+前面我们已经知道了Git中存在两种类型的仓库, 即本地仓库和远程仓库
 
-远程仓库我们可以借助一些代码托管平台来实现,毕竟常用的有GitHub,Gitee,GitLab等
+远程仓库我们可以借助一些代码托管平台来实现, 毕竟常用的有GitHub, Gitee, GitLab等
 
 * [GitHub](//github.com)
    * `//github.com`
-   * 一个面向开源及私有软件项目的托管平台,只支持Git作为唯一的版本库格式进行托管
+   * 一个面向开源及私有软件项目的托管平台, 只支持Git作为唯一的版本库格式进行托管
 * [Gitee](//gitee.com)
    * `//gitee.com`
-   * 是国内的一个代码托管平台,由于服务器在国内,所以相比GitHub,Gitee(码云)速度更快
+   * 是国内的一个代码托管平台, 由于服务器在国内, 所以相比GitHub, Gitee(码云)速度更快
 * [GitLab](//about.gitlab.com)
    * `//about.gitlab.com`
-   * 一个用于仓库管理系统的开源项目,使用Git作为代码管理工具,并在此基础上搭建起来的web服务,一般用于在企业,学校等内部网络搭建git私服
+   * 一个用于仓库管理系统的开源项目, 使用Git作为代码管理工具, 并在此基础上搭建起来的web服务, 一般用于在企业, 学校等内部网络搭建git私服
 
-GitHub和Gitee(码云)都是把代码放在别人的代码托管平台,而GitLab是自部署的,把代码放在自己服务器
+GitHub和Gitee(码云)都是把代码放在别人的代码托管平台, 而GitLab是自部署的, 把代码放在自己服务器
 
 ## 配置SSH秘钥
 
@@ -22,21 +22,21 @@ GitHub和Gitee(码云)都是把代码放在别人的代码托管平台,而GitLab
 
 1. 生成SSH公钥
    1. `ssh-keygen -t rsa`
-   2. 一直回车,如果以存在,会覆盖掉
-   3. 生成的公钥会放在当前用户目录下的`.ssh`文件夹,如:
+   2. 一直回车, 如果以存在, 会覆盖掉
+   3. 生成的公钥会放在当前用户目录下的`.ssh`文件夹, 如:
    4. `C:\Users\Administrator\.ssh\id_rsa.pub`
 2. 在代码托管平台绑定SSH秘钥(下一步有详细步骤)
 3. 验证是否配置成功
    1. GitHub:`ssh -T git@github.com`
    2. Gitee:`ssh -T git@gitee.com`
-   3. 如果需要确认,就输入yes
+   3. 如果需要确认, 就输入yes
    4. 返回`Hi xxx! You've successfully...`就说明成功了
 
 ### 配置远程仓库平台的SSH秘钥
 
 #### GitHub
 
-可以直接点击这里的[网址](//github.com/settings/keys),或者在设置里找到`SSH and GPG keys`
+可以直接点击这里的[网址](//github.com/settings/keys), 或者在设置里找到`SSH and GPG keys`
 
 ![9da62074107a2496bc1bbc071ec8add723ebf1ea](Assets/9da62074107a2496bc1bbc071ec8add723ebf1ea.png)
 
@@ -46,7 +46,7 @@ GitHub和Gitee(码云)都是把代码放在别人的代码托管平台,而GitLab
 
 #### Gitee
 
-可以直接点击这里的[网址](//gitee.com/profile/sshkeys),或者在设置里找到`SSH 公钥`
+可以直接点击这里的[网址](//gitee.com/profile/sshkeys), 或者在设置里找到`SSH 公钥`
 
 ![b980fcda2eb12f25438ed8de56465fb55e48c510](Assets/b980fcda2eb12f25438ed8de56465fb55e48c510.png)
 
@@ -62,7 +62,7 @@ SSH Key就是直接把`id_rsa.pub`文件里面的内容粘贴进去
 
 `git remote add 洱海文档GitHub git@github.com:Erhai-lake/ElakeDocs.git`
 
-远程仓库地址推荐使用SSH的,也就是上面例子中的第二个
+远程仓库地址推荐使用SSH的, 也就是上面例子中的第二个
 
 ## 查看本地仓库已绑定的远程仓库
 
@@ -76,7 +76,7 @@ SSH Key就是直接把`id_rsa.pub`文件里面的内容粘贴进去
 
 `git push origin master:master`
 
-如果本地分支名和远端分支名是一样的,可以省略,例如:
+如果本地分支名和远端分支名是一样的, 可以省略, 例如:
 
 `git push origin master`
 
@@ -86,26 +86,26 @@ SSH Key就是直接把`id_rsa.pub`文件里面的内容粘贴进去
 
 `git clone 远程仓库地址 本地目录名`
 
-如果不写本地目录名,则使用仓库名
+如果不写本地目录名, 则使用仓库名
 
-如果填写`.`,就在当前目录下
+如果填写`.`, 就在当前目录下
 
 ## 抓取
 
-将仓库里的更新抓取到本地,不进行合并
+将仓库里的更新抓取到本地, 不进行合并
 
 `git fetch 远端仓库名 分支名`
 
 `git fetch`
 
-远端仓库名和分支名不指定,则抓取全部分支
+远端仓库名和分支名不指定, 则抓取全部分支
 
 ## 拉取
 
-将仓库里的更新抓取到本地,自动合并,等同于 fetch+merge
+将仓库里的更新抓取到本地, 自动合并, 等同于 fetch+merge
 
 `git pull 远端仓库名 分支名`
 
 `git pull`
 
-远端仓库名和分支名不指定,则抓取全部分支
+远端仓库名和分支名不指定, 则抓取全部分支

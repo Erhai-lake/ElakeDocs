@@ -4,7 +4,7 @@
 | :----: | :---------------------------: |
 | 方法名 | `AutomaticallySelectSource()` |
 |  描述  | 自动选择`MoJang`或`BMCLAPI`源 |
-|  返回  |  字符串(`MoJang`,`BMCLAPI`)   |
+|  返回  |  字符串(`MoJang`, `BMCLAPI`)   |
 
 ## 例子
 

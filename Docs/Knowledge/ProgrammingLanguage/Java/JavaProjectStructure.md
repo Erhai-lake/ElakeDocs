@@ -4,7 +4,7 @@
 flowchart TD; A["project(工程)"] --> B["moduke(模块)"] --> C["package(包)"] --> D["class(类)"]
 ```
 
-我来举个例子,比如说我要写个B站
+我来举个例子, 比如说我要写个B站
 
 * B站系统(project)
     * 首页(moduke)
@@ -30,7 +30,7 @@ flowchart TD; A["project(工程)"] --> B["moduke(模块)"] --> C["package(包)"]
             * 推荐列表(class)
             * 建议栏(class)
 
-差不多就是这个样子,将不同的功能分开
+差不多就是这个样子, 将不同的功能分开
 
 ## 在IDEA创建project
 
@@ -59,7 +59,7 @@ flowchart TD; A["project(工程)"] --> B["moduke(模块)"] --> C["package(包)"]
 ![7bcad0f14268953b537f1e6702be2031c3519dce](Assets/7bcad0f14268953b537f1e6702be2031c3519dce.png)
 
 :::warning
-包名不是单单一个名字这么简单,一般是倒过来的公司域名和技术名,全部小写,例如:
+包名不是单单一个名字这么简单, 一般是倒过来的公司域名和技术名, 全部小写, 例如:
 
 `top.elake.hello`
 :::
@@ -69,11 +69,11 @@ flowchart TD; A["project(工程)"] --> B["moduke(模块)"] --> C["package(包)"]
 ![37eed0b33be505b6a2c68f90e5a5af585637d972](Assets/37eed0b33be505b6a2c68f90e5a5af585637d972.png)
 
 :::tip
-如果你的包不是像我这个的,而是这样的
+如果你的包不是像我这个的, 而是这样的
 
 ![62353ed0a902a1570d6ab3308039b539fd6e02d8](Assets/62353ed0a902a1570d6ab3308039b539fd6e02d8.png)
 
-可以按着下面的方法设置,看个人喜好
+可以按着下面的方法设置, 看个人喜好
 
 ![2cef05eb9573b13081f39614a4c491d77fae1d9f](Assets/2cef05eb9573b13081f39614a4c491d77fae1d9f.png)
 :::

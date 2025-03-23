@@ -12,7 +12,7 @@
 
 ## Object
 
-Object是内置的构造函数,用于创建普通对象
+Object是内置的构造函数, 用于创建普通对象
 
 ```js
 const User = new Object({ Name: '洱海之畔', Age: 18 })
@@ -20,7 +20,7 @@ console.log(User)
 // {Name: '洱海之畔', Age: 18}
 ```
 
-推荐使用字面量方式声明对象,而不是Object构造函数
+推荐使用字面量方式声明对象, 而不是Object构造函数
 
 ### 获取对象所有属性
 
@@ -76,7 +76,7 @@ console.log(Elake)
 
 ## Array
 
-Array是内置构造函数,用于创建数组
+Array是内置构造函数, 用于创建数组
 
 ```js
 const Arr = new Array(3, 5)
@@ -84,7 +84,7 @@ console.log(Arr)
 // [3, 5]
 ```
 
-创建数组建议使用**字面量**创建,不用Array构造函数创建
+创建数组建议使用**字面量**创建, 不用Array构造函数创建
 
 ### 遍历数组
 
@@ -98,7 +98,7 @@ console.log(Arr)
 
 `filter(函数)`
 
-实例方法筛选满足条件的项,返回一个新数组
+实例方法筛选满足条件的项, 返回一个新数组
 
 ```js
 const Array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -146,9 +146,9 @@ console.log(Sum) // 输出: 15
 
 #### 执行过程
 
-1. 如果**没有起始值**,则**上一次值以**数组的**第一个数组元素的值**
-2. 每一次循环,把**返回值**给做为下一次循环的**上一次值**
-3. 如果**有起始值**,则起始值做为**上一次值**
+1. 如果**没有起始值**, 则**上一次值以**数组的**第一个数组元素的值**
+2. 每一次循环, 把**返回值**给做为下一次循环的**上一次值**
+3. 如果**有起始值**, 则起始值做为**上一次值**
 
 刚刚的例子的计算过程如下
 
@@ -182,7 +182,7 @@ console.log(Sum) // 输出: 15
 
 ```js
 const Array = [1, 2, 3, 4, 5]
-// 拼接符如果不填,默认是,
+// 拼接符如果不填, 默认是
 console.log(Array.join())
 // 1,2,3,4,5
 ```
@@ -191,7 +191,7 @@ console.log(Array.join())
 
 `find(函数)`
 
-实例方法查找元素,返回符合测试条件的第一个元素值,如果没有返回`understand`
+实例方法查找元素, 返回符合测试条件的第一个元素值, 如果没有返回`understand`
 
 ```js
 const Array = [1, 1, 4, 5, 1, 4]
@@ -207,7 +207,7 @@ console.log(Find)
 
 `every(函数)`
 
-实例方法检测数组所有元素是否都符合指定条件,如果**所有元素**都通过检测返回`true`,否则返回`false`
+实例方法检测数组所有元素是否都符合指定条件, 如果**所有元素**都通过检测返回`true`, 否则返回`false`
 
 ```js
 const Array = [1, 1, 4, 5, 1, 4]
@@ -225,12 +225,12 @@ console.log(Every)
 
 `some(函数)`
 
-实例方法检测数组所有元素是否都符合指定条件,如果**任意元素**通过检测返回`true`,否则返回`false`
+实例方法检测数组所有元素是否都符合指定条件, 如果**任意元素**通过检测返回`true`, 否则返回`false`
 
 ```js
 const Array = [1, 1, 4, 5, 1, 4]
 const Some = Array.some((N) => {
-    // 只要有元素符合,就返回true
+    // 只要有元素符合, 就返回true
     // 否则返回false
     return N === 5
 })
@@ -243,7 +243,7 @@ console.log(Some)
 
 `concat(数组)`
 
-实例方法合并两个数值,返回新的数组
+实例方法合并两个数值, 返回新的数组
 
 ```js
 const Array1 = [1, 1, 4, 5, 1, 4]
@@ -263,7 +263,7 @@ console.log(Concat)
 ```js
 const Array1 = [1, 1, 4, 5, 1, 4]
 const Array2 = [1, 1, 4, 5, 1, 4]
-// 升序,默认
+// 升序, 默认
 // 直接写Array1.sort()也是可以的
 Array1.sort((A, B) => {
     return A - B
@@ -283,7 +283,7 @@ console.log(Array2)
 
 `splice(开始索引, 结束索引, ...替换字符)`
 
-实例方法用于添加,删除或替换数组中的元素
+实例方法用于添加, 删除或替换数组中的元素
 
 ```js
 // 删除元素
@@ -295,14 +295,14 @@ console.log(Array1)
 
 // 添加元素
 const Array2 = [1, 1, 4, 5, 1, 4]
-// 从索引2开始,不删除任何元素,添加A和B
+// 从索引2开始, 不删除任何元素, 添加A和B
 Array2.splice(2, 0, 'A', 'B')
 console.log(Array2)
 // [1, 1, 'A', 'B', 4, 5, 1, 4]
 
 // 替换元素
 const Array3 = [1, 1, 4, 5, 1, 4]
-// 从索引1开始,删除2个元素,并添加A和B
+// 从索引1开始, 删除2个元素, 并添加A和B
 Array3.splice(1, 2, 'A', 'B');
 console.log(Array3)
 // [1, 'A', 'B', 5, 1, 4]
@@ -326,7 +326,7 @@ console.log(Array)
 
 `findIndex(函数)`
 
-实例方法查找元素索引值,如果找到,返回索引值,否则返回-1
+实例方法查找元素索引值, 如果找到, 返回索引值, 否则返回-1
 
 ```js
 const Array = [1, 1, 4, 5, 1, 4]
@@ -347,7 +347,7 @@ console.log(FindIndex)
 实例属性获取字符串长度
 
 ```js
-const Str = '技术宅的创造之梦,如洱海般辽阔深邃.'
+const Str = '技术宅的创造之梦, 如洱海般辽阔深邃.'
 
 console.log(Str.length)
 // 18
@@ -360,9 +360,9 @@ console.log(Str.length)
 实例方法将字符串分割成数组
 
 ```js
-const Str = '技术宅的创造之梦,如洱海般辽阔深邃.'
+const Str = '技术宅的创造之梦, 如洱海般辽阔深邃.'
 
-console.log(Str.split(','))
+console.log(Str.split(', '))
 // ['技术宅的创造之梦', '如洱海般辽阔深邃.']
 ```
 
@@ -373,12 +373,12 @@ console.log(Str.split(','))
 实例方法字符串截取
 
 ```js
-const Str = '技术宅的创造之梦,如洱海般辽阔深邃.'
+const Str = '技术宅的创造之梦, 如洱海般辽阔深邃.'
 
 console.log(Str.substring(4))
-// 创造之梦,如洱海般辽阔深邃.
-console.log(Str.substring(4,12))
-// 创造之梦,如洱海
+// 创造之梦, 如洱海般辽阔深邃.
+console.log(Str.substring(4, 12))
+// 创造之梦, 如洱海
 ```
 
 ### 检测字符串以某字符开头
@@ -388,7 +388,7 @@ console.log(Str.substring(4,12))
 实例方法检测字符串是否以某字符开头
 
 ```js
-const Str = '技术宅的创造之梦,如洱海般辽阔深邃.'
+const Str = '技术宅的创造之梦, 如洱海般辽阔深邃.'
 
 console.log(Str.startsWith('技'))
 // true
@@ -403,7 +403,7 @@ console.log(Str.startsWith('宅', 2))
 实例方法检测字符串是否以某字符结尾
 
 ```js
-const Str = '技术宅的创造之梦,如洱海般辽阔深邃.'
+const Str = '技术宅的创造之梦, 如洱海般辽阔深邃.'
 
 console.log(Str.endsWith('.'))
 // true
@@ -419,10 +419,10 @@ console.log(Str.endsWith('梦', 8))
 实例方法检测字符串
 
 ```js
-const Str = '技术宅的创造之梦,如洱海般辽阔深邃.'
+const Str = '技术宅的创造之梦, 如洱海般辽阔深邃.'
 
 // 只要有任意字符串就可以返回true
-console.log(Str.includes('梦,如洱'))
+console.log(Str.includes('梦, 如洱'))
 // true
 console.log(Str.includes('辽阔', 2))
 // true
@@ -445,10 +445,10 @@ console.log(Str.toUpperCase())
 
 `indexOf(搜索的字符串, 要检测的字符索引)`
 
-实例方法检测字符串,如果找到,返回索引值,否则返回-1
+实例方法检测字符串, 如果找到, 返回索引值, 否则返回-1
 
 ```js
-const Str = '技术宅的创造之梦,如洱海般辽阔深邃.'
+const Str = '技术宅的创造之梦, 如洱海般辽阔深邃.'
 
 console.log(Str.indexOf('技'))
 // 0
@@ -460,25 +460,25 @@ console.log(Str.indexOf('技', 2))
 
 `replace(被替换是字符串或正则表达式, 要替换的字符串)`
 
-实例方法替换字符串,支持正则表达式
+实例方法替换字符串, 支持正则表达式
 
 ```js
-const Str = '技术宅的创造之梦,如洱海般辽阔深邃.'
+const Str = '技术宅的创造之梦, 如洱海般辽阔深邃.'
 
 console.log(Str.replace('辽阔深邃', '水草丰茂'))
-// 技术宅的创造之梦,如洱海般水草丰茂.
+// 技术宅的创造之梦, 如洱海般水草丰茂.
 console.log(Str.replace(/辽阔深邃/g, '水草丰茂'))
-// 技术宅的创造之梦,如洱海般水草丰茂.
+// 技术宅的创造之梦, 如洱海般水草丰茂.
 ```
 
 ### 查找字符串
 
 `match(被替换是字符串或正则表达式, 要替换的字符串)`
 
-实例方法查找字符串,支持正则表达式
+实例方法查找字符串, 支持正则表达式
 
 ```js
-const Str = '技术宅的创造之梦,如洱海般辽阔深邃.'
+const Str = '技术宅的创造之梦, 如洱海般辽阔深邃.'
 
 console.log(Str.match('辽阔深邃'))
 // ['辽阔深邃', index: 13, input: '技术宅的创造之梦,如洱海般辽阔深邃.', groups: undefined]
@@ -488,7 +488,7 @@ console.log(Str.match(/辽阔深邃/g))
 
 ## Number
 
-Number是内置的构造函数,用于创建数值
+Number是内置的构造函数, 用于创建数值
 
 ### 保留小数点长度
 

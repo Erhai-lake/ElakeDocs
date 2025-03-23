@@ -2,7 +2,7 @@
 
 ## JDK
 
-Java的产品叫**JDK(Java Development Kit - Java开发者工具包)**,JDK是编写Java程序的必须品
+Java的产品叫**JDK(Java Development Kit - Java开发者工具包)**, JDK是编写Java程序的必须品
 
 ## JDK的发展史
 
@@ -26,7 +26,7 @@ Java的产品叫**JDK(Java Development Kit - Java开发者工具包)**,JDK是编
     * 2023-09
     * 长期支持版本(LTS)
 
-这里是一些JDK较为重要的版本,很多公司依然在使用JDK8,因为他足够稳定,并且更换的成本也高
+这里是一些JDK较为重要的版本, 很多公司依然在使用JDK8, 因为他足够稳定, 并且更换的成本也高
 
 :::warning
 这篇文档用JDK21继续教学
@@ -34,13 +34,13 @@ Java的产品叫**JDK(Java Development Kit - Java开发者工具包)**,JDK是编
 
 ## JDK的下载
 
-技术人员的专业软件一定要会自己下载安装,不然容易被同事~~鄙视~~
+技术人员的专业软件一定要会自己下载安装, 不然容易被同事~~鄙视~~
 
 JDK的官方下载地址在这里:[点我跳转](//www.oracle.com/cn/java/technologies/downloads)
 
 下载JDK的长期支持版本就好了
 
-如果你没有找到你想要的版本,可以查看[历史版本](//www.oracle.com/cn/java/technologies/downloads/archive)
+如果你没有找到你想要的版本, 可以查看[历史版本](//www.oracle.com/cn/java/technologies/downloads/archive)
 
 下载时可能需要注册并登录网站
 
@@ -60,7 +60,7 @@ JDK的官方下载地址在这里:[点我跳转](//www.oracle.com/cn/java/techno
 
 ![3eb5340e54c64200decd71863b95a374514921c6](Assets/3eb5340e54c64200decd71863b95a374514921c6.png)
 
-快捷键`Win + R`打开运行,输入`cmd`打开cmd窗口,输入
+快捷键`Win + R`打开运行, 输入`cmd`打开cmd窗口, 输入
 
 ```shell
 java -version
@@ -68,7 +68,7 @@ javac -version
 
 ```
 
-显示以下内容即,安装完成
+显示以下内容即, 安装完成
 
 ```shell
 $ java -version
@@ -84,12 +84,12 @@ javac 21.0.4
 
 如果报错:`java不是内部或外部命令...`
 
-那就是环境变量没配置,接着往下看
+那就是环境变量没配置, 接着往下看
 
 ## 配置环境变量
 
 :::warning
-从JDK17开始,安装完成后,环境变量会自动配置
+从JDK17开始, 安装完成后, 环境变量会自动配置
 
 如果显示`java不是内部或外部命令...`那就继续看
 :::
@@ -116,7 +116,7 @@ JDK安装时的绝对路径
 
 在系统变量的列表里找到`CLASSPATH`
 
-如果没有,和刚刚一样点击新建
+如果没有, 和刚刚一样点击新建
 
 输入以下内容
 
@@ -146,7 +146,7 @@ CLASSPATH
 
 ![a836894dea8879594e0bf48a04028829173faef4](Assets/a836894dea8879594e0bf48a04028829173faef4.png)
 
-快捷键`Win + R`打开运行,输入`cmd`打开cmd窗口,输入
+快捷键`Win + R`打开运行, 输入`cmd`打开cmd窗口, 输入
 
 ```shell
 java -version
@@ -154,7 +154,7 @@ javac -version
 
 ```
 
-显示以下内容即,安装完成
+显示以下内容即, 安装完成
 
 ```shell
 $ java -version
@@ -174,12 +174,12 @@ javac 21.0.4
 
 `javac.exe`是编译工具
 
-我们写好的Java代码是高级语言,计算机底层是硬件,并不能识别只些语言,必须先通过`javac.exe`编译工具进行翻译,然后在用`java.exe`执行工具执行,才可以驱动计算机干活
+我们写好的Java代码是高级语言, 计算机底层是硬件, 并不能识别只些语言, 必须先通过`javac.exe`编译工具进行翻译, 然后在用`java.exe`执行工具执行, 才可以驱动计算机干活
 
 ## JDK的组成
 
-* **JVN(Java Virtual Machine)**: Java虚拟机,真正运行Java程序的地方
-* **核心类库**: Java提供的程序接口,给程序员自己的程序调用的
+* **JVN(Java Virtual Machine)**: Java虚拟机, 真正运行Java程序的地方
+* **核心类库**: Java提供的程序接口, 给程序员自己的程序调用的
 * **JRE(Java Runtime Environment)**: Java的运行环境
 
-除了这3个东西,还有**Javac(编译工具)**,**Jdb(调试器)**等,共同组成了JDK
+除了这3个东西, 还有**Javac(编译工具)**, **Jdb(调试器)**等, 共同组成了JDK

@@ -1,19 +1,19 @@
 # 字体图标
 
-展示的是**图标**,本质是**字体**
+展示的是**图标**, 本质是**字体**
 
-作用:在网页中添加简单地,颜色单一的小图标
+作用:在网页中添加简单地, 颜色单一的小图标
 
 优点:
 
-* 灵活性:灵活的修改样式,例如:尺寸,颜色等
-* 轻量性:体积小,渲染快,降低服务器请求次数
+* 灵活性:灵活的修改样式, 例如:尺寸, 颜色等
+* 轻量性:体积小, 渲染快, 降低服务器请求次数
 * 兼容性:几乎兼容所有主流浏览器
 * 使用方便:先下载再使用
 
 国内可以使用阿里的[iconfont图标库](//www.iconfont.cn)
 
-可以直接下载图标源文件,或者添加至项目,合并成字体图标
+可以直接下载图标源文件, 或者添加至项目, 合并成字体图标
 
 ![afaea0527bd47837a80efbf6e6be28f9619ec581](Assets/afaea0527bd47837a80efbf6e6be28f9619ec581.png)
 
@@ -27,7 +27,7 @@
 
 ![6b5cbadcd9e4b2aaac2fa4ab4beba76d9eaf0362](Assets/6b5cbadcd9e4b2aaac2fa4ab4beba76d9eaf0362.png)
 
-推荐使用Font class方法,Vue.js推荐使用Symbol方法,根据教程使用即可
+推荐使用Font class方法, Vue.js推荐使用Symbol方法, 根据教程使用即可
 
 引入项目下面生成的 fontclass 代码
 
@@ -35,7 +35,7 @@
 <link rel="stylesheet" href="iconfont.css">
 ```
 
-挑选相应图标并获取类名,应用于页面
+挑选相应图标并获取类名, 应用于页面
 
 ```html
 <span class="ErhaiLakeUI-icon xxx"></span>
@@ -47,6 +47,6 @@
 
 ![3e53bf8df2a57157f2096d6894e3ffc7281a7d16](Assets/3e53bf8df2a57157f2096d6894e3ffc7281a7d16.png)
 
-在确认编辑页面点击去除颜色提交后,等待审核通过后即可
+在确认编辑页面点击去除颜色提交后, 等待审核通过后即可
 
 ![21401abec17f7b3cb42af10b86bf24e1ae869b32](Assets/21401abec17f7b3cb42af10b86bf24e1ae869b32.png)

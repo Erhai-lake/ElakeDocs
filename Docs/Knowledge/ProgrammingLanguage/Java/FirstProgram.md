@@ -1,8 +1,8 @@
 # 第一个程序
 
-是的,你要开始编写你的第一个程序了,让你有点成就感,以便后期我们斩尽杀绝
+是的, 你要开始编写你的第一个程序了, 让你有点成就感, 以便后期我们斩尽杀绝
 
-我们第一个项目不使用IDEA,而是使用记事本加命令行的方式编写和运行
+我们第一个项目不使用IDEA, 而是使用记事本加命令行的方式编写和运行
 
 ## 第一步创建项目
 
@@ -36,7 +36,7 @@ public class HelloWorld {
 javac HelloWorld.java
 ```
 
-回车后不会返回任何消息,但是刚刚的目录下多了一个`HelloWorld.class`
+回车后不会返回任何消息, 但是刚刚的目录下多了一个`HelloWorld.class`
 
 ## 第四步运行程序
 
@@ -46,7 +46,7 @@ javac HelloWorld.java
 java HelloWorld
 ```
 
-如果操作没问题,cmd窗口就输出`Hello World!`了
+如果操作没问题, cmd窗口就输出`Hello World!`了
 
 ## 我报错了
 
@@ -76,4 +76,4 @@ java HelloWorld
 
 ## 扩展
 
-在新版JDK中,不在需要先编译在运行了,可以直接`java HelloWorld.java`
+在新版JDK中, 不在需要先编译在运行了, 可以直接`java HelloWorld.java`

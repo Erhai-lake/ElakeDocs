@@ -14,7 +14,7 @@
 * `pow`: 幂运算
 * `abs`: 绝对值
 
-如果想了解更多方法,可以访问[官方文档](//developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Math)
+如果想了解更多方法, 可以访问[官方文档](//developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Math)
 
 ## ceil
 

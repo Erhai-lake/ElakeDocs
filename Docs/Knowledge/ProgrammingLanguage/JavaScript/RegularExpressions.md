@@ -1,8 +1,8 @@
 # 正则表达式
 
-不了解正则表达式的,可以看[正则表达式的文档](/Docs/Knowledge/ProgrammingLanguage/RegularExpression/RegularExpression)
+不了解正则表达式的, 可以看[正则表达式的文档](/Docs/Knowledge/ProgrammingLanguage/RegularExpression/RegularExpression)
 
-这里只讲解在JS中,怎么使用正则表达式
+这里只讲解在JS中, 怎么使用正则表达式
 
 ## 定义正则表达式
 
@@ -18,7 +18,7 @@ const 变量名 = /表达式/
 
 用来查看正则表达式与指定的字符串是否匹配
 
-如果匹配成功,返回`true`,否则返回`false`
+如果匹配成功, 返回`true`, 否则返回`false`
 
 ```js
 const Test = /Hello/
@@ -34,7 +34,7 @@ console.log(Test.test('Hello World'))
 
 在一个指定字符串中执行一个搜索匹配
 
-如果匹配成功,返回一个数组,否则返回`null`
+如果匹配成功, 返回一个数组, 否则返回`null`
 
 ```js
 const Test = /Hello/

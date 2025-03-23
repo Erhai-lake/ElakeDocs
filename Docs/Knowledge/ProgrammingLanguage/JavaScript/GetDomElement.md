@@ -6,9 +6,9 @@
 document.querySelector('css选择器')
 ```
 
-如果页面有多个相同的元素,只会选择**第一个**
+如果页面有多个相同的元素, 只会选择**第一个**
 
-返回的是一个**HTMLElement对象**,如果没有匹配到,返回**null**
+返回的是一个**HTMLElement对象**, 如果没有匹配到, 返回**null**
 
 ```html
 <div>abc</div>
@@ -36,7 +36,7 @@ document.querySelector('css选择器')
 </script>
 ```
 
-和CSS一模一样,不会CSS的回去重修[Html5CSS3](/Docs/Knowledge/ProgrammingLanguage/Html5CSS3/Html5CSS3)
+和CSS一模一样, 不会CSS的回去重修[Html5CSS3](/Docs/Knowledge/ProgrammingLanguage/Html5CSS3/Html5CSS3)
 
 ### 匹配多个元素
 
@@ -67,9 +67,9 @@ document.querySelectorAll('css选择器')
 ```js
 // 根据id获取第一个元素
 document.getElementById('id')
-// 根据标签获取一类元素,例如获取页面所有div
+// 根据标签获取一类元素, 例如获取页面所有div
 document.getElementsByTagName('div')
-// 根据类名获取元素,例如获取所有类名为 w 的
+// 根据类名获取元素, 例如获取所有类名为 w 的
 document.getElementsByClassName('w')
 ```
 

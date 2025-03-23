@@ -57,20 +57,20 @@ pnpm run dev
 
 ## 命令
 
-* `GitLog`: 手动刷新文档的提交记录,用于更新贡献者和更新日志
-* `PictureSHA1`: 将编者随便命名的图片文件名修改为SHA1值,统一规范防止重名
-* `dev`: 本地调试,启动本地调试服务器`localhost:3000`
+* `GitLog`: 手动刷新文档的提交记录, 用于更新贡献者和更新日志
+* `PictureSHA1`: 将编者随便命名的图片文件名修改为SHA1值, 统一规范防止重名
+* `dev`: 本地调试, 启动本地调试服务器`localhost:3000`
 * `build`: 构建静态页面
 * `production`: 浏览构建后的静态页面
-* `Upload`: (警告) 将`master`分支合并到`build`分支,由GitHub构建出静态页面,并推送到`production`分支
+* `Upload`: (警告) 将`master`分支合并到`build`分支, 由GitHub构建出静态页面, 并推送到`production`分支
 
-> 如果你使用VS Code请使用运行和调试功能里的启动项,我已经配置好了`launch.json`
+> 如果你使用VS Code请使用运行和调试功能里的启动项, 我已经配置好了`launch.json`
 
 ## 分支
 
-* `master`: 主分支,用于存放最新的文档
-* `build`: 构建分支,当更新到一定体积时,将`master`分支合并到`build`分支,构建出静态页面,自动构建并推送到`production`分支
-* `production`: 部署分支,存放构建后的静态页面,用于自动部署到服务器
+* `master`: 主分支, 用于存放最新的文档
+* `build`: 构建分支, 当更新到一定体积时, 将`master`分支合并到`build`分支, 构建出静态页面, 自动构建并推送到`production`分支
+* `production`: 部署分支, 存放构建后的静态页面, 用于自动部署到服务器
 
 > [!WARNING]
 > 请不要直接修改`build`和`production`分支!

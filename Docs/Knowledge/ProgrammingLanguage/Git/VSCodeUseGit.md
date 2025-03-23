@@ -2,18 +2,18 @@
 
 ## 在VS Code配置Git
 
-安装好 VS Code 和 Git 后,VS Code会自动识别Git的位置,如果没有自动识别到,则需要手动配置
+安装好 VS Code 和 Git 后, VS Code会自动识别Git的位置, 如果没有自动识别到, 则需要手动配置
 
 ![b38460634ba1da9b8124ef4e2cfae3c293b66e0e](Assets/b38460634ba1da9b8124ef4e2cfae3c293b66e0e.png)
 
-点击后会打开一个`settings.json`的文件,并且会自动写入配置
+点击后会打开一个`settings.json`的文件, 并且会自动写入配置
 
 ![e46cd214fddec58703ed0a3b56344a1811cc5140](Assets/e46cd214fddec58703ed0a3b56344a1811cc5140.png)
 
 如果没有请自行输入:
 
 ```json
-"git.path": "Git路径,例如:C:/Program Files/Git/cmd/git.exe"
+"git.path": "Git路径, 例如:C:/Program Files/Git/cmd/git.exe"
 ```
 
 ## 克隆仓库
@@ -32,6 +32,6 @@
 
 ## 其他功能的使用方法
 
-在VS Code的Git下拉列表中,是VS Code现支持的所有功能(遇到BUG还请用命令行)
+在VS Code的Git下拉列表中, 是VS Code现支持的所有功能(遇到BUG还请用命令行)
 
-不知道有没有必要写,需要的可以告知一声,要的人多的话,应该会更新
+不知道有没有必要写, 需要的可以告知一声, 要的人多的话, 应该会更新

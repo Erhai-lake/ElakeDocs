@@ -47,6 +47,14 @@ export const JavaSidebar: any[] = [
                 link: '/Docs/Knowledge/ProgrammingLanguage/Java/Variables'
             },
             {
+                text: '数据类型',
+                link: '/Docs/Knowledge/ProgrammingLanguage/Java/DataTypes'
+            },
+            {
+                text: '关键词',
+                link: '/Docs/Knowledge/ProgrammingLanguage/Java/Keywords'
+            },
+            {
                 text: '规范',
                 link: '/Docs/Knowledge/ProgrammingLanguage/Java/Specification'
             }

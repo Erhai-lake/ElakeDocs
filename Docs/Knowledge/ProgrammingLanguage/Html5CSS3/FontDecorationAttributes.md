@@ -36,9 +36,9 @@
 
 属性名:`font-size`
 
-数值(100~900的整数,默认为400)
+数值(100~900的整数, 默认为400)
 
-关键词(如:加粗`bold`,默认为`normal`)
+关键词(如:加粗`bold`, 默认为`normal`)
 
 ```css
 .a{
@@ -52,7 +52,7 @@
 
 属性名:`font-style`
 
-关键词(正常:`normal`,倾斜:`italic`)
+关键词(正常:`normal`, 倾斜:`italic`)
 
 ```css
 .a{
@@ -80,7 +80,7 @@
 
 属性名:`font-family`
 
-字体名(可以设置多个,如果没有字体,就按从左到右的顺序读取下一个)
+字体名(可以设置多个, 如果没有字体, 就按从左到右的顺序读取下一个)
 
 ```css
 .a{
@@ -132,7 +132,7 @@
 
 属性名:`text-align`
 
-关键词(左对齐(默认):`left`,居中:`center`,右对齐:`right`)
+关键词(左对齐(默认):`left`, 居中:`center`, 右对齐:`right`)
 
 ```css
 .a{
@@ -146,7 +146,7 @@
 
 属性名:`text-decoration`
 
-关键词(无:`none`,下划线:`underline`,删除线:`line-through`,上划线:`overline`)
+关键词(无:`none`, 下划线:`underline`, 删除线:`line-through`, 上划线:`overline`)
 
 ```css
 .a{

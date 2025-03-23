@@ -4,7 +4,7 @@
 | :-----------: | :-----------------------------------------------------: |
 |    方法名     |                  `InitializeSource()`                   |
 |     描述      | 将版本信息写入[`VersionJson`](../Variables/VersionJson) |
-| 参数 `Source` |     源 字符串(`MoJang`,`BMCLAPI`,默认使用`MoJang`)      |
+| 参数 `Source` |     源 字符串(`MoJang`, `BMCLAPI`, 默认使用`MoJang`)      |
 |     返回      |                         布尔值                          |
 
 ## 例子

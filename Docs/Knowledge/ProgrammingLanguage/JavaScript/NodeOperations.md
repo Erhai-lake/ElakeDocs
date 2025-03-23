@@ -7,10 +7,10 @@ DOM树里每一个内容都称为节点
 节点类型
 
 * 元素节点
-  * 所有的标签,例如:`body`,`div`
+  * 所有的标签, 例如:`body`, `div`
   * `html`是根节点
 * 属性节点
-  * 所有的属性,例如`href`
+  * 所有的属性, 例如`href`
 * 文本节点
   * 所有的文本
 * 其他
@@ -25,9 +25,9 @@ flowchart TD; document --> html; html --> hrad; hrad --> meta --> charset(charse
 
 `子元素.parentNode`
 
-返回最近一级的父节点,找不到返回`null`
+返回最近一级的父节点, 找不到返回`null`
 
-例如,可以通过`p`元素获取上一级的`div`元素
+例如, 可以通过`p`元素获取上一级的`div`元素
 
 ```html
 <div><p></p></div>
@@ -40,7 +40,7 @@ flowchart TD; document --> html; html --> hrad; hrad --> meta --> charset(charse
 
 `父节点.childNodes`**(了解)**
 
-获取所有**子节点**,包括文本节点(空格,换行),注释节点等等
+获取所有**子节点**, 包括文本节点(空格, 换行), 注释节点等等
 
 `父节点.children`**(重点)**
 
@@ -48,7 +48,7 @@ flowchart TD; document --> html; html --> hrad; hrad --> meta --> charset(charse
 
 返回一个伪数组
 
-例如,可以通`ul`元素获取所有子元素
+例如, 可以通`ul`元素获取所有子元素
 
 ```html
 <ul>
@@ -142,9 +142,9 @@ flowchart TD; document --> html; html --> hrad; hrad --> meta --> charset(charse
 
 `元素.cloneNode(布尔值)`
 
-如果传入`true`,则代表克隆时会包含后代节点一起克隆
+如果传入`true`, 则代表克隆时会包含后代节点一起克隆
 
-如果传入`false`,则代表克隆时不包含后代节点
+如果传入`false`, 则代表克隆时不包含后代节点
 
 默认为`false`
 
@@ -172,13 +172,13 @@ flowchart TD; document --> html; html --> hrad; hrad --> meta --> charset(charse
 `父元素.removeChild(要删除的元素)`
 
 :::warning
-如果不存在父子关系,则无法删除
+如果不存在父子关系, 则无法删除
 :::
 
 :::note
 删除节点和隐藏节点(`display: none`)的区别
 
-隐藏节点虽然没有了,但还是在html节点中的
+隐藏节点虽然没有了, 但还是在html节点中的
 
 删除节点是直接从html节点中删除
 :::
