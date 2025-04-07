@@ -7,22 +7,22 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 const DocsDirectory = path.join(__dirname, 'Docs')
-const OutputFile = 'public/CommitRecords.json'
+const OutputFile = 'public/CommitRecords/'
 
 // 递归遍历目录以获取所有 .md 文件路径
 const WalkDirectory = (Dir) => {
-    let FilesList = []
+    let FilePathList = []
     const Items = fs.readdirSync(Dir)
     Items.forEach(Item => {
         const ItemPath = path.join(Dir, Item)
         const Stat = fs.statSync(ItemPath)
         if (Stat.isDirectory()) {
-            FilesList = FilesList.concat(WalkDirectory(ItemPath))
+            FilePathList = FilePathList.concat(WalkDirectory(ItemPath))
         } else if (path.extname(Item) === '.md') {
-            FilesList.push(ItemPath);
+            FilePathList.push(ItemPath);
         }
     })
-    return FilesList
+    return FilePathList
 }
 
 // 执行 git log 并解析输出
@@ -60,26 +60,28 @@ const UpdateProgress = (Current, Total) => {
 
 // 主函数
 const Main = () => {
-    console.log('开始获取提交记录...')
-    const Files = WalkDirectory(DocsDirectory)
-    const AllCommits = {}
-    Files.forEach((File, Index) => {
-        const RelativePath = path.relative(DocsDirectory, File).replace(/\\/g, '/')
-        AllCommits[RelativePath] = GetGitLog(File)
-        UpdateProgress(Index + 1, Files.length)
-    })
     if (process.stdout && process.stdout.clearLine) {
         process.stdout.clearLine()
         process.stdout.cursorTo(0)
     }
-    // 确保public目录存在
-    const OutputDir = path.dirname(OutputFile)
-    if (!fs.existsSync(OutputDir)) {
-        fs.mkdirSync(OutputDir, { recursive: true })
+    console.log('检查目录...')
+    if (!fs.existsSync(OutputFile)) {
+        console.log(`创建目录 ${OutputFile}...`)
+        fs.mkdirSync(OutputFile, { recursive: true })
     }
-    const AllCommitsJson = JSON.stringify(AllCommits)
-    // 将所有提交记录写入 JSON 文件
-    fs.writeFileSync(OutputFile, AllCommitsJson)
+    console.log('清空目录...')
+    fs.readdirSync(OutputFile).forEach(file => {
+        fs.unlinkSync(path.join(OutputFile, file))
+    })
+    console.log('开始获取提交记录...')
+    const FilePathList = WalkDirectory(DocsDirectory)
+    console.log(`共找到 ${FilePathList.length} 个文件`)
+    FilePathList.forEach((File, Index) => {
+        const RelativePath = path.relative(DocsDirectory, File).replace(/\\/g, '/').replace(/\//g, '_').replace('.md', '.json')
+        fs.writeFileSync(`${OutputFile}${RelativePath}`, JSON.stringify(GetGitLog(File)))
+        UpdateProgress(Index + 1, FilePathList.length)
+    })
     console.log(`提交记录已写入${OutputFile}`)
+    console.log('所有操作已完成.')
 }
 Main()

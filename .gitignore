@@ -8,4 +8,4 @@ pnpm-lock.yaml
 # VS Code配置文件
 .vscode/settings.json
 # Git 提交记录
-public/CommitRecords.json
+public/CommitRecords/*

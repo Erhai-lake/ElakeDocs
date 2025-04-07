@@ -35,22 +35,22 @@ onMounted(async (): Promise<void> => {
 const ContributorsData: any = ref([])
 const GetContributors: () => Promise<void> = async (): Promise<void> => {
     try {
-        const StoredAllCommits: string | null = sessionStorage.getItem('AllCommits')
-        let AllCommits: any
+        const FilePath: string = Route.path.replace(/html$/, 'md').replace(/\/Docs\//, '').replace(/\//g, '_').replace('.md', '.json')
+        const StoredAllCommits: string | null = sessionStorage.getItem(FilePath)
+        let GitCommits: any
         if (StoredAllCommits) {
             // 如果有存储的数据,直接解析并使用
-            AllCommits = JSON.parse(StoredAllCommits)
+            GitCommits = JSON.parse(StoredAllCommits)
         } else {
             // 如果没有存储的数据,发送网络请求获取
-            const Response = await fetch('/CommitRecords.json')
-            AllCommits = await Response.json()
+            const Response = await fetch(`/CommitRecords/${FilePath}`)
+            GitCommits = await Response.json()
             // 获取数据后存入sessionStorage
-            sessionStorage.setItem('AllCommits', JSON.stringify(AllCommits))
+            sessionStorage.setItem(FilePath, JSON.stringify(GitCommits))
         }
-        const FilePath: string = `${Route.path}`.replace(/html$/, 'md').replace(/\/Docs\//, '')
-        const Commits: any = AllCommits[FilePath]
+
         const DataSet = new Set<string>()
-        Commits.forEach((Item: { Name: string }): void => {
+            GitCommits.forEach((Item: { Name: string }): void => {
             DataSet.add(Item.Name.replace(/_/, '-'))
         })
         ContributorsData.value = Array.from(DataSet).map((Name: string): { Name: string, AvatarUrl: string } => {

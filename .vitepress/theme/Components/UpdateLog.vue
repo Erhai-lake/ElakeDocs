@@ -64,22 +64,21 @@ const UpdateLogData: any = ref([])
 const LastUpdateTime: any = ref('0000-00-00')
 const GetUpdateLog: () => Promise<void> = async (): Promise<void> => {
     try {
-        const StoredAllCommits: string | null = sessionStorage.getItem('AllCommits')
-        let AllCommits: any
+        const FilePath: string = Route.path.replace(/html$/, 'md').replace(/\/Docs\//, '').replace(/\//g, '_').replace('.md', '.json')
+        const StoredAllCommits: string | null = sessionStorage.getItem(FilePath)
+        let GitCommits: any
         if (StoredAllCommits) {
             // 如果有存储的数据,直接解析并使用
-            AllCommits = JSON.parse(StoredAllCommits)
+            GitCommits = JSON.parse(StoredAllCommits)
         } else {
             // 如果没有存储的数据,发送网络请求获取
-            const Response = await fetch('/CommitRecords.json')
-            AllCommits = await Response.json()
+            const Response = await fetch(`/CommitRecords/${FilePath}`)
+            GitCommits = await Response.json()
             // 获取数据后存入sessionStorage
-            sessionStorage.setItem('AllCommits', JSON.stringify(AllCommits))
+            sessionStorage.setItem(FilePath, JSON.stringify(GitCommits))
         }
-        const FilePath: string = `${Route.path}`.replace(/html$/, 'md').replace(/\/Docs\//, '')
-        const Commits: any = AllCommits[FilePath]
         const DataSet = new Set<any>()
-        Commits.forEach((Item: { Sha: string, Name: string, Message: string, Time: string }): void => {
+        GitCommits.forEach((Item: { Sha: string, Name: string, Message: string, Time: string }): void => {
             DataSet.add(
                 {
                     Sha: Item.Sha,
