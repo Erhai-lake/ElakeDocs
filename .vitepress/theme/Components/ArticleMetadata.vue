@@ -88,11 +88,21 @@ const GetLastUpdateTime: () => void = (): void => {
 // 计算字数
 const WordCount: any = ref('')
 const CalculateWordCount: () => void = (): void => {
-    const ContentElement: HTMLElement | null = document.querySelector('main > div > div')
-    if (ContentElement) {
-        const TextContent: string = ContentElement.textContent || ''
-        WordCount.value = TextContent ? TextContent.length : 0
-    }
+    let ContentElement: HTMLElement | null = document.querySelector('main > div > div')
+    if (!ContentElement) return
+    ContentElement = ContentElement.cloneNode(true) as HTMLElement
+    // 代码块移除
+    const PreElements: NodeListOf<HTMLElement> = ContentElement.querySelectorAll('pre')
+    PreElements.forEach(pre => pre.remove())
+    const LangSpan: NodeListOf<HTMLElement> = ContentElement.querySelectorAll('span.lang')
+    LangSpan.forEach(lang => lang.remove())
+    const LineNumber: NodeListOf<HTMLElement> = ContentElement.querySelectorAll('div.line-numbers-wrapper')
+    LineNumber.forEach(line => line.remove())
+    const TextContent: string = ContentElement.textContent || ''
+    // 计算中文字符和英文单词数
+    const CnChars: RegExpMatchArray | [] = TextContent.match(/[\u4e00-\u9fa5]/g) || []
+    const EnWords: RegExpMatchArray | [] = TextContent.match(/[a-zA-Z]+/g) || []
+    WordCount.value = CnChars.length + EnWords.length
 }
 
 // 计算阅读时长
