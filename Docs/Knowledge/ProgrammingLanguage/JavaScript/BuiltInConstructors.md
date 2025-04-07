@@ -15,9 +15,9 @@
 Object是内置的构造函数, 用于创建普通对象
 
 ```js
-const User = new Object({ Name: '洱海之畔', Age: 18 })
+const User = new Object({ Name: '洱海', Age: 18 })
 console.log(User)
-// {Name: '洱海之畔', Age: 18}
+// {Name: '洱海', Age: 18}
 ```
 
 推荐使用字面量方式声明对象, 而不是Object构造函数
@@ -31,7 +31,7 @@ console.log(User)
 返回一个数组
 
 ```js
-const Erhai_lake = { Name: '洱海之畔', Age: 18 }
+const Erhai_lake = { Name: '洱海', Age: 18 }
 
 const Arr = Object.keys(Erhai_lake)
 console.log(Arr)
@@ -47,11 +47,11 @@ console.log(Arr)
 返回一个数组
 
 ```js
-const Erhai_lake = { Name: '洱海之畔', Age: 18 }
+const Erhai_lake = { Name: '洱海', Age: 18 }
 
 const Arr = Object.values(Erhai_lake)
 console.log(Arr)
-// ['洱海之畔', 18]
+// ['洱海', 18]
 ```
 
 ### 拷贝对象
@@ -64,14 +64,14 @@ console.log(Arr)
 
 ```js
 // 将Erhai_lake拷贝给Elake
-const Erhai_lake = { Name: '洱海之畔', Age: 18 }
+const Erhai_lake = { Name: '洱海', Age: 18 }
 const Elake = {}
 Object.assign(Elake, Erhai_lake)
 
 console.log(Erhai_lake)
-// {Name: '洱海之畔', Age: 18}
+// {Name: '洱海', Age: 18}
 console.log(Elake)
-// {Name: '洱海之畔', Age: 18}
+// {Name: '洱海', Age: 18}
 ```
 
 ## Array

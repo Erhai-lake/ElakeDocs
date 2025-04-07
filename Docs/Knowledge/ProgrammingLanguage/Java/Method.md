@@ -88,3 +88,15 @@ public class MethodOverloadExample {
     }
 }
 ```
+
+## 无关内容
+
+::: details 其他东西
+Java的方法与js的`function`类似
+
+因为这是柒月说的, 柒月原话:
+
+![d6d53ead5d1b14cc1005b9efeb7b9783e1bffda8](Assets/d6d53ead5d1b14cc1005b9efeb7b9783e1bffda8.png)
+
+不知道怎么解释, 所以丢聊天记录
+:::

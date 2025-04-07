@@ -16,7 +16,7 @@
 
 ```js
 // 普通字符串
-const Str = '洱海之畔'
+const Str = '洱海'
 console.log(Str.length)
 // 4
 ```

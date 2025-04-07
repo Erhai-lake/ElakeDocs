@@ -15,7 +15,7 @@ export const Navbar = [
         text: 'GitHub',
         items: [
             {
-                text: '洱海之畔',
+                text: '洱海',
                 link: '//github.com/Erhai-lake'
             },
             {
@@ -28,7 +28,7 @@ export const Navbar = [
         text: 'Gitee',
         items: [
             {
-                text: '洱海之畔',
+                text: '洱海',
                 link: '//gitee.com/Erhai-lake'
             },
             {
@@ -41,7 +41,7 @@ export const Navbar = [
         text: '邮箱',
         items: [
             {
-                text: '洱海之畔',
+                text: '洱海',
                 link: 'mailto:fuzixuan0714_0826@163.com'
             },
             {

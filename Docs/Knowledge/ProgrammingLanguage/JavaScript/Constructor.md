@@ -13,7 +13,7 @@
 ```js
 // 创建洱海的对象
 const Erhai_lake = {
-    Name: '洱海之畔',
+    Name: '洱海',
     Age: 18,
     Gender: '男'
 }
@@ -41,7 +41,7 @@ function ELake(Name, Age, Gender) {
 }
 
 // 创建洱海的对象
-const Erhai_lake = new ELake('洱海之畔', 18, '男')
+const Erhai_lake = new ELake('洱海', 18, '男')
 // 创建柒月的对象
 const Qi_Month = new ELake('柒月', 18, '女')
 // 创建小良的对象
@@ -67,7 +67,7 @@ const XiaoLiang = new ELake('小良', 18, '男')
 function ELake(Name) {
     this.Name = Name
 }
-const Erhai_lake = new ELake('洱海之畔')
+const Erhai_lake = new ELake('洱海')
 const Qi_Month = new ELake('柒月')
 // 实例属性
 Erhai_lake.Name = 'Erhai_lake'
