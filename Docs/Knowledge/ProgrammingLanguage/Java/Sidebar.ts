@@ -51,8 +51,16 @@ export const JavaSidebar: any[] = [
                 link: '/Docs/Knowledge/ProgrammingLanguage/Java/DataTypes'
             },
             {
-                text: '关键词',
-                link: '/Docs/Knowledge/ProgrammingLanguage/Java/Keywords'
+                text: '关键字和标识符',
+                link: '/Docs/Knowledge/ProgrammingLanguage/Java/KeywordsAndIdentifiers'
+            },
+            {
+                text: '方法',
+                link: '/Docs/Knowledge/ProgrammingLanguage/Java/Method'
+            },
+            {
+                text: '类型转换',
+                link: '/Docs/Knowledge/ProgrammingLanguage/Java/TypeConversion'
             },
             {
                 text: '规范',
