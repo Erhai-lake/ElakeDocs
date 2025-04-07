@@ -1,16 +1,16 @@
 export const Navbar = [
-    {
-        text: '洱海官网',
-        link: '//www.elake.top'
-    },
-    {
-        text: '洱海云盘',
-        link: '//alist.elake.top'
-    },
-    {
-        text: '服务监控',
-        link: '//ping.elake.top'
-    },
+    // {
+    //     text: '洱海官网',
+    //     link: '//www.elake.top'
+    // },
+    // {
+    //     text: '洱海云盘',
+    //     link: '//alist.elake.top'
+    // },
+    // {
+    //     text: '服务监控',
+    //     link: '//ping.elake.top'
+    // },
     {
         text: 'GitHub',
         items: [
