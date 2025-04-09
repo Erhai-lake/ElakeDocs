@@ -4,11 +4,13 @@ import ArticleMetadata from '/.vitepress/theme/Components/ArticleMetadata.vue'
 import Contributors from '/.vitepress/theme/Components/Contributors.vue'
 import UpdateLog from '/.vitepress/theme/Components/UpdateLog.vue'
 import Copyright from '/.vitepress/theme/Components/Copyright.vue'
+import LinkIcon from '/.vitepress/theme/Components/LinkIcon.vue'
 
 const { Layout } = Theme
 </script>
 
 <template>
+    <LinkIcon />
     <Layout>
         <template #doc-before>
             <ArticleMetadata />
