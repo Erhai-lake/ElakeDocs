@@ -95,4 +95,3 @@ flowchart TD; byte --> i; short --> i; char --> i[int] --> long --> float --> do
 * 表达式的最终结果类型由表达式中的**最高类型决定**.
 * **在表达式中, `byte`, `short`, `char`** 是 **直接转换成`int`** 类型参与运算的.
 :::
-
