@@ -56,6 +56,13 @@ public class MethodExample {
 
 ```java
 public class MethodExample {
+    public static void main(String[] args) {
+        sayHello(); // 调用没有参数和返回值的方法
+        int result = add(5, 10); // 调用有参数和返回值的方法
+        System.out.println("返回: " + result);
+        printSum(5, 10); // 调用有参数但没有返回值的方法
+    }
+
     // 定义一个没有参数和返回值的方法
     public static void sayHello() {
         System.out.println("Hello, World!");
@@ -70,13 +77,6 @@ public class MethodExample {
     public static void printSum(int a, int b) {
         System.out.println("Sum: " + (a + b));
     }
-
-    public static void main(String[] args) {
-        sayHello(); // 调用没有参数和返回值的方法
-        int result = add(5, 10); // 调用有参数和返回值的方法
-        System.out.println("返回: " + result);
-        printSum(5, 10); // 调用有参数但没有返回值的方法
-    }
 }
 
 ```
@@ -87,6 +87,12 @@ public class MethodExample {
 
 ```java
 public class MethodExample {
+    public static void main(String[] args) {
+        MethodExample example = new MethodExample();
+        System.out.println("2个数的和: " + example.add(5, 10)); // 调用第一个 add 方法
+        System.out.println("3个数的和: " + example.add(5, 10, 15)); // 调用第二个 add 方法
+    }
+
     // 定义一个方法, 接收两个整数参数
     public int add(int a, int b) {
         return a + b;
@@ -95,12 +101,6 @@ public class MethodExample {
     // 定义一个方法, 接收三个整数参数
     public int add(int a, int b, int c) {
         return a + b + c;
-    }
-
-    public static void main(String[] args) {
-        MethodExample example = new MethodExample();
-        System.out.println("2个数的和: " + example.add(5, 10)); // 调用第一个 add 方法
-        System.out.println("3个数的和: " + example.add(5, 10, 15)); // 调用第二个 add 方法
     }
 }
 ```
