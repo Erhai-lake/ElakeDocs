@@ -32,7 +32,7 @@ export default withMermaid({
     // 描述
     description: "记录点滴 见证思考 分享成长",
     // 基础路径
-    base: '/',
+    base: '/repo/',
     // 头部
     head: [
         // Logo
