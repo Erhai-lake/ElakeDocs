@@ -64,7 +64,7 @@ const UpdateLogData: any = ref([])
 const LastUpdateTime: any = ref('0000-00-00')
 const GetUpdateLog: () => Promise<void> = async (): Promise<void> => {
     try {
-        const FilePath: string = Route.path.replace(/html$/, 'md').replace(/\/Docs\//, '').replace(/\//g, '_').replace('.md', '.json')
+        const FilePath: string = Route.path.replace(/html$/, 'md').replace(/\/ElakeDocs\/Docs\//, '').replace(/\//g, '_').replace('.md', '.json')
         const StoredAllCommits: string | null = sessionStorage.getItem(FilePath)
         let GitCommits: any
         if (StoredAllCommits) {
@@ -72,7 +72,7 @@ const GetUpdateLog: () => Promise<void> = async (): Promise<void> => {
             GitCommits = JSON.parse(StoredAllCommits)
         } else {
             // 如果没有存储的数据,发送网络请求获取
-            const Response = await fetch(`/CommitRecords/${FilePath}`)
+            const Response = await fetch(`/ElakeDocs/CommitRecords/${FilePath}`)
             GitCommits = await Response.json()
             // 获取数据后存入sessionStorage
             sessionStorage.setItem(FilePath, JSON.stringify(GitCommits))

@@ -35,7 +35,7 @@ onMounted(async (): Promise<void> => {
 const ContributorsData: any = ref([])
 const GetContributors: () => Promise<void> = async (): Promise<void> => {
     try {
-        const FilePath: string = Route.path.replace(/html$/, 'md').replace(/\/Docs\//, '').replace(/\//g, '_').replace('.md', '.json')
+        const FilePath: string = Route.path.replace(/html$/, 'md').replace(/\/ElakeDocs\/Docs\//, '').replace(/\//g, '_').replace('.md', '.json')
         const StoredAllCommits: string | null = sessionStorage.getItem(FilePath)
         let GitCommits: any
         if (StoredAllCommits) {
