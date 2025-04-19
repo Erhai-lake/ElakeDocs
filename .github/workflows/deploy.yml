@@ -27,7 +27,6 @@ jobs:
           uses: actions/setup-node@v2
           with:
             node-version: 20
-            cache: npm
 
         - name: 配置 Pages
           uses: actions/configure-pages@v4
