@@ -1,11 +1,18 @@
 name: 构建文档
+# 触发条件
 on:
-    push:
-        branches:
-        - build
-
+  push:
+    branches: [master]  # 当代码推送到 master 分支时触发
+  workflow_dispatch:    # 允许在 GitHub Actions 页面手动触发
+# 权限设置
 permissions:
-    contents: write
+  contents: read     # 读取仓库内容
+  pages: write       # 写入 GitHub Pages
+  id-token: write    # 生成 JWT 令牌用于身份验证
+# 并发控制
+concurrency:
+  group: pages       # 同一时间只允许一个部署运行
+  cancel-in-progress: false # 不取消正在进行的部署
 
 jobs:
     build:
@@ -20,6 +27,10 @@ jobs:
           uses: actions/setup-node@v2
           with:
             node-version: 20
+            cache: npm
+
+        - name: 配置 Pages
+          uses: actions/configure-pages@v4
 
         - name: 安装 pnpm☂
           run: npm install -g pnpm
@@ -30,8 +41,20 @@ jobs:
         - name: 构建 项目🚽
           run: pnpm run build
 
-        - name: 同步到分支🚄
-          uses: JamesIves/github-pages-deploy-action@v4
+        - name: 上传产物
+          uses: actions/upload-pages-artifact@v3
           with:
-            branch: production
-            folder: .vitepress/dist
+            path: docs/.vitepress/dist
+            
+  # 部署任务
+    deploy:
+        environment:
+          name: github-pages
+          url: ${{ steps.deployment.outputs.page_url }}
+        needs: build
+        runs-on: ubuntu-latest
+        name: Deploy
+        steps:
+          - name: Deploy to GitHub Pages
+            id: deployment
+            uses: actions/deploy-pages@v4
