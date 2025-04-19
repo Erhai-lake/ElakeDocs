@@ -43,7 +43,7 @@ jobs:
         - name: 上传产物
           uses: actions/upload-pages-artifact@v3
           with:
-            path: docs/.vitepress/dist
+            path: .vitepress/dist
             
   # 部署任务
     deploy:
