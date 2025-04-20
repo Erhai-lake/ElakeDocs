@@ -9,8 +9,7 @@
         "PictureSHA1": "node PictureSHA1.js",
         "dev": "pnpm run PictureSHA1 && pnpm run GitLog && vitepress dev --port 3000",
         "build": "pnpm run PictureSHA1 && pnpm run GitLog && vitepress build --port 3001",
-        "preview": "vitepress preview",
-        "Upload": "git checkout build && git merge master && git push && git checkout master"
+        "preview": "vitepress preview"
     },
     "keywords": [],
     "author": "",

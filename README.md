@@ -62,15 +62,17 @@ pnpm run dev
 * `dev`: 本地调试, 启动本地调试服务器`localhost:3000`
 * `build`: 构建静态页面
 * `production`: 浏览构建后的静态页面
-* `Upload`: (警告) 将`master`分支合并到`build`分支, 由GitHub构建出静态页面, 并推送到`production`分支
 
 > 如果你使用VS Code请使用运行和调试功能里的启动项, 我已经配置好了`launch.json`
 
-## 分支
+```shell
+git checkout stable && git merge master && git push
+```
+
+## 主要分支
 
 * `master`: 主分支, 用于存放最新的文档
-* `build`: 构建分支, 当更新到一定体积时, 将`master`分支合并到`build`分支, 构建出静态页面, 自动构建并推送到`production`分支
-* `production`: 部署分支, 存放构建后的静态页面, 用于自动部署到服务器
+* `stable`: 构建分支, 当`master`更新到一定体积且稳定时, 将`master`分支合并到`stable`分支, 构建出静态页面, 自动构建并部署到`GitHub Pages`供大家访问
 
 > [!WARNING]
-> 请不要直接修改`build`和`production`分支!
+> 请不要直接修改`stable`和分支!
