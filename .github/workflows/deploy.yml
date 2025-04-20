@@ -42,7 +42,7 @@ jobs:
         - name: 构建 项目🚽
           run: pnpm run build
 
-        - name: 上传产物
+        - name: 上传到 GitHub Pages📦
           uses: actions/upload-pages-artifact@v3
           with:
             path: .vitepress/dist
@@ -54,8 +54,8 @@ jobs:
           url: ${{ steps.deployment.outputs.page_url }}
         needs: build
         runs-on: ubuntu-latest
-        name: Deploy
+        name: 部署
         steps:
-          - name: Deploy to GitHub Pages
+          - name: 部署到 GitHub Pages📦
             id: deployment
             uses: actions/deploy-pages@v4
