@@ -66,7 +66,7 @@ pnpm run dev
 > 如果你使用VS Code请使用运行和调试功能里的启动项, 我已经配置好了`launch.json`
 
 ```shell
-git checkout stable
+git checkout production
 git merge master
 git push
 ```
