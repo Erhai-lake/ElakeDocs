@@ -2,7 +2,7 @@ name: 构建文档
 # 触发条件
 on:
   push:
-    branches: [stable]  # 当代码推送到 stable 分支时触发
+    branches: [production]  # 当代码推送到 production 分支时触发
   workflow_dispatch:    # 允许在 GitHub Actions 页面手动触发
 # 权限设置
 permissions:
@@ -54,7 +54,6 @@ jobs:
           url: ${{ steps.deployment.outputs.page_url }}
         needs: build
         runs-on: ubuntu-latest
-        name: 部署
         steps:
           - name: 部署到 GitHub Pages📦
             id: deployment
