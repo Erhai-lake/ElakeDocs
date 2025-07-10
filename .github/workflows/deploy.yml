@@ -6,13 +6,7 @@ on:
   workflow_dispatch:    # 允许在 GitHub Actions 页面手动触发
 # 权限设置
 permissions:
-  contents: read     # 读取仓库内容
-  pages: write       # 写入 GitHub Pages
-  id-token: write    # 生成 JWT 令牌用于身份验证
-# 并发控制
-concurrency:
-  group: pages       # 同一时间只允许一个部署运行
-  cancel-in-progress: false # 不取消正在进行的部署
+  contents: write     # 读取仓库内容
 
 jobs:
     build:
@@ -33,17 +27,14 @@ jobs:
           with:
             node-version: 20
 
-        - name: 配置 Pages
-          uses: actions/configure-pages@v4
-
         - name: 安装 依赖❄
           run: pnpm install
 
         - name: 构建 项目🚽
           run: pnpm run build
 
-        - name: 上传产物
-          uses: actions/upload-pages-artifact@v3
+        - name: 同步到分支🚄
+          uses: JamesIves/github-pages-deploy-action@v4
           with:
-            path: .vitepress/dist
-
+            branch: artifacts
+            folder: .vitepress/dist
