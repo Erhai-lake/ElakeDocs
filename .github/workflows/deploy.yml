@@ -6,7 +6,7 @@ on:
   workflow_dispatch:    # 允许在 GitHub Actions 页面手动触发
 # 权限设置
 permissions:
-  contents: write     # 读写仓库内容
+  contents: read     # 读取仓库内容
   pages: write       # 写入 GitHub Pages
   id-token: write    # 生成 JWT 令牌用于身份验证
 # 并发控制
@@ -46,16 +46,4 @@ jobs:
           uses: actions/upload-pages-artifact@v3
           with:
             path: .vitepress/dist
-            
-  # 部署任务
-    deploy:
-        environment:
-          name: github-pages
-          url: ${{ steps.deployment.outputs.page_url }}
-        needs: build
-        runs-on: ubuntu-latest
-        name: Deploy
-        steps:
-          - name: Deploy to GitHub Pages
-            id: deployment
-            uses: actions/deploy-pages@v4
+
