@@ -39,42 +39,14 @@ jobs:
         - name: 安装 依赖❄
           run: pnpm install
 
-        - name: 构建项目(GitHub Pages 版本)🚽
-          run: |
-            echo "构建 GitHub Pages 版本 (base: /ElakeDocs/)"
-            export VITEPRESS_BASE="/ElakeDocs/"
-            pnpm run build
+        - name: 构建 项目🚽
+          run: pnpm run build
 
-        - name: 构建项目(服务器版本)🚽
-          run: |
-            echo "构建服务器版本 (base: /)"
-            VITEPRESS_BASE="/" pnpm run build
-
-        - name: 上传到 GitHub Pages📦
+        - name: 上传产物
           uses: actions/upload-pages-artifact@v3
           with:
-            path: .vitepress/dist-ghpages
+            path: .vitepress/dist
             
-        - name: 保存产物到 artifacts 分支📦
-          run: |
-            git config --global user.name "GitHub Actions"
-            git config --global user.email "actions@github.com"
-
-            if ! git fetch origin artifacts 2>/dev/null; then
-              echo "创建新的artifacts分支"
-              git checkout --orphan artifacts
-              git rm -rf .
-            else
-              echo "检出现有的artifacts分支"
-              git checkout artifacts
-              git rm -rf .
-            fi
-
-            cp -r .vitepress/dist/* .
-            git add .
-            git commit -m "Update artifacts from production branch (Build $GITHUB_RUN_ID)"
-            git push origin artifacts --force
-
   # 部署任务
     deploy:
         environment:
@@ -82,7 +54,8 @@ jobs:
           url: ${{ steps.deployment.outputs.page_url }}
         needs: build
         runs-on: ubuntu-latest
+        name: Deploy
         steps:
-          - name: 部署到 GitHub Pages📦
+          - name: Deploy to GitHub Pages
             id: deployment
             uses: actions/deploy-pages@v4
