@@ -42,8 +42,8 @@ jobs:
         - name: 构建项目(GitHub Pages 版本)🚽
           run: |
             echo "构建 GitHub Pages 版本 (base: /ElakeDocs/)"
-            VITEPRESS_BASE="/ElakeDocs/" pnpm run build
-            mv .vitepress/dist .vitepress/dist-ghpages
+            export VITEPRESS_BASE="/ElakeDocs/"
+            pnpm run build
 
         - name: 构建项目(服务器版本)🚽
           run: |
