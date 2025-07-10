@@ -2,7 +2,7 @@
 // https://github.com/oh-my-live2d/live2d-models
 export const live2d: any[] = [
     {
-        path: '//api.elake.top/Live2DModels/bilibili-22/index.json',
+        path: "//api.elake.top/Live2DModels/bilibili-22/index.json",
         scale: 0.3,
         position: [0, 50],
         stageStyle: {
@@ -10,7 +10,7 @@ export const live2d: any[] = [
         }
     },
     {
-        path: '//api.elake.top/Live2DModels/bilibili-33/index.json',
+        path: "//api.elake.top/Live2DModels/bilibili-33/index.json",
         scale: 0.3,
         position: [0, 50],
         stageStyle: {
@@ -18,7 +18,7 @@ export const live2d: any[] = [
         }
     },
     {
-        path: '//api.elake.top/Live2DModels/Pio/model.json',
+        path: "//api.elake.top/Live2DModels/Pio/model.json",
         scale: 0.3,
         position: [0, 50],
         stageStyle: {
@@ -26,7 +26,7 @@ export const live2d: any[] = [
         }
     },
     {
-        path: '//api.elake.top/Live2DModels/Senko_Normals/senko.model3.json',
+        path: "//api.elake.top/Live2DModels/Senko_Normals/senko.model3.json",
         position: [0, 50]
     }
 ]

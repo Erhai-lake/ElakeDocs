@@ -27,8 +27,8 @@ function Debounce(Fun, Time) {
 
 const Value = Debounce((V) => console.log(V), 1000)
 
-const Input = document.querySelector('input')
-Input.addEventListener('input', function () {
+const Input = document.querySelector("input")
+Input.addEventListener("input", function () {
     Value(this.value)
 })
 ```

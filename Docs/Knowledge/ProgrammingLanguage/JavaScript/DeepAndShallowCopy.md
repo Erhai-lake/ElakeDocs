@@ -4,7 +4,7 @@
 
 ```js
 const Obj = {
-    Name: '柒月',
+    Name: "柒月",
     Age: 18
 }
 // 直接使用赋值
@@ -12,15 +12,15 @@ const O = Obj
 
 // 复制成功了
 console.log(O)
-// {Name: '柒月', Age: 18}
+// {Name: "柒月", Age: 18}
 
 // 这个时候我们修改一下对象O
-O.Name = '洱海'
+O.Name = "洱海"
 
 console.log(O)
-// {Name: '洱海', Age: 18}
+// {Name: "洱海", Age: 18}
 console.log(Obj)
-// {Name: '洱海', Age: 18}
+// {Name: "洱海", Age: 18}
 ```
 
 发现了么, 我修改对象`O`, 会导致对象`Obj`一起被修改, 这是因为, 虽然复制成功了, 实际上是将`Obj`对象的引用复制给了变量`O`, 因此, `O`和`Obj`指向内存中的同一个对象, 修改`O`会导致`Obj`也发生变化
@@ -44,7 +44,7 @@ console.log(Obj)
 
 ```js
 const Obj = {
-    Name: '柒月',
+    Name: "柒月",
     Age: 18
 }
 // 浅拷贝-拷贝对象
@@ -57,36 +57,36 @@ const Obj = {
 const O = { ...Obj }
 
 console.log(O)
-// {Name: '柒月', Age: 18}
+// {Name: "柒月", Age: 18}
 
 // 这个时候我们修改一下对象O
-O.Name = '洱海'
+O.Name = "洱海"
 
 console.log(O)
-// {Name: '洱海', Age: 18}
+// {Name: "洱海", Age: 18}
 console.log(Obj)
-// {Name: '柒月', Age: 18}
+// {Name: "柒月", Age: 18}
 ```
 
 看起来似乎解决问题了, 但是还是有问题的:
 
 ```js
 const Obj = {
-    Name: '柒月',
+    Name: "柒月",
     Age: 18,
     Two: {
-        A: 'B'
+        A: "B"
     }
 }
 const O = { ...Obj }
 // 这个时候我们修改一下对象O
-O.Name = '洱海'
-O.Two.A = '洱海'
+O.Name = "洱海"
+O.Two.A = "洱海"
 
 console.log(O)
-// {Name: '洱海', Age: 18, Two: {A: '洱海}}
+// {Name: "洱海", Age: 18, Two: {A: "洱海}}
 console.log(Obj)
-// {Name: '柒月', Age: 18, Two: {A: '洱海}}
+// {Name: "柒月", Age: 18, Two: {A: "洱海}}
 ```
 
 发现了么, 修改对象`O`里的对象`Two`里面的属性还是会影响对象`Obj`(绕绕的)
@@ -133,24 +133,24 @@ const DeepCopy = (OldObj) => {
 }
 
 const Obj = {
-    Name: '柒月',
+    Name: "柒月",
     Age: 18,
-    A: ['柒', '月'],
+    A: ["柒", "月"],
     O: {
-        A: 'B'
+        A: "B"
     }
 }
 const O = DeepCopy(Obj)
 
-O.Name = '洱海'
-O.A[0] = '洱'
-O.A[1] = '海'
-O.O.A = 'C'
+O.Name = "洱海"
+O.A[0] = "洱"
+O.A[1] = "海"
+O.O.A = "C"
 
 console.log(O)
-// { Name: '洱海', Age: 18, A: [ '洱', '海' ], O: { A: 'C' } }
+// { Name: "洱海", Age: 18, A: [ "洱", "海" ], O: { A: "C" } }
 console.log(Obj)
-// { Name: '柒月', Age: 18, A: [ '柒', '月' ], O: { A: 'B' } }
+// { Name: "柒月", Age: 18, A: [ "柒", "月" ], O: { A: "B" } }
 ```
 
 ### 通过JSON实现
@@ -161,24 +161,24 @@ console.log(Obj)
 
 ```js
 const Obj = {
-    Name: '柒月',
+    Name: "柒月",
     Age: 18,
-    A: ['柒', '月'],
+    A: ["柒", "月"],
     O: {
-        A: 'B'
+        A: "B"
     }
 }
 
 // 将对象转换为字符串在转换为对象
 // 转回为字符串的时候就已经和原版的对象没有任何关系了
 const O = JSON.parse(JSON.stringify(Obj))
-O.Name = '洱海'
-O.A[0] = '洱'
-O.A[1] = '海'
-O.O.A = 'C'
+O.Name = "洱海"
+O.A[0] = "洱"
+O.A[1] = "海"
+O.O.A = "C"
 
 console.log(O)
-// { Name: '洱海', Age: 18, A: [ '洱', '海' ], O: { A: 'C' } }
+// { Name: "洱海", Age: 18, A: [ "洱", "海" ], O: { A: "C" } }
 console.log(Obj)
-// { Name: '柒月', Age: 18, A: [ '柒', '月' ], O: { A: 'B' } }
+// { Name: "柒月", Age: 18, A: [ "柒", "月" ], O: { A: "B" } }
 ```

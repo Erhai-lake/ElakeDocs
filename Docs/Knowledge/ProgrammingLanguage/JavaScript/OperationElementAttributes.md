@@ -14,8 +14,8 @@
 <img src="img1.jpg" width="700">
 <script>
     // 修改图片和大小
-    document.querySelector('img').src = 'img2.webp'
-    document.querySelector('img').width = '1000'
+    document.querySelector("img").src = "img2.webp"
+    document.querySelector("img").width = "1000"
 </script>
 ```
 

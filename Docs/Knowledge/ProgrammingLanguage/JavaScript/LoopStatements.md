@@ -129,7 +129,7 @@ for (let Hours = 0; Hours <= 24; Hours++) {
 let i = 1
 while (true) {
     if (i === 3) {
-        console.log('退出循环')
+        console.log("退出循环")
         break
     }
     console.log(`这是我循环的第${i}遍`)
@@ -150,7 +150,7 @@ let i = 1
 while (i <= 5) {
     if (i === 3) {
         i++
-        console.log('退出本次循环')
+        console.log("退出本次循环")
         continue
     }
     console.log(`这是我循环的第${i}遍`)

@@ -90,7 +90,7 @@ function fn () {
     let B = {}
     A.c = B
     B.c = B
-    return '引用计算无法回收'
+    return "引用计算无法回收"
 }
 ```
 

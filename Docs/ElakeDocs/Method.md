@@ -35,11 +35,11 @@
 ```ts [/Docs/Knowledge/ProgrammingLanguage/Java/Sidebar.ts]
 export const JavaSidebar: any[] = [
     {
-        text: 'Java',
+        text: "Java",
         items: [
             {
-                text: '前言',
-                link: '/Docs/Knowledge/ProgrammingLanguage/Java/Java'
+                text: "前言",
+                link: "/Docs/Knowledge/ProgrammingLanguage/Java/Java"
             }
         ]
     }
@@ -53,15 +53,15 @@ export const JavaSidebar: any[] = [
 ```ts [/Docs/Knowledge/ProgrammingLanguage/Java/Sidebar.ts]
 export const JavaSidebar: any[] = [
     {
-        text: 'Java',
+        text: "Java",
         items: [
             {
-                text: '前言',
-                link: '/Docs/Knowledge/ProgrammingLanguage/Java/Java'
+                text: "前言",
+                link: "/Docs/Knowledge/ProgrammingLanguage/Java/Java"
             },
             { // [!code ++]
-                text: '环境', // [!code ++]
-                link: '/Docs/Knowledge/ProgrammingLanguage/Java/Environment' // [!code ++]
+                text: "环境", // [!code ++]
+                link: "/Docs/Knowledge/ProgrammingLanguage/Java/Environment" // [!code ++]
             } // [!code ++]
         ]
     }
@@ -77,23 +77,23 @@ export const JavaSidebar: any[] = [
 ```ts [/Docs/Knowledge/Sidebar.ts]
 export const KnowledgeSidebar: any[] = [
     {
-        text: '知识库',
+        text: "知识库",
         items: [
             {
-                text: '前言',
-                link: '/Docs/Knowledge/Knowledge'
+                text: "前言",
+                link: "/Docs/Knowledge/Knowledge"
             },
             {
-                text: '编程语言',
+                text: "编程语言",
                 collapsed: true,
                 items: [
                     {
-                        text: 'JS',
-                        link: '/Docs/Knowledge/ProgrammingLanguage/JavaScript/JavaScript'
+                        text: "JS",
+                        link: "/Docs/Knowledge/ProgrammingLanguage/JavaScript/JavaScript"
                     },
                     {
-                        text: 'Java',
-                        link: '/Docs/Knowledge/ProgrammingLanguage/Java/Java'
+                        text: "Java",
+                        link: "/Docs/Knowledge/ProgrammingLanguage/Java/Java"
                     }
                 ]
             }
@@ -113,22 +113,22 @@ export const KnowledgeSidebar: any[] = [
 
 ```ts [/.vitepress/Sidebar.ts]
 // JS
-import { JavaScriptSidebar } from '../Docs/Knowledge/ProgrammingLanguage/JavaScript/Sidebar'
+import { JavaScriptSidebar } from "../Docs/Knowledge/ProgrammingLanguage/JavaScript/Sidebar"
 // Java // [!code ++]
-import { JavaSidebar } from '../Docs/Knowledge/ProgrammingLanguage/Java/Sidebar' // [!code ++]
+import { JavaSidebar } from "../Docs/Knowledge/ProgrammingLanguage/Java/Sidebar" // [!code ++]
 
 export const Sidebar: any = {
     // JS
-    '/Docs/Knowledge/ProgrammingLanguage/JavaScript/': JavaScriptSidebar,
+    "/Docs/Knowledge/ProgrammingLanguage/JavaScript/": JavaScriptSidebar,
     // Java // [!code ++]
-    '/Docs/Knowledge/ProgrammingLanguage/Java/': JavaSidebar // [!code ++]
+    "/Docs/Knowledge/ProgrammingLanguage/Java/": JavaSidebar // [!code ++]
 }
 ```
 ::: warning
 这里面为了可读性, 请写注释!
 :::
 
-其中`'/Docs/Knowledge/ProgrammingLanguage/Java/'`是路径, `JavaS`文档的路径
+其中`"/Docs/Knowledge/ProgrammingLanguage/Java/"`是路径, `JavaS`文档的路径
 
 ## 测试一下
 

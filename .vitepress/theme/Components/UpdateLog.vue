@@ -41,8 +41,8 @@
 
 
 <script lang="ts" setup>
-import { ref, watch, onMounted } from 'vue'
-import { useRoute } from 'vitepress'
+import { ref, watch, onMounted } from "vue"
+import { useRoute } from "vitepress"
 
 // 路由
 const Route = useRoute()
@@ -61,10 +61,10 @@ onMounted(async (): Promise<void> => {
 
 // 获取更新历史数据
 const UpdateLogData: any = ref([])
-const LastUpdateTime: any = ref('0000-00-00')
+const LastUpdateTime: any = ref("0000-00-00")
 const GetUpdateLog: () => Promise<void> = async (): Promise<void> => {
     try {
-        const FilePath: string = Route.path.replace(/html$/, 'md').replace(/\/Docs\//, '').replace(/\//g, '_').replace('.md', '.json')
+        const FilePath: string = Route.path.replace(/html$/, "md").replace(/\/Docs\//, "").replace(/\//g, "_").replace(".md", ".json")
         const StoredAllCommits: string | null = sessionStorage.getItem(FilePath)
         let GitCommits: any
         if (StoredAllCommits) {
@@ -82,7 +82,7 @@ const GetUpdateLog: () => Promise<void> = async (): Promise<void> => {
             DataSet.add(
                 {
                     Sha: Item.Sha,
-                    Name: Item.Name.replace(/_/, '-'),
+                    Name: Item.Name.replace(/_/, "-"),
                     Message: Item.Message,
                     Time: Item.Time
                 }
@@ -91,10 +91,10 @@ const GetUpdateLog: () => Promise<void> = async (): Promise<void> => {
         // 将Set转换为数组并进行排序
         const SortedCommitsArray: any = Array.from(DataSet).sort((A: any, B: any): number => {
             const ParseTime: (TimeStr: string) => number = (TimeStr: string): number => {
-                if (TimeStr === '0000-00-00') {
-                    return new Date('1969-12-31').getTime()
+                if (TimeStr === "0000-00-00") {
+                    return new Date("1969-12-31").getTime()
                 }
-                const [Year, Month, Day] = TimeStr.split('-').map(Number);
+                const [Year, Month, Day] = TimeStr.split("-").map(Number);
                 return new Date(Year, Month - 1, Day).getTime();
             }
             const TimeA: number = ParseTime(A.Time)
@@ -115,15 +115,15 @@ const GetUpdateLog: () => Promise<void> = async (): Promise<void> => {
     } catch {
         UpdateLogData.value = [
             {
-                Sha: '00000000000000000000000000000000000000000000000000',
-                ShortSha: '0000000000',
-                Name: '洱海工作室',
-                AvatarUrl: '//api.elake.top/Logo/',
-                Message: '日志也被BUG酱吃掉啦~',
-                Time: '😋👉00-00'
+                Sha: "00000000000000000000000000000000000000000000000000",
+                ShortSha: "0000000000",
+                Name: "洱海工作室",
+                AvatarUrl: "//api.elake.top/Logo/",
+                Message: "日志也被BUG酱吃掉啦~",
+                Time: "😋👉00-00"
             }
         ]
-        LastUpdateTime.value = '时间被BUG酱吃掉啦~'
+        LastUpdateTime.value = "时间被BUG酱吃掉啦~"
     }
 }
 

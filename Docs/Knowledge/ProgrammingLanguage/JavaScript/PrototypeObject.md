@@ -14,8 +14,8 @@ function User(Name, Age) {
     this.Age = Age
 }
 // 直接写在prototype对象上
-User.prototype.Hi = () => console.log('Hi~')
-const Elake = new User('洱海', 18)
+User.prototype.Hi = () => console.log("Hi~")
+const Elake = new User("洱海", 18)
 Elake.Hi()
 // Hi~
 ```
@@ -47,10 +47,10 @@ console.log(User.prototype.constructor === User)
 ```js
 function Test() {
 }
-Test.prototype.A = () => console.log('A函数')
-Test.prototype.B = () => console.log('B函数')
-Test.prototype.C = () => console.log('C函数')
-Test.prototype.D = () => console.log('D函数')
+Test.prototype.A = () => console.log("A函数")
+Test.prototype.B = () => console.log("B函数")
+Test.prototype.C = () => console.log("C函数")
+Test.prototype.D = () => console.log("D函数")
 const T = new Test()
 T.A()
 T.B()
@@ -65,10 +65,10 @@ function Test() {
 }
 console.log(Test.prototype)
 Test.prototype = {
-    A: () => console.log('A函数'),
-    B: () => console.log('B函数'),
-    C: () => console.log('C函数'),
-    D: () => console.log('D函数')
+    A: () => console.log("A函数"),
+    B: () => console.log("B函数"),
+    C: () => console.log("C函数"),
+    D: () => console.log("D函数")
 }
 console.log(Test.prototype)
 const T = new Test()
@@ -90,10 +90,10 @@ function Test() {
 console.log(Test.prototype)
 Test.prototype = {
     constructor: Test,
-    A: () => console.log('A函数'),
-    B: () => console.log('B函数'),
-    C: () => console.log('C函数'),
-    D: () => console.log('D函数')
+    A: () => console.log("A函数"),
+    B: () => console.log("B函数"),
+    C: () => console.log("C函数"),
+    D: () => console.log("D函数")
 }
 console.log(Test.prototype)
 const T = new Test()
@@ -201,7 +201,7 @@ function Woman() {
 // 继承Person
 Woman.prototype = new Person()
 Woman.prototype.constructor = Woman
-Woman.prototype.Hi = () => console.log('Hi~')
+Woman.prototype.Hi = () => console.log("Hi~")
 const A = new Woman()
 console.log(A)
 

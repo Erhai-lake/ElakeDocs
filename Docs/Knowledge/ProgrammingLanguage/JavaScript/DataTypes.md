@@ -57,17 +57,17 @@ console.log(2 % 5 + 4 * 2) // 10
 
 ## string 字符串型
 
-通过单引号`''`, 双引号`""`, 反引号`(就是这个符号, 这里只打一半, 大全会转义成代码行, 谅解一下谢谢)包裹的数据都叫字符串, 单引号和双引号没有本质上的区别, 但是推荐优先使用单引号
+通过单引号`''`, 双引号`""`, 反引号`(就是这个符号, 这里只打一半, 打全会转义成代码行, 谅解一下谢谢)包裹的数据都叫字符串, 单引号和双引号没有本质上的区别, 但是推荐优先使用双引号
 
 ```js
-let Test1 = '单引号'
+let Test1 = "单引号"
 let Test2 = "双引号"
 let Test3 = `反引号`
-let Test1 = '145141919810' // 虽然看上去是数值, 但是使用单引号包起来了就是字符串
-let Test5 = '' // 空字符串
+let Test1 = "145141919810" // 虽然看上去是数值, 但是使用单引号包起来了就是字符串
+let Test5 = "" // 空字符串
 let Test6 = '单引号嵌套"双引号"'
 let Test7 = "双引号嵌套'单引号'"
-let Test8 = '使用转义符输出\'单引号\''
+let Test8 = "使用转义符输出\"双引号\""
 ```
 
 无论是那种引号, 都必须成对使用
@@ -81,9 +81,9 @@ let Test8 = '使用转义符输出\'单引号\''
 运算符 `+` 可以实现字符串的拼接
 
 ```js
-let Name = '张三'
+let Name = "张三"
 let Age = 18
-console.log('我叫' + Name + ', 人家刚满' + Age + '岁~')// 我叫张三, 人家刚满18岁~
+console.log("我叫" + Name + ", 人家刚满" + Age + "岁~")// 我叫张三, 人家刚满18岁~
 ```
 
 #### 模板字符串
@@ -151,7 +151,7 @@ console.log(Obj)
 
 ```js
 let Test1 = 1145
-let Test2 = 'aaa'
+let Test2 = "aaa"
 let Test3 = true
 let Test4
 let Test5 = null
@@ -171,12 +171,12 @@ console.log(typeof Test5) // object
 
 ```js
 // 这里有两个存放数值的字符串变量
-let Test1 = '114514'
-let Test2 = '1919810'
+let Test1 = "114514"
+let Test2 = "1919810"
 
 // 如果你想将他们相加
 console.log(Test1 + Test2)
-// 由于不是数值型而是字符串类型, 最终输出的结果为:'1145141919810', 就不是简单的加分运算了
+// 由于不是数值型而是字符串类型, 最终输出的结果为:"1145141919810", 就不是简单的加分运算了
 ```
 
 使用表单, 或者输入框获取的数据默认都是字符串类型的, 此时是不能直接进行运算的
@@ -196,14 +196,14 @@ console.log(Test1 + Test2)
 
 ```js
 console.log(11 +11) // 22
-console.log('11' + '11') // 1111
+console.log("11" + "11") // 1111
 console.log(11 - 11) // 0
-console.log('11' -11) // 0
+console.log("11" -11) // 0
 console.log(1 * 1) // 1
-console.log('1' * 1) // 1
-console.log(typeof '123') // string
-console.log(typeof + '123') // number
-console.log(+ '11' + 11) // 22
+console.log("1" * 1) // 1
+console.log(typeof "123") // string
+console.log(typeof + "123") // number
+console.log(+ "11" + 11) // 22
 ```
 
 ### 显式转换
@@ -225,7 +225,7 @@ console.log(+ '11' + 11) // 22
 NaN也是number类型的数据, 代表非数字
 
 ```js
-console.log(Number('123')) // 123
+console.log(Number("123")) // 123
 ```
 
 ##### parseint ()
@@ -233,7 +233,7 @@ console.log(Number('123')) // 123
 这个函数只会保留整数
 
 ```js
-console.log(parseint('114.514')) // 114
+console.log(parseint("114.514")) // 114
 ```
 
 ##### parseFloat ()
@@ -241,5 +241,5 @@ console.log(parseint('114.514')) // 114
 这个函数可以保留小数
 
 ```js
-console.log(parseFloat('114.514')) // 114.514
+console.log(parseFloat("114.514")) // 114.514
 ```

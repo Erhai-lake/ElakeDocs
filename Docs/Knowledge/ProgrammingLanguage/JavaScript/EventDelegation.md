@@ -31,7 +31,7 @@
     <li>Test5</li>
 </ul>
 <script>
-    document.querySelector('ul').addEventListener('click', (Event) => {
+    document.querySelector("ul").addEventListener("click", (Event) => {
         console.log(Event)
         alert(Event.target.textContent)
     })

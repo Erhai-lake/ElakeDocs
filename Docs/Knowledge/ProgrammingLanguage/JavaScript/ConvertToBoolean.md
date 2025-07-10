@@ -2,13 +2,13 @@
 
 `Boolean(内容)`
 
-**`''`, `0`, `undefined`, `null`, `false`, `NaN`转换为布尔值都是false, 其余则为true**
+**`""`, `0`, `undefined`, `null`, `false`, `NaN`转换为布尔值都是false, 其余则为true**
 
 ```js
-console.log(Boolean('字符串'))
+console.log(Boolean("字符串"))
 // true
 
-console.log(Boolean(''))
+console.log(Boolean(""))
 // false
 
 console.log(Boolean(0))

@@ -15,9 +15,9 @@
 Object是内置的构造函数, 用于创建普通对象
 
 ```js
-const User = new Object({ Name: '洱海', Age: 18 })
+const User = new Object({ Name: "洱海", Age: 18 })
 console.log(User)
-// {Name: '洱海', Age: 18}
+// {Name: "洱海", Age: 18}
 ```
 
 推荐使用字面量方式声明对象, 而不是Object构造函数
@@ -31,11 +31,11 @@ console.log(User)
 返回一个数组
 
 ```js
-const Erhai_lake = { Name: '洱海', Age: 18 }
+const Erhai_lake = { Name: "洱海", Age: 18 }
 
 const Arr = Object.keys(Erhai_lake)
 console.log(Arr)
-// ['Name', 'Age']
+// ["Name", "Age"]
 ```
 
 ### 获取对象所有值
@@ -47,11 +47,11 @@ console.log(Arr)
 返回一个数组
 
 ```js
-const Erhai_lake = { Name: '洱海', Age: 18 }
+const Erhai_lake = { Name: "洱海", Age: 18 }
 
 const Arr = Object.values(Erhai_lake)
 console.log(Arr)
-// ['洱海', 18]
+// ["洱海", 18]
 ```
 
 ### 拷贝对象
@@ -64,14 +64,14 @@ console.log(Arr)
 
 ```js
 // 将Erhai_lake拷贝给Elake
-const Erhai_lake = { Name: '洱海', Age: 18 }
+const Erhai_lake = { Name: "洱海", Age: 18 }
 const Elake = {}
 Object.assign(Elake, Erhai_lake)
 
 console.log(Erhai_lake)
-// {Name: '洱海', Age: 18}
+// {Name: "洱海", Age: 18}
 console.log(Elake)
-// {Name: '洱海', Age: 18}
+// {Name: "洱海", Age: 18}
 ```
 
 ## Array
@@ -176,7 +176,7 @@ console.log(Sum) // 输出: 15
 
 ### 拼接数组
 
-`join('拼接符')`
+`join("拼接符")`
 
 实例方法数组元素拼接为字符串后返回字符串
 
@@ -296,16 +296,16 @@ console.log(Array1)
 // 添加元素
 const Array2 = [1, 1, 4, 5, 1, 4]
 // 从索引2开始, 不删除任何元素, 添加A和B
-Array2.splice(2, 0, 'A', 'B')
+Array2.splice(2, 0, "A", "B")
 console.log(Array2)
-// [1, 1, 'A', 'B', 4, 5, 1, 4]
+// [1, 1, "A", "B", 4, 5, 1, 4]
 
 // 替换元素
 const Array3 = [1, 1, 4, 5, 1, 4]
 // 从索引1开始, 删除2个元素, 并添加A和B
-Array3.splice(1, 2, 'A', 'B');
+Array3.splice(1, 2, "A", "B");
 console.log(Array3)
-// [1, 'A', 'B', 5, 1, 4]
+// [1, "A", "B", 5, 1, 4]
 ```
 
 ### 反转数组
@@ -347,7 +347,7 @@ console.log(FindIndex)
 实例属性获取字符串长度
 
 ```js
-const Str = '技术宅的创造之梦, 如洱海般辽阔深邃.'
+const Str = "技术宅的创造之梦, 如洱海般辽阔深邃."
 
 console.log(Str.length)
 // 18
@@ -360,10 +360,10 @@ console.log(Str.length)
 实例方法将字符串分割成数组
 
 ```js
-const Str = '技术宅的创造之梦, 如洱海般辽阔深邃.'
+const Str = "技术宅的创造之梦, 如洱海般辽阔深邃."
 
-console.log(Str.split(', '))
-// ['技术宅的创造之梦', '如洱海般辽阔深邃.']
+console.log(Str.split(", "))
+// ["技术宅的创造之梦", "如洱海般辽阔深邃."]
 ```
 
 ### 截取字符串
@@ -373,7 +373,7 @@ console.log(Str.split(', '))
 实例方法字符串截取
 
 ```js
-const Str = '技术宅的创造之梦, 如洱海般辽阔深邃.'
+const Str = "技术宅的创造之梦, 如洱海般辽阔深邃."
 
 console.log(Str.substring(4))
 // 创造之梦, 如洱海般辽阔深邃.
@@ -388,11 +388,11 @@ console.log(Str.substring(4, 12))
 实例方法检测字符串是否以某字符开头
 
 ```js
-const Str = '技术宅的创造之梦, 如洱海般辽阔深邃.'
+const Str = "技术宅的创造之梦, 如洱海般辽阔深邃."
 
-console.log(Str.startsWith('技'))
+console.log(Str.startsWith("技"))
 // true
-console.log(Str.startsWith('宅', 2))
+console.log(Str.startsWith("宅", 2))
 // true
 ```
 
@@ -403,12 +403,12 @@ console.log(Str.startsWith('宅', 2))
 实例方法检测字符串是否以某字符结尾
 
 ```js
-const Str = '技术宅的创造之梦, 如洱海般辽阔深邃.'
+const Str = "技术宅的创造之梦, 如洱海般辽阔深邃."
 
-console.log(Str.endsWith('.'))
+console.log(Str.endsWith("."))
 // true
 // 检测前8个字符是否以梦结尾
-console.log(Str.endsWith('梦', 8))
+console.log(Str.endsWith("梦", 8))
 // true
 ```
 
@@ -419,12 +419,12 @@ console.log(Str.endsWith('梦', 8))
 实例方法检测字符串
 
 ```js
-const Str = '技术宅的创造之梦, 如洱海般辽阔深邃.'
+const Str = "技术宅的创造之梦, 如洱海般辽阔深邃."
 
 // 只要有任意字符串就可以返回true
-console.log(Str.includes('梦, 如洱'))
+console.log(Str.includes("梦, 如洱"))
 // true
-console.log(Str.includes('辽阔', 2))
+console.log(Str.includes("辽阔", 2))
 // true
 ```
 
@@ -435,7 +435,7 @@ console.log(Str.includes('辽阔', 2))
 实例方法检测字符串
 
 ```js
-const Str = 'abcDEF'
+const Str = "abcDEF"
 
 console.log(Str.toUpperCase())
 // ABCDEF
@@ -448,11 +448,11 @@ console.log(Str.toUpperCase())
 实例方法检测字符串, 如果找到, 返回索引值, 否则返回-1
 
 ```js
-const Str = '技术宅的创造之梦, 如洱海般辽阔深邃.'
+const Str = "技术宅的创造之梦, 如洱海般辽阔深邃."
 
-console.log(Str.indexOf('技'))
+console.log(Str.indexOf("技"))
 // 0
-console.log(Str.indexOf('技', 2))
+console.log(Str.indexOf("技", 2))
 // -1
 ```
 
@@ -463,11 +463,11 @@ console.log(Str.indexOf('技', 2))
 实例方法替换字符串, 支持正则表达式
 
 ```js
-const Str = '技术宅的创造之梦, 如洱海般辽阔深邃.'
+const Str = "技术宅的创造之梦, 如洱海般辽阔深邃."
 
-console.log(Str.replace('辽阔深邃', '水草丰茂'))
+console.log(Str.replace("辽阔深邃", "水草丰茂"))
 // 技术宅的创造之梦, 如洱海般水草丰茂.
-console.log(Str.replace(/辽阔深邃/g, '水草丰茂'))
+console.log(Str.replace(/辽阔深邃/g, "水草丰茂"))
 // 技术宅的创造之梦, 如洱海般水草丰茂.
 ```
 
@@ -478,12 +478,12 @@ console.log(Str.replace(/辽阔深邃/g, '水草丰茂'))
 实例方法查找字符串, 支持正则表达式
 
 ```js
-const Str = '技术宅的创造之梦, 如洱海般辽阔深邃.'
+const Str = "技术宅的创造之梦, 如洱海般辽阔深邃."
 
-console.log(Str.match('辽阔深邃'))
-// ['辽阔深邃', index: 13, input: '技术宅的创造之梦,如洱海般辽阔深邃.', groups: undefined]
+console.log(Str.match("辽阔深邃"))
+// ["辽阔深邃", index: 13, input: "技术宅的创造之梦,如洱海般辽阔深邃.", groups: undefined]
 console.log(Str.match(/辽阔深邃/g))
-// ['辽阔深邃']
+// ["辽阔深邃"]
 ```
 
 ## Number

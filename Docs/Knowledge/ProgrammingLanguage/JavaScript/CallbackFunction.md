@@ -6,7 +6,7 @@
 
 ```js
 const Fn = () =>  {
-    console.log('我是回调函数...')
+    console.log("我是回调函数...")
 }
 
 // 函数Fn作为参数, 传递给了setInterval, Fn就是回调函数
@@ -16,8 +16,8 @@ setInterval(Fn, 1000)
 或者是事件监听, 他也是一个**回调函数**
 
 ```js
-BUT.addEventListener('click', function () {
-    console.log('我是回调函数...')
+BUT.addEventListener("click", function () {
+    console.log("我是回调函数...")
 })
 ```
 

@@ -4,14 +4,14 @@
 
 ## 输入
 
-`prompt('提示词')`
+`prompt("提示词")`
 
 作用:显示一个浏览器对话框
 
 例子:
 
 ```js
-prompt('请输入用户名:')
+prompt("请输入用户名:")
 ```
 
 ![07d2cb663e19c26a6bd53d0ea1ee821272a8344f](Assets/07d2cb663e19c26a6bd53d0ea1ee821272a8344f.png)
@@ -24,7 +24,7 @@ prompt('请输入用户名:')
 
 ### 在网页内输出
 
-`document.write('要输出的内容')`
+`document.write("要输出的内容")`
 
 作用:向body内输出内容
 
@@ -35,35 +35,35 @@ prompt('请输入用户名:')
 例子:
 
 ```js
-document.write('<h1>标题</h1>')
+document.write("<h1>标题</h1>")
 ```
 
 ![06f098f5124bea0314632a338a35a3e2a3df9437](Assets/06f098f5124bea0314632a338a35a3e2a3df9437.png)
 
 ### 浏览器警告框
 
-`alert('要输出的内容')`
+`alert("要输出的内容")`
 
 作用:页面弹窗警告对话框
 
 例子:
 
 ```js
-alert('警告')
+alert("警告")
 ```
 
 ![a9b090c2ff6b174a0e495a6529a949338ba01485](Assets/a9b090c2ff6b174a0e495a6529a949338ba01485.png)
 
 ### 控制台打印
 
-`console.log('要输出的内容')`
+`console.log("要输出的内容")`
 
 作用:在控制台输出内容, 程序调试, 日志使用
 
 例子:
 
 ```js
-console.log('正常')
+console.log("正常")
 ```
 
 ![5d2e0cf37582c7fd0de3af45a746b109c507357f](Assets/5d2e0cf37582c7fd0de3af45a746b109c507357f.png)

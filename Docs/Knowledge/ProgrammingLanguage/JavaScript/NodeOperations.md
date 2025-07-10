@@ -32,7 +32,7 @@ flowchart TD; document --> html; html --> hrad; hrad --> meta --> charset(charse
 ```html
 <div><p></p></div>
 <script>
-    console.log(document.querySelector('p').parentNode)
+    console.log(document.querySelector("p").parentNode)
 </script>
 ```
 
@@ -59,7 +59,7 @@ flowchart TD; document --> html; html --> hrad; hrad --> meta --> charset(charse
     <li></li>
 </ul>
 <script>
-    console.log(document.querySelector('ul').children)
+    console.log(document.querySelector("ul").children)
 </script>
 ```
 
@@ -81,11 +81,11 @@ flowchart TD; document --> html; html --> hrad; hrad --> meta --> charset(charse
 </div>
 <script>
     // 下一个
-    console.log(document.querySelector('span').nextElementSibling)
+    console.log(document.querySelector("span").nextElementSibling)
     // 返回i元素
 
     // 上一个
-    console.log(document.querySelector('span').previousElementSibling)
+    console.log(document.querySelector("span").previousElementSibling)
     // 返回p元素
 </script>
 ```
@@ -99,7 +99,7 @@ flowchart TD; document --> html; html --> hrad; hrad --> meta --> charset(charse
 
 ### 创建节点
 
-`document.createElement('标签名')`
+`document.createElement("标签名")`
 
 ### 追加节点
 
@@ -121,18 +121,18 @@ flowchart TD; document --> html; html --> hrad; hrad --> meta --> charset(charse
 </ul>
 <script>
     // 创建元素
-    const New1 = document.createElement('li')
+    const New1 = document.createElement("li")
     // 写点内容
-    New1.textContent = '我是插到父元素最后的'
+    New1.textContent = "我是插到父元素最后的"
     // 插到父元素最后
-    document.querySelector('ul').appendChild(New1)
+    document.querySelector("ul").appendChild(New1)
 
     // 创建元素
-    const New2 = document.createElement('li')
+    const New2 = document.createElement("li")
     // 写点内容
-    New2.textContent = '我是插到父元素中某个子元素前面的'
+    New2.textContent = "我是插到父元素中某个子元素前面的"
     // 插到父元素中某个子元素前面
-    document.querySelector('ul').insertBefore(New2, document.querySelector('.A'))
+    document.querySelector("ul").insertBefore(New2, document.querySelector(".A"))
 </script>
 ```
 
@@ -155,7 +155,7 @@ flowchart TD; document --> html; html --> hrad; hrad --> meta --> charset(charse
     <li>3</li>
 </ul>
 <script>
-    const Ul = document.querySelector('ul')
+    const Ul = document.querySelector("ul")
     // 克隆元素
     const New1 = Ul.children[0].cloneNode()
     const New2 = Ul.children[0].cloneNode(true)
@@ -190,7 +190,7 @@ flowchart TD; document --> html; html --> hrad; hrad --> meta --> charset(charse
     <li>3</li>
 </ul>
 <script>
-    const Ul = document.querySelector('ul')
+    const Ul = document.querySelector("ul")
     // 删除节点
     Ul.removeChild(Ul.children[1])
 </script>

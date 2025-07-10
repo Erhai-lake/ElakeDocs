@@ -7,9 +7,9 @@ JS内置的一个用来让代码延迟执行的函数
 `setTimeout`仅执行一次, 所以可以理解为把一段代码延迟执行
 
 ```js
-console.log('开始计时')
+console.log("开始计时")
 setTimeout(() => {
-    console.log('时间到了')
+    console.log("时间到了")
 }, 2000)
 ```
 

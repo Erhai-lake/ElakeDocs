@@ -100,7 +100,7 @@ console.log(C)
 可以设置默认值
 
 ```js
-const [A, B = 'aaa'] = [1]
+const [A, B = "aaa"] = [1]
 
 console.log(A)
 // 1
@@ -141,7 +141,7 @@ console.log(C)
 
 ```js
 const User = {
-    Name: '张三',
+    Name: "张三",
     Age: 18
 }
 
@@ -157,7 +157,7 @@ console.log(Age)
 
 ```js
 const User = {
-    Name: '张三',
+    Name: "张三",
     Age: 18
 }
 const { Name: A, Age: B } = User
@@ -173,7 +173,7 @@ console.log(B)
 ```js
 const Users = [
     {
-        Name: '张三',
+        Name: "张三",
         Age: 18
     }
 ]
@@ -189,10 +189,10 @@ console.log(Age)
 
 ```js
 const Users = {
-    'A': {
-        Name: '张三'
+    "A": {
+        Name: "张三"
     },
-    'B': [
+    "B": [
         {
             Age: 18
         }

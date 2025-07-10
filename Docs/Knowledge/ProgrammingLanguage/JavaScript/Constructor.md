@@ -13,21 +13,21 @@
 ```js
 // 创建洱海的对象
 const Erhai_lake = {
-    Name: '洱海',
+    Name: "洱海",
     Age: 18,
-    Gender: '男'
+    Gender: "男"
 }
 // 创建柒月的对象
 const Qi_Month = {
-    Name: '柒月',
+    Name: "柒月",
     Age: 18,
-    Gender: '女'
+    Gender: "女"
 }
 // 创建小良的对象
 const XiaoLiang = {
-    Name: '小良',
+    Name: "小良",
     Age: 18,
-    Gender: '男'
+    Gender: "男"
 }
 ```
 
@@ -41,11 +41,11 @@ function ELake(Name, Age, Gender) {
 }
 
 // 创建洱海的对象
-const Erhai_lake = new ELake('洱海', 18, '男')
+const Erhai_lake = new ELake("洱海", 18, "男")
 // 创建柒月的对象
-const Qi_Month = new ELake('柒月', 18, '女')
+const Qi_Month = new ELake("柒月", 18, "女")
 // 创建小良的对象
-const XiaoLiang = new ELake('小良', 18, '男')
+const XiaoLiang = new ELake("小良", 18, "男")
 ```
 
 :::warning
@@ -67,13 +67,13 @@ const XiaoLiang = new ELake('小良', 18, '男')
 function ELake(Name) {
     this.Name = Name
 }
-const Erhai_lake = new ELake('洱海')
-const Qi_Month = new ELake('柒月')
+const Erhai_lake = new ELake("洱海")
+const Qi_Month = new ELake("柒月")
 // 实例属性
-Erhai_lake.Name = 'Erhai_lake'
+Erhai_lake.Name = "Erhai_lake"
 // 实例方法
 Erhai_lake.sayHi = () => {
-    console.log('Hi~')
+    console.log("Hi~")
 }
 console.log(Erhai_lake)
 console.log(Qi_Month)

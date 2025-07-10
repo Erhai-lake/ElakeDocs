@@ -17,12 +17,12 @@
 ```js
 // If双分支的写法
 if (1 === 1) {
-    console.log('正确')
+    console.log("正确")
 } else {
-    console.log('错误')
+    console.log("错误")
 }
 // 可以看见用了5行这么多, 在来看看三元运算符的写法
-1 === 1 ? console.log('正确') : console.log('错误')
+1 === 1 ? console.log("正确") : console.log("错误")
 // 不错, 确实整洁了许多
 ```
 

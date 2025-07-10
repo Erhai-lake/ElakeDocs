@@ -12,7 +12,7 @@
 <!-- data-cs="这是自定义属性"  设置自定义属性 -->
 <p data-a1="这是自定义属性1" data-a2="这是自定义属性2">TEST</p>
 <script>
-    const P = document.querySelector('p')
+    const P = document.querySelector("p")
     // 获取自定义属性对象
     console.log(P.dataset)
 </script>
@@ -28,7 +28,7 @@
 <!-- data-cs="这是自定义属性"  设置自定义属性 -->
 <p data-cs="这是自定义属性">TEST</p>
 <script>
-    const P = document.querySelector('p')
+    const P = document.querySelector("p")
     // 获取自定义属性
     console.log(P.dataset.cs)
 </script>
@@ -44,9 +44,9 @@
 <!-- data-cs="这是自定义属性"  设置自定义属性 -->
 <p data-cs="这是自定义属性">TEST</p>
 <script>
-    const P = document.querySelector('p')
+    const P = document.querySelector("p")
     // 修改自定义属性
-    P.dataset.cs = '这是修改后的自定义属性'
+    P.dataset.cs = "这是修改后的自定义属性"
     // 获取自定义属性
     console.log(P.dataset.cs)
 </script>
@@ -69,7 +69,7 @@ p标签的内容就是自定义属性的内容
 ```html
 <p data-A="这是自定义属性"></p>
 <script>
-    const P = document.querySelector('p')
+    const P = document.querySelector("p")
     P.textContent = P.dataset.a
     console.log(P.dataset)
 </script>

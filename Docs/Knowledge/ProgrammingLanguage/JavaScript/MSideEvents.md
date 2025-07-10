@@ -32,18 +32,18 @@ Android和IOS都有
 </style>
 <div></div>
 <script>
-    const Div = document.querySelector('div')
+    const Div = document.querySelector("div")
     // 手指触摸到一个元素时触发
-    Div.addEventListener('touchstart', () => {
-        console.log('摸到我了')
+    Div.addEventListener("touchstart", () => {
+        console.log("摸到我了")
     })
     // 手指在一个元素上滑动时触发
-    Div.addEventListener('touchmove', () => {
-        console.log('滑丫滑~')
+    Div.addEventListener("touchmove", () => {
+        console.log("滑丫滑~")
     })
     // 手指从一个元素上移开时触发
-    Div.addEventListener('touchend', () => {
-        console.log('不摸了?')
+    Div.addEventListener("touchend", () => {
+        console.log("不摸了?")
     })
 </script>
 ```

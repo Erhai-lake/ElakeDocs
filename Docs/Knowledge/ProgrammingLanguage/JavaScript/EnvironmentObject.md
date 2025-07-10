@@ -28,9 +28,9 @@
 ```html
 <button>按钮</button>
 <script>
-    const But = document.querySelector('button')
-    But.addEventListener('click', function () {
-        this.style.backgroundColor = '#80ceff'
+    const But = document.querySelector("button")
+    But.addEventListener("click", function () {
+        this.style.backgroundColor = "#80ceff"
     })
 </script>
 ```
@@ -42,9 +42,9 @@
 ```html
 <button>按钮</button>
 <script>
-    const But = document.querySelector('button')
-    But.addEventListener('click', function () {
-        But.style.backgroundColor = '#80ceff'
+    const But = document.querySelector("button")
+    But.addEventListener("click", function () {
+        But.style.backgroundColor = "#80ceff"
     })
 </script>
 ```

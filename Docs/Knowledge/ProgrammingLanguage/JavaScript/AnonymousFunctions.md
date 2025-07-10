@@ -24,7 +24,7 @@ function() { }
 let fun = function (A) => {
     console.log(A)
 }
-fun('我是函数表达式')
+fun("我是函数表达式")
 ```
 
 可以看见函数表达式与具名函数书写类似
@@ -33,19 +33,19 @@ fun('我是函数表达式')
 具名函数的调用可以写在任意位置, 函数表达式只能在声明后调用
 
 ```js
-fun('我是具名函数')
+fun("我是具名函数")
 function fun(A) {
 	console.log(A)
 }
-fun('我可以在任意位置调用, 厉不厉害你具哥~')
+fun("我可以在任意位置调用, 厉不厉害你具哥~")
 ```
 
 ```js
-fun('我是函数表达式') // 报错(不能在声明前调用)
+fun("我是函数表达式") // 报错(不能在声明前调用)
 let fun = function (A) => {
  	console.log(A)
 }
-fun('我只能在声明后调用qwq')
+fun("我只能在声明后调用qwq")
 ```
 :::
 
@@ -56,9 +56,9 @@ fun('我只能在声明后调用qwq')
 ```html
 <button>点我</button>
 <script>
-    let Btn = document.querySelector('button')
+    let Btn = document.querySelector("button")
     Btn.onclick = function () {
-        alert('我是匿名函数')
+        alert("我是匿名函数")
     }
 </script>
 ```
@@ -76,12 +76,12 @@ fun('我只能在声明后调用qwq')
 ```js
 // 方法1:可以先敲两个小括号, 然后在第一个小括号里写一个匿名函数
 (function () {
-    console.log('方法一')
+    console.log("方法一")
 })();
 
 // 方法2:可以先敲一个小括号, 在小括号里写一个匿名函数, 最后在匿名函数后面在敲一个小括号
 (function () {
-    console.log('方法二')
+    console.log("方法二")
 }());
 ```
 

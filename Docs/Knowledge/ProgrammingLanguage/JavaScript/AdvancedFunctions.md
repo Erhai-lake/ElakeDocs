@@ -9,7 +9,7 @@
 ```js
 Fn()
 function Fn() {
-    console.log('函数提升')
+    console.log("函数提升")
 }
 ```
 
@@ -18,7 +18,7 @@ JS只提升函数声明, 不提升函数调用
 ```js
 Fun()
 var Fun = function () {
-    console.log('函数提升')
+    console.log("函数提升")
 }
 ```
 
@@ -91,8 +91,8 @@ console.log(getSum(2, 5, 6, 7, 8, 5))
 展开运算符`...`, 将一个数组进行展开
 
 ```js
-const Arr = [1, 5, 6, 1, 2]
-console.log(...Arr)
+const arr = [1, 5, 6, 1, 2]
+console.log(...arr)
 // 1 5 6 1 2
 ```
 
@@ -101,8 +101,8 @@ console.log(...Arr)
 常见用法: 求数值最大值, 最小值, 合并数组等
 
 ```js
-const Arr = [1, 5, 6, 1, 2]
-console.log(Math.max(...Arr))
+const arr = [1, 5, 6, 1, 2]
+console.log(Math.max(...arr))
 // 6
 ```
 
@@ -121,50 +121,50 @@ console.log(Math.max(...Arr))
 箭头函数更适用于那些本来**需要匿名函数的地方**
 
 ```js
-const Fn = (Num) => {
-    console.log(Num)
+const fn = (num) => {
+    console.log(num)
 }
 
-Fn(114514)
+fn(114514)
 // 114514
 ```
 
 只有一个形参的时候, 可以省略小括号, 但是...真的好看么...
 
 ```js
-const Fn = Num => {
-    console.log(Num)
+const fn = num => {
+    console.log(num)
 }
 
-Fn(114514)
+fn(114514)
 // 114514
 ```
 
 只有一行代码的时候, 可以省略大括号
 
 ```js
-const Fn = (Num) => console.log(Num)
+const fn = (num) => console.log(num)
 
-Fn(114514)
+fn(114514)
 // 114514
 ```
 
 只有一行代码的时候, 可以省略`return`
 
 ```js
-const Fn = (Num) => Num + Num
+const fn = (num) => num + num
 
-console.log(Fn(114514))
+console.log(fn(114514))
 // 229028
 ```
 
 可以直接返回一个对象
 
 ```js
-const Fn = (Num) => ({Num: Num})
+const fn = (num) => ({num: num})
 
-console.log(Fn(114514))
-// {Num: 114514}
+console.log(fn(114514))
+// {num: 114514}
 ```
 
 回调函数也可以使用
@@ -172,8 +172,8 @@ console.log(Fn(114514))
 ```html
 <div></div>
 <script>
-    const Test = document.querySelector('.Test')
-    Test.addEventListener('click',  () => console.log('被点击'))
+    const TEST = document.querySelector(".Test")
+    TEST.addEventListener("click",  () => console.log("被点击"))
 </script>
 ```
 
@@ -192,56 +192,56 @@ console.log(Fn(114514))
 console.log(this)
 
 // 普通函数
-function Fn() {
+function fn() {
     // window
     console.log(this)
 }
-window.Fn()
+window.fn()
 
 // 对象方法里面的this
-const Obj = {
-    name: 'test',
+const OBJ = {
+    name: "test",
     getNum: function () {
-        // Obj
+        // OBJ
         console.log(this)
     }
 }
-Obj.getNum()
+OBJ.getNum()
 ```
 
 **箭头函数不会创建自己的this**, 它只会从自己的作用域链的上一层沿用`this`
 
 ```js
 // 箭头函数的this, 是上一层作用域的this
-const Fn = () => {
+const fn = () => {
     // window
     console.log(this)
 }
-Fn()
+fn()
 
 // 对象方法的箭头函数this
-const Obj1 = {
-    name: 'test',
+const OBJ1 = {
+    name: "test",
     getNum: () => {
         // window
         console.log(this)
     }
 }
-Obj1.getNum()
+OBJ1.getNum()
 
-const Obj2 = {
-    name: 'test',
+const OBJ2 = {
+    name: "test",
     getNum: function () {
         // obj
         console.log(this)
-        const Count = () => {
+        const count = () => {
             // obj
             console.log(this)
         }
-        Count()
+        count()
     }
 }
-Obj2.getNum()
+OBJ2.getNum()
 ```
 
 也就是说
@@ -249,8 +249,8 @@ Obj2.getNum()
 ```html
 <div></div>
 <script>
-    const Test = document.querySelector('.Test')
-    Test.addEventListener('click', () => console.log(this))
+    const TEST = document.querySelector(".Test")
+    TEST.addEventListener("click", () => console.log(this))
 </script>
 ```
 

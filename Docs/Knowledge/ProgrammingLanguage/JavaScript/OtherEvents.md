@@ -10,8 +10,8 @@
 
 ```js
 // 等待页面所有资源加载完成, 就会执行回调函数
-window.addEventListemer('load', () => {
-    console.log('页面加载完成')
+window.addEventListemer("load", () => {
+    console.log("页面加载完成")
 })
 ```
 
@@ -20,8 +20,8 @@ window.addEventListemer('load', () => {
 ```html
 <img src="https://api.elake.top/Logo/">
 <script>
-    document.querySelector('img').addEventListener('load', () => {
-        console.log('图片加载完成')
+    document.querySelector("img").addEventListener("load", () => {
+        console.log("图片加载完成")
     })
 </script>
 ```
@@ -35,8 +35,8 @@ window.addEventListemer('load', () => {
 这个事件只能监听`document`
 
 ```js
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('Html文档加载完成')
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Html文档加载完成")
 })
 ```
 
@@ -65,12 +65,12 @@ document.addEventListener('DOMContentLoaded', () => {
 </style>
 <div class="Div"><div></div></div>
 <script>
-    window.addEventListener('scroll', () => {
-        console.log('页面滚了')
+    window.addEventListener("scroll", () => {
+        console.log("页面滚了")
     })
 
-    document.querySelector('.Div').addEventListener('scroll', () => {
-        console.log('div标签滚了')
+    document.querySelector(".Div").addEventListener("scroll", () => {
+        console.log("div标签滚了")
     })
 </script>
 ```
@@ -108,8 +108,8 @@ Ps: 好难写...不是很好理解, 要经常实践
     <div></div>
 </div>
 <script>
-    const Div = document.querySelector('.Div')
-    Div.addEventListener('scroll', () => {
+    const Div = document.querySelector(".Div")
+    Div.addEventListener("scroll", () => {
         console.log(Div.scrollTop)
     })
 </script>
@@ -134,7 +134,7 @@ H5对于获取一些特定的元素, 有专门的写法
     }
 </style>
 <script>
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
         console.log(document.documentElement.scrollTop)
     })
 </script>
@@ -161,19 +161,19 @@ H5对于获取一些特定的元素, 有专门的写法
 </style>
 <div>回到顶部</div>
 <script>
-    const Div = document.querySelector('div')
+    const Div = document.querySelector("div")
 
     // 显示和隐藏 读取
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
         if (document.documentElement.scrollTop >= 300) {
-            Div.style.display = 'block'
+            Div.style.display = "block"
         } else {
-            Div.style.display = 'none'
+            Div.style.display = "none"
         }
     })
 
     // 回到顶部 写入
-    Div.addEventListener('click', () => {
+    Div.addEventListener("click", () => {
         document.documentElement.scrollTop = 0
     })
 </script>
@@ -189,8 +189,8 @@ H5对于获取一些特定的元素, 有专门的写法
 
 ```html
 <script>
-    window.addEventListener('resize', () => {
-        console.log('窗口尺寸改变')
+    window.addEventListener("resize", () => {
+        console.log("窗口尺寸改变")
     })
 </script>
 ```
@@ -258,7 +258,7 @@ Ps: 好难写...不是很好理解, 要经常实践
     <div class="B">滚动条</div>
   </div>
 <script>
-    const A = document.querySelector('.A')
+    const A = document.querySelector(".A")
     console.log(`clientWidth: ${A.clientWidth}, clientHeight: ${A.clientHeight}`)
     // clientWidth: 225, clientHeight: 140
 
@@ -287,7 +287,7 @@ Ps: 好难写...不是很好理解, 要经常实践
 </style>
 <div class="A"></div>
 <script>
-    const A = document.querySelector('.A')
+    const A = document.querySelector(".A")
     console.log(`offsetTop: ${A.offsetTop}, offsetLeft: ${A.offsetLeft}`)
     // offsetTop: 10, offsetLeft: 18
 </script>
@@ -311,7 +311,7 @@ Ps: 好难写...不是很好理解, 要经常实践
 </style>
 <div class="A"></div>
 <script>
-    const A = document.querySelector('.A')
+    const A = document.querySelector(".A")
     console.log(`offsetWidth: ${A.offsetWidth}, offsetHeight: ${A.offsetHeight}`)
     console.log(A.getBoundingClientRect())
 </script>

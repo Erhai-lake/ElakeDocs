@@ -13,8 +13,8 @@
     <input type="submit" value="打开B站">
 </form>
 <script>
-    document.querySelector('form').addEventListener('submit', (Event) => {
-        console.log('已点击')
+    document.querySelector("form").addEventListener("submit", (Event) => {
+        console.log("已点击")
         Event.preventDefault()
     })
 </script>
@@ -27,8 +27,8 @@
 ```html
 <a href="//www.bilibili.com">打开B站</a>
 <script>
-    document.querySelector('a').addEventListener('click', (Event) => {
-        console.log('已点击')
+    document.querySelector("a").addEventListener("click", (Event) => {
+        console.log("已点击")
         Event.preventDefault()
     })
 </script>

@@ -23,7 +23,7 @@
 
 ```html
 <script>
-    localStorage.setItem('键名',  '存储的内容')
+    localStorage.setItem("键名",  "存储的内容")
 </script>
 ```
 
@@ -39,7 +39,7 @@
 
 ```html
 <script>
-    console.log(localStorage.getItem('键名'))
+    console.log(localStorage.getItem("键名"))
     // 存储的内容
 </script>
 ```
@@ -52,7 +52,7 @@
 
 ```html
 <script>
-    localStorage.removeItem('键名')
+    localStorage.removeItem("键名")
 </script>
 ```
 
@@ -80,14 +80,14 @@
 ```html
 <script>
     const Obj = {
-        Name: '张三',
+        Name: "张三",
         Age: 18,
-        Gender: '男'
+        Gender: "男"
     }
     // 将对象转换为Json字符串后存储
-    localStorage.setItem('obj', JSON.stringify(Obj))
+    localStorage.setItem("obj", JSON.stringify(Obj))
     // 将Json字符串转换成对象输出
-    console.log(JSON.parse(localStorage.getItem('obj')))
+    console.log(JSON.parse(localStorage.getItem("obj")))
 </script>
 ```
 

@@ -14,7 +14,7 @@ function Person(Name, Age) {
 }
 
 // 实例化对象
-let Fun = new Person('张三', 25);
+let Fun = new Person("张三", 25);
 ```
 
 ## 类声明
@@ -29,7 +29,7 @@ class Person {
 }
 
 // 实例化对象
-const Fun = new Person('李四', 30);
+const Fun = new Person("李四", 30);
 ```
 
 理解即可

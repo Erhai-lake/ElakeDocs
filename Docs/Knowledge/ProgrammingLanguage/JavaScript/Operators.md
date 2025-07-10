@@ -152,8 +152,8 @@ console.log(Num)
 console.log(3 > 5) // false
 console.log(3 >= 3) // true
 console.log(2 == 2) // true
-console.log(2 == '2') // true
-console.log(2 === '2') // false
+console.log(2 == "2") // true
+console.log(2 === "2") // false
 console.log(undefined == null) // true
 console.log(undefined === null) // false
 console.log(NaN == NaN) // false
@@ -169,9 +169,9 @@ console.log(NaN == NaN) // false
 ![a602241570bcc0cf69ee9a331b58841d770e13a6](Assets/a602241570bcc0cf69ee9a331b58841d770e13a6.png)
 
 ```js
-console.log('a' < 'b') // true
-console.log('aa' < 'ab') // true
-console.log('aa' < 'aac') // true
+console.log("a" < "b") // true
+console.log("aa" < "ab") // true
+console.log("aa" < "aac") // true
 ```
 
 :::warning

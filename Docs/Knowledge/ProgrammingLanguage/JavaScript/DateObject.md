@@ -13,7 +13,7 @@ console.log(Date)
 ## 获取指定时间
 
 ```js
-const Date = new Date('2024-08-26 08:26:00')
+const Date = new Date("2024-08-26 08:26:00")
 console.log(Date)
 // Mon Aug 26 2024 08:26:00 GMT+0800 (中国标准时间)
 ```
@@ -51,4 +51,4 @@ console.log(+new Date())
 console.log(Date.now())
 ```
 
-第一和第二种方法, 都可以通过`new Date('2024-08-26 08:26:00')`来获取指定时间的时间戳, 而第三种, 只能获取当前时间戳
+第一和第二种方法, 都可以通过`new Date("2024-08-26 08:26:00")`来获取指定时间的时间戳, 而第三种, 只能获取当前时间戳

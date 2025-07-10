@@ -29,9 +29,9 @@ const Arr = [100, 100, 100]
 
 ```js
 const Obj = {
-    Name: '张三',
+    Name: "张三",
     Age: 18,
-    Gender: '男'
+    Gender: "男"
 }
 ```
 
@@ -106,15 +106,15 @@ delete 对象名.属性名
 
 ```js
 const Obj = {
-    'Name-Test': '张三'
+    "Name-Test": "张三"
 }
 
-console.log(Obj['Name-Test'])
+console.log(Obj["Name-Test"])
 // 张三
 ```
 
 1. 属性需要用`‘’`或`“”`包起来
-2. 访问需要使用`对象名['属性名']`
+2. 访问需要使用`对象名["属性名"]`
 :::
 
 ## 对象中的方法
@@ -130,7 +130,7 @@ console.log(Obj['Name-Test'])
 
 ```js
 const Obj = {
-    Name: '张三',
+    Name: "张三",
     Test: function () {
         console.log(Obj.Name)
     },
@@ -161,9 +161,9 @@ for遍历对象的问题
 
 ```js
 const Obj = {
-    Name: '张三',
+    Name: "张三",
     Age: 18,
-    Gender: '男'
+    Gender: "男"
 }
 
 for (const Item in Obj) {
@@ -181,9 +181,9 @@ for (const Item in Obj) {
 
 为什么非得用这个才能获取?让你用你就用呗, 哪有这么多废话()
 
-我们`Item`返回的是一个字符串, 如果你用另一种写法, 相当于这样:`Obj.'Name'`
+我们`Item`返回的是一个字符串, 如果你用另一种写法, 相当于这样:`Obj."Name"`
 
-这是绝对不行的, 需要使用`Obj[]`, 加上`Item`就成了`Obj['Name']`
+这是绝对不行的, 需要使用`Obj[]`, 加上`Item`就成了`Obj["Name"]`
 
 **这个一定要理解了, 很容易搞不清楚**
 :::
@@ -192,9 +192,9 @@ for (const Item in Obj) {
 
 ```js
 const Arr = [
-    { Name: '张三', Age: 18, Gender: '男' },
-    { Name: '李四', Age: 20, Gender: '男' },
-    { Name: '小美', Age: 15, Gender: '女' },
+    { Name: "张三", Age: 18, Gender: "男" },
+    { Name: "李四", Age: 20, Gender: "男" },
+    { Name: "小美", Age: 15, Gender: "女" },
 ]
 ```
 

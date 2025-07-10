@@ -11,16 +11,16 @@
 
 ```js
 Sum = 0
-const Test = () => {
+const test = () => {
     let Sum = 0
     for (let i = 1; i <= 100; i++) {
         Sum += i
     }
-    let ResultElement = document.createElement('div')
+    let ResultElement = document.createElement("div")
     ResultElement.innerHTML = `从1加到100的结果为: ${Sum}`
     document.body.appendChild(ResultElement)
 }
-Test()
+test()
 ```
 
 === 示例
@@ -28,16 +28,16 @@ Test()
 ````md
 ```js
 Sum = 0
-const Test = () => {
+const test = () => {
     let Sum = 0
     for (let i = 1; i <= 100; i++) {
         Sum += i
     }
-    let ResultElement = document.createElement('div')
+    let ResultElement = document.createElement("div")
     ResultElement.innerHTML = `从1加到100的结果为: ${Sum}`
     document.body.appendChild(ResultElement)
 }
-Test()
+test()
 ```
 ````
 :::
@@ -49,16 +49,16 @@ Test()
 
 ```js [测试用js]
 Sum = 0
-const Test = () => {
+const test = () => {
     let Sum = 0
     for (let i = 1; i <= 100; i++) {
         Sum += i
     }
-    let ResultElement = document.createElement('div')
+    let ResultElement = document.createElement("div")
     ResultElement.innerHTML = `从1加到100的结果为: ${Sum}`
     document.body.appendChild(ResultElement)
 }
-Test()
+test()
 ```
 
 === 示例
@@ -66,16 +66,16 @@ Test()
 ````md
 ```js [测试用js]
 Sum = 0
-const Test = () => {
+const test = () => {
     let Sum = 0
     for (let i = 1; i <= 100; i++) {
         Sum += i
     }
-    let ResultElement = document.createElement('div')
+    let ResultElement = document.createElement("div")
     ResultElement.innerHTML = `从1加到100的结果为: ${Sum}`
     document.body.appendChild(ResultElement)
 }
-Test()
+test()
 ```
 ````
 :::
@@ -123,16 +123,16 @@ Test()
 
 ```js {4-6,8,9}
 Sum = 0
-const Test = () => {
+const test = () => {
     let Sum = 0
     for (let i = 1; i <= 100; i++) {
         Sum += i
     }
-    let ResultElement = document.createElement('div')
+    let ResultElement = document.createElement("div")
     ResultElement.innerHTML = `从1加到100的结果为: ${Sum}`
     document.body.appendChild(ResultElement)
 }
-Test()
+test()
 ```
 
 === 示例
@@ -140,16 +140,16 @@ Test()
 ````md
 ```js {4-6,8,9}
 Sum = 0
-const Test = () => {
+const test = () => {
     let Sum = 0
     for (let i = 1; i <= 100; i++) {
         Sum += i
     }
-    let ResultElement = document.createElement('div')
+    let ResultElement = document.createElement("div")
     ResultElement.innerHTML = `从1加到100的结果为: ${Sum}`
     document.body.appendChild(ResultElement)
 }
-Test()
+test()
 ```
 ````
 :::
@@ -161,16 +161,16 @@ Test()
 
 ```js {4-6,8,9}
 Sum = 0
-const Test = () => {
+const test = () => {
     let Sum = 0
     for (let i = 1; i <= 100; i++) {
         Sum += i
     }
-    let ResultElement = document.createElement('div')
+    let ResultElement = document.createElement("div")
     ResultElement.innerHTML = `从1加到100的结果为: ${Sum}`
     document.body.appendChild(ResultElement)
 }
-Test()
+test()
 ```
 
 === 示例
@@ -178,16 +178,16 @@ Test()
 ````md
 ```js {4-6,8,9}
 Sum = 0
-const Test = () => {
+const test = () => {
     let Sum = 0
     for (let i = 1; i <= 100; i++) {
         Sum += i
     }
-    let ResultElement = document.createElement('div')
+    let ResultElement = document.createElement("div")
     ResultElement.innerHTML = `从1加到100的结果为: ${Sum}`
     document.body.appendChild(ResultElement)
 }
-Test()
+test()
 ```
 ````
 :::
@@ -199,16 +199,16 @@ Test()
 
 ```js
 Sum = 0
-const Test = () => {
+const test = () => {
     let Sum = 0 // [!code highlight]
     for (let i = 1; i <= 100; i++) {
         Sum += i
     }
-    let ResultElement = document.createElement('div') // [!code highlight]
+    let ResultElement = document.createElement("div") // [!code highlight]
     ResultElement.innerHTML = `从1加到100的结果为: ${Sum}`
     document.body.appendChild(ResultElement)
 }
-Test()
+test()
 ```
 
 === 示例
@@ -216,16 +216,16 @@ Test()
 ````md
 ```js
 Sum = 0
-const Test = () => {
+const test = () => {
     let Sum = 0 // [!!code highlight]
     for (let i = 1; i <= 100; i++) {
         Sum += i
     }
-    let ResultElement = document.createElement('div') // [!!code highlight]
+    let ResultElement = document.createElement("div") // [!!code highlight]
     ResultElement.innerHTML = `从1加到100的结果为: ${Sum}`
     document.body.appendChild(ResultElement)
 }
-Test()
+test()
 ```
 ````
 :::
@@ -239,16 +239,16 @@ Test()
 
 ```js
 Sum = 0
-const Test = () => {
+const test = () => {
     let Sum = 0 // [!code focus]
     for (let i = 1; i <= 100; i++) {
         Sum += i
     }
-    let ResultElement = document.createElement('div') // [!code focus]
+    let ResultElement = document.createElement("div") // [!code focus]
     ResultElement.innerHTML = `从1加到100的结果为: ${Sum}`
     document.body.appendChild(ResultElement)
 }
-Test()
+test()
 ```
 
 === 示例
@@ -261,11 +261,11 @@ const Test = () => {
     for (let i = 1; i <= 100; i++) {
         Sum += i
     }
-    let ResultElement = document.createElement('div') // [!!code focus]
+    let ResultElement = document.createElement("div") // [!!code focus]
     ResultElement.innerHTML = `从1加到100的结果为: ${Sum}`
     document.body.appendChild(ResultElement)
 }
-Test()
+test()
 ```
 ````
 :::
@@ -279,16 +279,16 @@ Test()
 
 ```js
 Sum = 0
-const Test = () => {
+const test = () => {
     let Sum = 0  // [!code --]
     for (let i = 1; i <= 100; i++) {
         Sum += i  // [!code ++]
     }
-    let ResultElement = document.createElement('div')
+    let ResultElement = document.createElement("div")
     ResultElement.innerHTML = `从1加到100的结果为: ${Sum}`
     document.body.appendChild(ResultElement)
 }
-Test()
+test()
 ```
 
 === 示例
@@ -296,16 +296,16 @@ Test()
 ````md
 ```js
 Sum = 0
-const Test = () => {
+const test = () => {
     let Sum = 0  // [!!code --]
     for (let i = 1; i <= 100; i++) {
         Sum += i  // [!!code ++]
     }
-    let ResultElement = document.createElement('div')
+    let ResultElement = document.createElement("div")
     ResultElement.innerHTML = `从1加到100的结果为: ${Sum}`
     document.body.appendChild(ResultElement)
 }
-Test()
+test()
 ```
 ````
 :::
@@ -319,16 +319,16 @@ Test()
 
 ```js
 Sum = 0
-const Test = () => {
+const test = () => {
     let Sum = 0 // [!code error]
     for (let i = 1; i <= 100; i++) {
         Sum += i // [!code warning]
     }
-    let ResultElement = document.createElement('div')
+    let ResultElement = document.createElement("div")
     ResultElement.innerHTML = `从1加到100的结果为: ${Sum}`
     document.body.appendChild(ResultElement)
 }
-Test()
+test()
 ```
 
 === 示例
@@ -336,16 +336,16 @@ Test()
 ````
 ```js
 Sum = 0
-const Test = () => {
+const test = () => {
     let Sum = 0 // [!!code error]
     for (let i = 1; i <= 100; i++) {
         Sum += i // [!!code warning]
     }
-    let ResultElement = document.createElement('div')
+    let ResultElement = document.createElement("div")
     ResultElement.innerHTML = `从1加到100的结果为: ${Sum}`
     document.body.appendChild(ResultElement)
 }
-Test()
+test()
 ```
 ````
 :::
@@ -398,18 +398,18 @@ Test()
 
 ```js
 Sum = 0
-const Test = () => {
+const test = () => {
     let Sum = 0
     for (let i = 1; i <= 100; i++) {
         Sum += i
     }
     // #region snippet
-    let ResultElement = document.createElement('div')
+    let ResultElement = document.createElement("div")
     ResultElement.innerHTML = `从1加到100的结果为: ${Sum}`
     document.body.appendChild(ResultElement)
     // #endregion snippet
 }
-Test()
+test()
 ```
 
 :::tabs

@@ -19,7 +19,7 @@
         for (let J = 1; J <= I; J++) {
             document.write(`<span>${J} X ${I} = ${I * J}</span>`)
         }
-        document.write('<br>')
+        document.write("<br>")
     }
 </script>
 ```
@@ -33,19 +33,19 @@ for (let I = 1; I <= 9; I++) {
     for (let J = 1; J <= I; J++) {
         document.write(`<span>${J} X ${I} = ${I * J}</span>`)
     }
-    document.write('<br>')
+    document.write("<br>")
 }
 for (let I = 1; I <= 9; I++) {
     for (let J = 1; J <= I; J++) {
         document.write(`<span>${J} X ${I} = ${I * J}</span>`)
     }
-    document.write('<br>')
+    document.write("<br>")
 }
 for (let I = 1; I <= 9; I++) {
     for (let J = 1; J <= I; J++) {
         document.write(`<span>${J} X ${I} = ${I * J}</span>`)
     }
-    document.write('<br>')
+    document.write("<br>")
 }
 ```
 
@@ -57,7 +57,7 @@ function Sheet99() {
 		for (let J = 1; J <= I; J++) {
 			document.write(`<span>${J} X ${I} = ${I * J}</span>`)
 		}
-		document.write('<br>')
+		document.write("<br>")
 	}
 }
 
@@ -132,7 +132,7 @@ getSum(10, 5)
 // 输出 15
 ```
 
-我们之前使用的`alent('打印')`, `console.log('控制台输出')`, 本质上也是执行函数并传参的体现
+我们之前使用的`alent("打印")`, `console.log("控制台输出")`, 本质上也是执行函数并传参的体现
 
 ## 形参默认值
 
@@ -161,8 +161,8 @@ getSum()
 其实我们之前已经接触过了
 
 ```js
-let result1 = prompt('请输入您的年龄')
-let result1 = parseInt('111')
+let result1 = prompt("请输入您的年龄")
+let result1 = parseInt("111")
 ```
 
 将用户输入的内容, 返回到变量中
@@ -170,7 +170,7 @@ let result1 = parseInt('111')
 既然存在**有返回值的函数**, 那自然就存在没有**返回值的函数**
 
 ```js
-alert('弹窗不需要返回值')
+alert("弹窗不需要返回值")
 ```
 
 所以, 可以根据需求, 来决定是否需要返回值
@@ -197,7 +197,7 @@ console.log(getSum(10, 5))
 ```js
 function getSum(Num1 = 0, Num2 = 0) {
     return Num1 + Num2
-    console.log('return下面的代码不会执行了')
+    console.log("return下面的代码不会执行了")
 }
 ```
 :::

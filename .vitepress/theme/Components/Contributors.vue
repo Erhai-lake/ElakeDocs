@@ -13,8 +13,8 @@
 
 
 <script lang="ts" setup>
-import { ref, watch, onMounted } from 'vue'
-import { useRoute } from 'vitepress'
+import { ref, watch, onMounted } from "vue"
+import { useRoute } from "vitepress"
 
 // 路由
 const Route = useRoute()
@@ -35,7 +35,7 @@ onMounted(async (): Promise<void> => {
 const ContributorsData: any = ref([])
 const GetContributors: () => Promise<void> = async (): Promise<void> => {
     try {
-        const FilePath: string = Route.path.replace(/html$/, 'md').replace(/\/Docs\//, '').replace(/\//g, '_').replace('.md', '.json')
+        const FilePath: string = Route.path.replace(/html$/, "md").replace(/\/Docs\//, "").replace(/\//g, "_").replace(".md", ".json")
         const StoredAllCommits: string | null = sessionStorage.getItem(FilePath)
         let GitCommits: any
         if (StoredAllCommits) {
@@ -51,7 +51,7 @@ const GetContributors: () => Promise<void> = async (): Promise<void> => {
 
         const DataSet = new Set<string>()
             GitCommits.forEach((Item: { Name: string }): void => {
-            DataSet.add(Item.Name.replace(/_/, '-'))
+            DataSet.add(Item.Name.replace(/_/, "-"))
         })
         ContributorsData.value = Array.from(DataSet).map((Name: string): { Name: string, AvatarUrl: string } => {
             return {
@@ -62,8 +62,8 @@ const GetContributors: () => Promise<void> = async (): Promise<void> => {
     } catch {
         ContributorsData.value = [
             {
-                Name: '名字好吃捏~',
-                AvatarUrl: '//api.elake.top/Logo/'
+                Name: "名字好吃捏~",
+                AvatarUrl: "//api.elake.top/Logo/"
             }
         ]
     }
@@ -79,11 +79,11 @@ let HoverTimer: any = null
 // 鼠标移入
 const HandleMouseOver: (event: MouseEvent) => void = (event: MouseEvent): void => {
     const Item: HTMLElement = event.target as HTMLElement
-    if (!Item.classList.contains('ContributorsItem') || Item === CurrentHoveredItem) return
+    if (!Item.classList.contains("ContributorsItem") || Item === CurrentHoveredItem) return
     CurrentHoveredItem = Item
-    const Avatar: HTMLElement | null = Item.querySelector('.Avatar')
+    const Avatar: HTMLElement | null = Item.querySelector(".Avatar")
     if (!Avatar) return
-    Avatar.classList.add('Rotate')
+    Avatar.classList.add("Rotate")
     let HoverTime: number = 0
     const Father: HTMLElement | null = Item.parentElement
     if (Father === null) return
@@ -91,10 +91,10 @@ const HandleMouseOver: (event: MouseEvent) => void = (event: MouseEvent): void =
         HoverTime += 1
         switch (HoverTime) {
             case 5:
-                Item.classList.add('Rotate')
+                Item.classList.add("Rotate")
                 break
             case 7:
-                Father.classList.add('Rotate')
+                Father.classList.add("Rotate")
                 break
         }
     }, 1000)
@@ -103,17 +103,17 @@ const HandleMouseOver: (event: MouseEvent) => void = (event: MouseEvent): void =
 // 鼠标移出
 const HandleMouseLeave: (event: MouseEvent) => void = (event: MouseEvent): void => {
     const Item: HTMLElement = event.target as HTMLElement
-    if (!Item.classList.contains('ContributorsItem') || Item !== CurrentHoveredItem) return
+    if (!Item.classList.contains("ContributorsItem") || Item !== CurrentHoveredItem) return
     clearInterval(HoverTimer)
     CurrentHoveredItem = null
     HoverTimer = null
-    Item.classList.remove('Rotate')
-    const Avatar: HTMLElement | null = Item.querySelector('.Avatar')
+    Item.classList.remove("Rotate")
+    const Avatar: HTMLElement | null = Item.querySelector(".Avatar")
     if (!Avatar) return
-    Avatar.classList.remove('Rotate')
+    Avatar.classList.remove("Rotate")
     const Father: HTMLElement | null = Item.parentElement
     if (Father === null) return
-    Father.classList.remove('Rotate')
+    Father.classList.remove("Rotate")
 }
 </script>
 
@@ -152,7 +152,7 @@ const HandleMouseLeave: (event: MouseEvent) => void = (event: MouseEvent): void 
             }
 
             &::before {
-                content: '';
+                content: "";
                 position: absolute;
                 width: 230px;
                 background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
@@ -163,7 +163,7 @@ const HandleMouseLeave: (event: MouseEvent) => void = (event: MouseEvent): void 
             }
 
             &::after {
-                content: '';
+                content: "";
                 background: var(--vp-c-bg);
                 position: absolute;
                 inset: 5px;

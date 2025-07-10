@@ -34,7 +34,7 @@ div {
 div {
     width: 200px;
     height: 200px;
-    background-image: url('image.png');
+    background-image: url("image.png");
     border: 1px solid black;
 }
 ```
@@ -64,7 +64,7 @@ div {
 div {
     width: 200px;
     height: 200px;
-    background-image: url('image.png');
+    background-image: url("image.png");
     background-repeat: no-repeat;
     border: 1px solid black;
 }
@@ -100,7 +100,7 @@ div {
 div {
     width: 200px;
     height: 200px;
-    background-image: url('image.png');
+    background-image: url("image.png");
     background-repeat: no-repeat;
     background-position: center bottom;
     border: 1px solid black;
@@ -136,7 +136,7 @@ div {
 div {
     width: 200px;
     height: 200px;
-    background-image: url('image.png');
+    background-image: url("image.png");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: contain;
@@ -162,7 +162,7 @@ div {
 div {
     width: 200px;
     height: 200px;
-    background-image: url('image2.png');
+    background-image: url("image2.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     border: 1px solid black;

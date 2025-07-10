@@ -31,14 +31,14 @@ const Obj = {
 }
 Obj.Test3()
 
-document.querySelector('button').addEventListener('click', function () {
+document.querySelector("button").addEventListener("click", function () {
     console.log(this)
     // button
 })
 ```
 
 ```js
-'use strict'
+"use strict"
 function Test1() {
     console.log(this)
     // undefined
@@ -59,7 +59,7 @@ const Obj = {
 }
 Obj.Test3()
 
-document.querySelector('button').addEventListener('click', function () {
+document.querySelector("button").addEventListener("click", function () {
     console.log(this)
     // button
 })
@@ -90,7 +90,7 @@ const Obj = {
 }
 Obj.Test2()
 
-document.querySelector('button').addEventListener('click', () => {
+document.querySelector("button").addEventListener("click", () => {
     console.log(this)
     // window
 })
@@ -118,7 +118,7 @@ JS中允许指定函数中的`this`指向, 共有3个方法
 
 ```js
 const Obj = {
-    Name: '柒月'
+    Name: "柒月"
 }
 function Fun(X, Y) {
     console.log(this)
@@ -141,7 +141,7 @@ console.log(Fun.call(Obj, 2, 3))
 
 ```js
 const Obj = {
-    Name: '柒月'
+    Name: "柒月"
 }
 function Fun(X, Y) {
     console.log(this)
@@ -175,7 +175,7 @@ console.log(Max, Min)
 
 ```js
 const Obj = {
-    Name: '柒月'
+    Name: "柒月"
 }
 function Fun1(X, Y) {
     console.log(this)
@@ -192,8 +192,8 @@ console.log(Fun2())
 例如:有一个按钮, 点击禁用, 3秒后恢复
 
 ```js
-const But = document.querySelector('button')
-But.addEventListener('click', function () {
+const But = document.querySelector("button")
+But.addEventListener("click", function () {
     // 禁用按钮
     this.disabled = true
     setTimeout(function () {

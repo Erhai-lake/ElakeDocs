@@ -86,7 +86,7 @@ console.log(test)
 声明变量时, 多个变量之间使用`, `隔开即可, 例如:
 
 ```js
-let test1 = '第一个变量', test2 = '第二个变量'
+let test1 = "第一个变量", test2 = "第二个变量"
 console.log(test1, test2)
 ```
 

@@ -14,7 +14,7 @@
 
 比如鼠标经过显示下拉菜单, 点击可以播放的轮播图等等
 
-`事件源.addEventListener('事件类型',  函数)`
+`事件源.addEventListener("事件类型",  函数)`
 
 事件监听三要素
 
@@ -33,9 +33,9 @@
 </style>
 <div class="But">点我</div>
 <script>
-    const But = document.querySelector('.But')
-    But.addEventListener('click', () => {
-        console.log('被点击~')
+    const But = document.querySelector(".But")
+    But.addEventListener("click", () => {
+        console.log("被点击~")
     })
 </script>
 ```
@@ -49,7 +49,7 @@
 `事件源.on事件 = function() {}`
 
 ```js
-const But = document.querySelector('.But')
+const But = document.querySelector(".But")
 But.onclick = () => {
     alert(1)
 }
@@ -62,14 +62,14 @@ But.onclick = () => {
 
 ### DOM L2
 
-`事件源.addEventListener('事件类型', 函数)`
+`事件源.addEventListener("事件类型", 函数)`
 
 ```js
-const But = document.querySelector('.But')
-But.addEventListener('click', () => {
+const But = document.querySelector(".But")
+But.addEventListener("click", () => {
     alert(1)
 })
-But.addEventListener('click', () => {
+But.addEventListener("click", () => {
     alert(2)
 })
 // 点击按钮, 弹出的是1和2
@@ -117,18 +117,18 @@ on方式会被覆盖, **addEventListener**方式可以绑定多次, 拥有事件
 </style>
 <div class="a"></div>
 <script>
-    const Test = document.querySelector('.a')
-    Test.addEventListener('mouseenter', () => {
-        console.log('鼠标经过')
-        Test.style.backgroundColor = '#000000'
+    const Test = document.querySelector(".a")
+    Test.addEventListener("mouseenter", () => {
+        console.log("鼠标经过")
+        Test.style.backgroundColor = "#000000"
     })
-    Test.addEventListener('mouseleave', () => {
-        console.log('鼠标离开')
-        Test.style.backgroundColor = '#80ceff'
+    Test.addEventListener("mouseleave", () => {
+        console.log("鼠标离开")
+        Test.style.backgroundColor = "#80ceff"
     })
-    Test.addEventListener('click', () => {
-        console.log('鼠标点击')
-        Test.style.backgroundColor = '#ebff6c'
+    Test.addEventListener("click", () => {
+        console.log("鼠标点击")
+        Test.style.backgroundColor = "#ebff6c"
     })
 </script>
 ```
@@ -140,12 +140,12 @@ on方式会被覆盖, **addEventListener**方式可以绑定多次, 拥有事件
 ```html
 <input type="text" class="a">
 <script>
-    const Test = document.querySelector('.a')
-    Test.addEventListener('focus', () => {
-        console.log('获取焦点')
+    const Test = document.querySelector(".a")
+    Test.addEventListener("focus", () => {
+        console.log("获取焦点")
     })
-    Test.addEventListener('blur', () => {
-        console.log('失去焦点')
+    Test.addEventListener("blur", () => {
+        console.log("失去焦点")
     })
 </script>
 ```
@@ -163,14 +163,14 @@ on方式会被覆盖, **addEventListener**方式可以绑定多次, 拥有事件
 </style>
 <input type="text" class="a">
 <script>
-    const Test = document.querySelector('.a')
-    Test.addEventListener('keydown', () => {
-        console.log('键盘按下')
-        Test.style.backgroundColor = '#ffffff'
+    const Test = document.querySelector(".a")
+    Test.addEventListener("keydown", () => {
+        console.log("键盘按下")
+        Test.style.backgroundColor = "#ffffff"
     })
-    Test.addEventListener('keyup', () => {
-        console.log('键盘抬起')
-        Test.style.backgroundColor = '#80ceff'
+    Test.addEventListener("keyup", () => {
+        console.log("键盘抬起")
+        Test.style.backgroundColor = "#80ceff"
     })
 </script>
 ```
@@ -182,9 +182,9 @@ on方式会被覆盖, **addEventListener**方式可以绑定多次, 拥有事件
 ```html
 <input type="text" class="a">
 <script>
-    const Test = document.querySelector('.a')
-    Test.addEventListener('input', () => {
-        console.log('输入框用户输入')
+    const Test = document.querySelector(".a")
+    Test.addEventListener("input", () => {
+        console.log("输入框用户输入")
         console.log(Test.value)
     })
 </script>
@@ -222,8 +222,8 @@ on方式会被覆盖, **addEventListener**方式可以绑定多次, 拥有事件
 </style>
 <div class="a"></div>
 <script>
-    const Test = document.querySelector('.a')
-    Test.addEventListener('click', (Event) => {
+    const Test = document.querySelector(".a")
+    Test.addEventListener("click", (Event) => {
     console.log(Event)
 })
 </script>
@@ -249,8 +249,8 @@ on方式会被覆盖, **addEventListener**方式可以绑定多次, 拥有事件
 </style>
 <input type="text" class="a">
 <script>
-    const Test = document.querySelector('.a')
-    Test.addEventListener('keydown', (Event) => {
+    const Test = document.querySelector(".a")
+    Test.addEventListener("keydown", (Event) => {
         console.log(Event.key)
     })
 </script>

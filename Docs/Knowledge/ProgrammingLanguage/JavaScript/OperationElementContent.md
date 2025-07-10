@@ -4,9 +4,9 @@ DOM对象都是根据标签生成的, 所以操作标签, 本质上就是操作D
 
 如果想要修改标签元素里面的内容, 则可以使用以下几种方式:
 
-1. `对象.innerText = ''`
-2. `对象.textContent = ''`
-3. `对象.innerHTML = ''`
+1. `对象.innerText = ""`
+2. `对象.textContent = ""`
+3. `对象.innerHTML = ""`
 
 ## innerText
 
@@ -18,10 +18,10 @@ DOM对象都是根据标签生成的, 所以操作标签, 本质上就是操作D
 <p class="Test1">我是测试内容</p>
 <p class="Test2">我是测试内容</p>
 <script>
-    const Test1 = document.querySelector('.Test1')
-    const Test2 = document.querySelector('.Test2')
-    Test1.innerText = '测试内容是我'
-  	Test2.innerText = '<strong>加粗了</strong>'
+    const Test1 = document.querySelector(".Test1")
+    const Test2 = document.querySelector(".Test2")
+    Test1.innerText = "测试内容是我"
+  	Test2.innerText = "<strong>加粗了</strong>"
 </script>
 ```
 
@@ -35,10 +35,10 @@ DOM对象都是根据标签生成的, 所以操作标签, 本质上就是操作D
 <p class="Test1">我是测试内容</p>
 <p class="Test2">我是测试内容</p>
 <script>
-    const Test1 = document.querySelector('.Test1')
-    const Test2 = document.querySelector('.Test2')
-    Test1.textContent = '测试内容是我'
-  	Test2.textContent = '<strong>加粗了</strong>'
+    const Test1 = document.querySelector(".Test1")
+    const Test2 = document.querySelector(".Test2")
+    Test1.textContent = "测试内容是我"
+  	Test2.textContent = "<strong>加粗了</strong>"
 </script>
 ```
 
@@ -66,10 +66,10 @@ DOM对象都是根据标签生成的, 所以操作标签, 本质上就是操作D
 <p class="Test1">我是测试内容</p>
 <p class="Test2">我是测试内容</p>
 <script>
-    const Test1 = document.querySelector('.Test1')
-    const Test2 = document.querySelector('.Test2')
-    Test1.innerHTML = '测试内容是我'
-    Test2.innerHTML = '<strong>加粗了</strong>'
+    const Test1 = document.querySelector(".Test1")
+    const Test2 = document.querySelector(".Test2")
+    Test1.innerHTML = "测试内容是我"
+    Test2.innerHTML = "<strong>加粗了</strong>"
 </script>
 ```
 

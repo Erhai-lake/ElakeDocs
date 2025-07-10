@@ -16,7 +16,7 @@
 <input type="text" value="测试内容">
 <script>
     // 获取对象
-    const Input = document.querySelector('input')
+    const Input = document.querySelector("input")
     // 获取文本框输入的值
     console.log(Input.value)
 
@@ -37,9 +37,9 @@
 <input type="text" value="测试内容">
 <script>
     // 获取对象
-    const Input = document.querySelector('input')
+    const Input = document.querySelector("input")
     // 设置输入框的值
-    Input.value = '不是测试的测试内容'
+    Input.value = "不是测试的测试内容"
     // 获取文本框输入的值
     console.log(Input.value)
 </script>
@@ -54,7 +54,7 @@
 ```html
 <input type="text" value="测试内容">
 <script>
-    const Input = document.querySelector('input')
+    const Input = document.querySelector("input")
     console.log(Input.type)
 </script>
 ```
@@ -70,8 +70,8 @@
 ```html
 <input type="text" value="测试内容">
 <script>
-    const Input = document.querySelector('input')
-    Input.type = 'password'
+    const Input = document.querySelector("input")
+    Input.type = "password"
     console.log(Input.type)
 </script>
 ```
@@ -103,7 +103,7 @@
 ```html
 <input type="checkbox">
 <script>
-    const Input = document.querySelector('input')
+    const Input = document.querySelector("input")
     Input.checked = true
     console.log(Input.checked)
 </script>
@@ -130,7 +130,7 @@
 ```html
 <button disabled>按钮</button>
 <script>
-    const But = document.querySelector('button')
+    const But = document.querySelector("button")
     console.log(But.disabled)
 </script>
 ```
@@ -144,7 +144,7 @@
 ```html
 <button disabled>按钮</button>
 <script>
-    const But = document.querySelector('button')
+    const But = document.querySelector("button")
     But.disabled = false
     console.log(But.disabled)
 </script>

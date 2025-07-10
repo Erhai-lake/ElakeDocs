@@ -9,7 +9,7 @@
 ## 声明语法
 
 ```js
-const Name = '张三'
+const Name = "张三"
 ```
 
 ## 使用
@@ -29,7 +29,7 @@ console.log(Name)
 当这个变量需要改变时, 再改为`let`
 
 ```js
-const Name = '某某某'
+const Name = "某某某"
 const Age = 18
 console.log(`${Name}今年${Age}岁`)
 ```

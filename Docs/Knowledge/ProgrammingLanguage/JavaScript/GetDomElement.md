@@ -3,7 +3,7 @@
 ## 根据CSS选择器获取
 
 ```js
-document.querySelector('css选择器')
+document.querySelector("css选择器")
 ```
 
 如果页面有多个相同的元素, 只会选择**第一个**
@@ -21,15 +21,15 @@ document.querySelector('css选择器')
     <li>Test5</li>
 </ul>
 <script>
-    const Div1 = document.querySelector('div')
+    const Div1 = document.querySelector("div")
     console.log(Div1)
     console.log(Div1.innerHTML)
     // abc
-    const Div2 = document.querySelector('.Test')
+    const Div2 = document.querySelector(".Test")
     console.log(Div2)
     console.log(Div2.innerHTML)
     // 123
-    const Li = document.querySelector('ul li:first-child')
+    const Li = document.querySelector("ul li:first-child")
     console.log(Li)
     console.log(Li.innerHTML)
     // Test1
@@ -41,7 +41,7 @@ document.querySelector('css选择器')
 ### 匹配多个元素
 
 ```js
-document.querySelectorAll('css选择器')
+document.querySelectorAll("css选择器")
 ```
 
 ```html
@@ -53,7 +53,7 @@ document.querySelectorAll('css选择器')
     <li>Test5</li>
 </ul>
 <script>
-    const Li = document.querySelectorAll('ul li')
+    const Li = document.querySelectorAll("ul li")
     console.log(Li)
     console.log(Li[0].innerHTML)
     // Test1
@@ -66,11 +66,11 @@ document.querySelectorAll('css选择器')
 
 ```js
 // 根据id获取第一个元素
-document.getElementById('id')
+document.getElementById("id")
 // 根据标签获取一类元素, 例如获取页面所有div
-document.getElementsByTagName('div')
+document.getElementsByTagName("div")
 // 根据类名获取元素, 例如获取所有类名为 w 的
-document.getElementsByClassName('w')
+document.getElementsByClassName("w")
 ```
 
 了解即可

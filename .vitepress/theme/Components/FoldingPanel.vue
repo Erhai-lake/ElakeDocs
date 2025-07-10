@@ -32,7 +32,7 @@ defineProps({
     },
     Title: {
         type: String,
-        default: ''
+        default: ""
     }
 })
 
@@ -41,16 +41,16 @@ const Folding: (Event: any) => void = (Event): void => {
     if (FoldingPanelTitle) {
         const FoldingPanel: any = FoldingPanelTitle.parentNode
         if (FoldingPanel) {
-            const FoldingPanelContent: any = FoldingPanel.querySelector('.FoldingPanelContent')
+            const FoldingPanelContent: any = FoldingPanel.querySelector(".FoldingPanelContent")
             if (FoldingPanelContent) {
-                const Height: string = getComputedStyle(FoldingPanelContent).getPropertyValue('--Height')
-                const Arrow: any = FoldingPanelTitle.querySelector('.Arrow')
+                const Height: string = getComputedStyle(FoldingPanelContent).getPropertyValue("--Height")
+                const Arrow: any = FoldingPanelTitle.querySelector(".Arrow")
                 if (FoldingPanelContent.style.height !== Height) {
                     FoldingPanelContent.style.height = Height
-                    Arrow.style.transform = 'rotate(-180deg)'
+                    Arrow.style.transform = "rotate(-180deg)"
                 } else {
-                    FoldingPanelContent.style.height = '0px'
-                    Arrow.style.transform = 'rotate(0deg)'
+                    FoldingPanelContent.style.height = "0px"
+                    Arrow.style.transform = "rotate(0deg)"
                 }
             }
         }

@@ -15,11 +15,11 @@ if (条件) {
 ```js
 // 条件为true, 执行大括号内代码
 if (2 === 2) {
-  console.log('执行')
+  console.log("执行")
 }
 // 条件为false, 不执行大括号内代码
-if (2 === '2') {
-  console.log('执行')
+if (2 === "2") {
+  console.log("执行")
 }
 ```
 
@@ -28,11 +28,11 @@ if (2 === '2') {
 ```js
 // 条件为0, 隐式转换为false, 不执行大括号内代码
 if (0) {
-  console.log('执行')
+  console.log("执行")
 }
 // 条件为空字符串, 隐式转换为false, 不执行大括号内代码
-if ('') {
-  console.log('执行')
+if ("") {
+  console.log("执行")
 }
 ```
 
@@ -40,7 +40,7 @@ if ('') {
 
 ```js
 // 只有一个语句, 大括号可以省略
-if (1 == 1) console.log('执行')
+if (1 == 1) console.log("执行")
 ```
 
 ## 双分支
@@ -55,9 +55,9 @@ if (条件) {
 
 ```js
 if (2 === 2) {
-  console.log('真')
+  console.log("真")
 } else {
-  console.log('假')
+  console.log("假")
 }
 ```
 

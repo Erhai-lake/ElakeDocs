@@ -41,8 +41,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch, onMounted } from 'vue'
-import { useRoute } from 'vitepress'
+import { ref, watch, onMounted } from "vue"
+import { useRoute } from "vitepress"
 
 // 路由
 const Route = useRoute()
@@ -69,15 +69,15 @@ const UpdateData: () => void = (): void => {
 }
 
 // 获取最后更新时间
-const LastUpdateTime: any = ref('')
+const LastUpdateTime: any = ref("")
 const GetLastUpdateTime: () => void = (): void => {
-    const OfficialLastUpdateTimeFatherElement: HTMLElement | null = document.querySelector('.last-updated > p')
+    const OfficialLastUpdateTimeFatherElement: HTMLElement | null = document.querySelector(".last-updated > p")
     if (OfficialLastUpdateTimeFatherElement) {
-        OfficialLastUpdateTimeFatherElement.style.display = 'none'
-        const OfficialLastUpdateTimeElement: HTMLElement | null = OfficialLastUpdateTimeFatherElement.querySelector('time')
+        OfficialLastUpdateTimeFatherElement.style.display = "none"
+        const OfficialLastUpdateTimeElement: HTMLElement | null = OfficialLastUpdateTimeFatherElement.querySelector("time")
         if (OfficialLastUpdateTimeElement) {
-            const OfficialLastUpdateTime: string = OfficialLastUpdateTimeElement.innerHTML.replace(/\//g, '-')
-            if (OfficialLastUpdateTime && OfficialLastUpdateTime !== '') {
+            const OfficialLastUpdateTime: string = OfficialLastUpdateTimeElement.innerHTML.replace(/\//g, "-")
+            if (OfficialLastUpdateTime && OfficialLastUpdateTime !== "") {
                 LastUpdateTime.value = OfficialLastUpdateTime
                 clearInterval(Interval)
             }
@@ -86,19 +86,19 @@ const GetLastUpdateTime: () => void = (): void => {
 }
 
 // 计算字数
-const WordCount: any = ref('')
+const WordCount: any = ref("")
 const CalculateWordCount: () => void = (): void => {
-    let ContentElement: HTMLElement | null = document.querySelector('main > div > div')
+    let ContentElement: HTMLElement | null = document.querySelector("main > div > div")
     if (!ContentElement) return
     ContentElement = ContentElement.cloneNode(true) as HTMLElement
     // 代码块移除
-    const PreElements: NodeListOf<HTMLElement> = ContentElement.querySelectorAll('pre')
+    const PreElements: NodeListOf<HTMLElement> = ContentElement.querySelectorAll("pre")
     PreElements.forEach(pre => pre.remove())
-    const LangSpan: NodeListOf<HTMLElement> = ContentElement.querySelectorAll('span.lang')
+    const LangSpan: NodeListOf<HTMLElement> = ContentElement.querySelectorAll("span.lang")
     LangSpan.forEach(lang => lang.remove())
-    const LineNumber: NodeListOf<HTMLElement> = ContentElement.querySelectorAll('div.line-numbers-wrapper')
+    const LineNumber: NodeListOf<HTMLElement> = ContentElement.querySelectorAll("div.line-numbers-wrapper")
     LineNumber.forEach(line => line.remove())
-    const TextContent: string = ContentElement.textContent || ''
+    const TextContent: string = ContentElement.textContent || ""
     // 计算中文字符和英文单词数
     const CnChars: RegExpMatchArray | [] = TextContent.match(/[\u4e00-\u9fa5]/g) || []
     const EnWords: RegExpMatchArray | [] = TextContent.match(/[a-zA-Z]+/g) || []
@@ -106,24 +106,24 @@ const CalculateWordCount: () => void = (): void => {
 }
 
 // 计算阅读时长
-const ReadingTime: any = ref('')
+const ReadingTime: any = ref("")
 const CalculateReadingTime: () => void = (): void => {
     const WordsPerMinute: number = 200
     ReadingTime.value = Math.ceil(WordCount.value / WordsPerMinute)
 }
 
 // 获取一言
-const Hitokoto: any = ref('')
+const Hitokoto: any = ref("")
 const GetHitokoto: () => void = (): void => {
-    fetch('//international.v1.hitokoto.cn')
+    fetch("//international.v1.hitokoto.cn")
         .then(response => response.json())
         .then(Data => {
-            const FromWho: string = Data.from_who ? ` [${Data.from_who}]` : ''
-            const From: string = Data.from ? ` [${Data.from}]` : ''
+            const FromWho: string = Data.from_who ? ` [${Data.from_who}]` : ""
+            const From: string = Data.from ? ` [${Data.from}]` : ""
             Hitokoto.value = `${Data.hitokoto}${FromWho}${From}`
         })
         .catch((): void => {
-            Hitokoto.value = '记录点滴 见证思考 分享成长[洱海工作室]'
+            Hitokoto.value = "记录点滴 见证思考 分享成长[洱海工作室]"
         })
 }
 

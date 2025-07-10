@@ -40,16 +40,16 @@
 <script>
     // document.addEventListener(事件类型, 函数, 是否使用捕获机制)
 
-    document.addEventListener('click', () => {
-        alert('我是老大')
+    document.addEventListener("click", () => {
+        alert("我是老大")
     }, true)
 
-    document.querySelector('.a').addEventListener('click', () => {
-        alert('我是老二')
+    document.querySelector(".a").addEventListener("click", () => {
+        alert("我是老二")
     }, true)
 
-    document.querySelector('.b').addEventListener('click', () => {
-        alert('我是老三')
+    document.querySelector(".b").addEventListener("click", () => {
+        alert("我是老三")
     }, true)
 </script>
 ```
@@ -85,16 +85,16 @@ DOM L2事件监听第三个参数默认是`false`, 默认都是冒泡
     <div class="b"></div>
 </div>
 <script>
-    document.addEventListener('click', () => {
-        alert('我是老大')
+    document.addEventListener("click", () => {
+        alert("我是老大")
     })
 
-    document.querySelector('.a').addEventListener('click', () => {
-        alert('我是老二')
+    document.querySelector(".a").addEventListener("click", () => {
+        alert("我是老二")
     })
 
-    document.querySelector('.b').addEventListener('click', () => {
-        alert('我是老三')
+    document.querySelector(".b").addEventListener("click", () => {
+        alert("我是老三")
     })
 </script>
 ```
@@ -130,17 +130,17 @@ DOM L2事件监听第三个参数默认是`false`, 默认都是冒泡
     <div class="b"></div>
 </div>
 <script>
-    document.addEventListener('click', () => {
-        alert('我是老大')
+    document.addEventListener("click", () => {
+        alert("我是老大")
     })
 
-    document.querySelector('.a').addEventListener('click', (Event) => {
-        alert('我是老二')
+    document.querySelector(".a").addEventListener("click", (Event) => {
+        alert("我是老二")
         // Event.stopPropagation()
     })
 
-    document.querySelector('.b').addEventListener('click', (Event) => {
-        alert('我是老三')
+    document.querySelector(".b").addEventListener("click", (Event) => {
+        alert("我是老三")
         Event.stopPropagation()
     })
 </script>
@@ -156,7 +156,7 @@ DOM L2事件监听第三个参数默认是`false`, 默认都是冒泡
 
 ```js
 BUT.onclick = () => {
-    alert('点击了')
+    alert("点击了")
 }
 // 解绑
 BUT.onclick = null
@@ -171,7 +171,7 @@ BUT.onclick = null
 :::
 
 ```js
-BUT.addEventListener('click', Fn)
+BUT.addEventListener("click", Fn)
 // 解绑
-BUT.removeEventListener('click', Fn)
+BUT.removeEventListener("click", Fn)
 ```

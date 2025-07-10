@@ -18,7 +18,7 @@
 
 <body>
     <script>
-        alert('Hello World')
+        alert("Hello World")
     </script>
 </body>
 
@@ -49,7 +49,7 @@
 ```
 
 ```js
-alert('Hello World')
+alert("Hello World")
 ```
 
 ## 内联JS

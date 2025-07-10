@@ -25,9 +25,9 @@ function Throttle(Fun, Time) {
     }
 }
 
-const Mouse = Throttle(() => console.log('在这1秒内进行了鼠标移动'), 1000)
+const Mouse = Throttle(() => console.log("在这1秒内进行了鼠标移动"), 1000)
 
-window.addEventListener('mousemove', Mouse)
+window.addEventListener("mousemove", Mouse)
 ```
 
 ![689599eb8278c294fc5b0dadaa5557f30827c9c9](Assets/689599eb8278c294fc5b0dadaa5557f30827c9c9.gif)

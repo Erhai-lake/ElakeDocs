@@ -28,20 +28,20 @@
 2. 大驼峰:每个单词首字母都大写.例如:`UserName`
 
 ```js
-let mingzi = '张三' ×
-let NAME = '张三' √
+let mingzi = "张三" ×
+let name = "张三" √
 ```
 
 ## 非匿名箭头函数加参数括号 &
 
 ```js
 ×
-const Test = a => {
+const test = a => {
   console.log(a)
 }
 
 √
-const Test = (a) => {
+const test = (a) => {
   console.log(a)
 }
 ```

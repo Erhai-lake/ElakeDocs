@@ -7,7 +7,7 @@
 ```js
 const Test = (X, Y) => {
     if (!X || !Y) {
-        throw new Error('参数不能为空')
+        throw new Error("参数不能为空")
     }
     return X + Y
 }
@@ -42,7 +42,7 @@ Test()
 ```js
 const Test = (X, Y) => {
     if (!X || !Y) {
-        throw new Error('参数不能为空')
+        throw new Error("参数不能为空")
     }
     return X + Y
 }
@@ -50,9 +50,9 @@ const Test = (X, Y) => {
 try {
     Test()
 } catch (Error) {
-    console.error('捕获到错误:', Error.message);
+    console.error("捕获到错误:", Error.message);
 } finally {
-    console.log('无论是否发生错误, 这里都会执行');
+    console.log("无论是否发生错误, 这里都会执行");
 }
 ```
 
