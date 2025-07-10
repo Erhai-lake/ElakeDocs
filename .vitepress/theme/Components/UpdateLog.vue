@@ -64,7 +64,7 @@ const UpdateLogData: any = ref([])
 const LastUpdateTime: any = ref('0000-00-00')
 const GetUpdateLog: () => Promise<void> = async (): Promise<void> => {
     try {
-        const FilePath: string = Route.path.replace(/html$/, 'md').replace(/\/ElakeDocs\/Docs\//, '').replace(/\//g, '_').replace('.md', '.json')
+        const FilePath: string = Route.path.replace(/html$/, 'md').replace(/\/Docs\//, '').replace(/\//g, '_').replace('.md', '.json')
         const StoredAllCommits: string | null = sessionStorage.getItem(FilePath)
         let GitCommits: any
         if (StoredAllCommits) {
