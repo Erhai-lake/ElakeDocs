@@ -49,15 +49,15 @@ jobs:
             
         - name: 保存产物到 artifacts 分支📦
           run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git fetch origin artifacts || git branch artifacts
-          git checkout -b artifacts
-          git rm -rf .
-          cp -r .vitepress/dist/* .
-          git add .
-          git commit -m "Update artifacts from production branch"
-          git push origin artifacts:artifacts --force
+            git config --global user.name "GitHub Actions"
+            git config --global user.email "actions@github.com"
+            git fetch origin artifacts || git branch artifacts
+            git checkout -b artifacts
+            git rm -rf .
+            cp -r .vitepress/dist/* .
+            git add .
+            git commit -m "Update artifacts from production branch"
+            git push origin artifacts:artifacts --force
 
   # 部署任务
     deploy:
