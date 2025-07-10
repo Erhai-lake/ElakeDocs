@@ -1,121 +1,88 @@
 name: 构建文档
+# 触发条件
 on:
   push:
-    branches: [production]
-  workflow_dispatch:
-
+    branches: [production]  # 当代码推送到 production 分支时触发
+  workflow_dispatch:    # 允许在 GitHub Actions 页面手动触发
+# 权限设置
 permissions:
-  contents: write
-  pages: write
-  id-token: write
-
+  contents: write     # 读写仓库内容
+  pages: write       # 写入 GitHub Pages
+  id-token: write    # 生成 JWT 令牌用于身份验证
+# 并发控制
 concurrency:
-  group: pages
-  cancel-in-progress: false
+  group: pages       # 同一时间只允许一个部署运行
+  cancel-in-progress: false # 不取消正在进行的部署
 
 jobs:
-  build:
-    runs-on: ubuntu-latest  # 修正拼写错误: ubuntU-latest
-    steps:
-      - name: 检出代码
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+    build:
+        runs-on: ubuntu-latest
+        steps:
+        - name: 切换分支🀄
+          uses: actions/checkout@v4
+          with:
+            fetch-depth: 0
 
-      - name: 设置 pnpm
-        uses: pnpm/action-setup@v3
-        with:
-          version: 9
+        - name: 使用 pnpm☂
+          uses: pnpm/action-setup@v3
+          with:
+            version: 9
 
-      - name: 设置 Node.js
-        uses: actions/setup-node@v4  # 升级到 v4
-        with:
-          node-version: 20
-          cache: 'pnpm'  # 添加 pnpm 缓存
+        - name: 使用 node:20🌠
+          uses: actions/setup-node@v2
+          with:
+            node-version: 20
 
-      - name: 配置 Pages
-        uses: actions/configure-pages@v4
+        - name: 配置 Pages
+          uses: actions/configure-pages@v4
 
-      - name: 安装依赖
-        run: pnpm install
+        - name: 安装 依赖❄
+          run: pnpm install
 
-      - name: 构建 GitHub Pages 版本
-        run: |
-          echo "构建 GitHub Pages 版本 (base: /ElakeDocs/)"
-          pnpm run build
-          mv .vitepress/dist .vitepress/dist-ghpages
-          echo "构建产物结构:"
-          find .vitepress/dist-ghpages -type f | head -20
+        - name: 构建项目(GitHub Pages 版本)🚽
+          run: |
+            echo "构建 GitHub Pages 版本 (base: /ElakeDocs/)"
+            VITEPRESS_BASE="/ElakeDocs/" pnpm run build
+            mv .vitepress/dist .vitepress/dist-ghpages
 
-      - name: 构建服务器版本
-        run: |
-          echo "构建服务器版本 (base: /)"
-          # 备份原始配置
-          cp .vitepress/config.js .vitepress/config.js.bak
-          
-          # 修改配置为根路径
-          if ! sed -i "s|base: '/ElakeDocs/'|base: '/'|g" .vitepress/config.js; then
-            echo "⚠️ 修改配置失败, 显示原始配置:"
-            grep "base:" .vitepress/config.js || true
-            exit 1
-          fi
-          
-          echo "✅ 修改后的配置:"
-          grep "base:" .vitepress/config.js || true
-          
-          # 执行构建并记录日志
-          pnpm run build 2>&1 | tee .vitepress/build.log
-          if [ ${PIPESTATUS[0]} -ne 0 ]; then
-            echo "❌ 构建失败, 显示错误日志:"
-            cat .vitepress/build.log
-            exit 1
-          fi
-          
-          # 恢复原始配置
-          mv .vitepress/config.js.bak .vitepress/config.js
-          
-          echo "✅ 服务器版本构建产物:"
-          find .vitepress/dist -type f | head -20
+        - name: 构建项目(服务器版本)🚽
+          run: |
+            echo "构建服务器版本 (base: /)"
+            VITEPRESS_BASE="/" pnpm run build
 
-      - name: 上传到 GitHub Pages
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: .vitepress/dist-ghpages
+        - name: 上传到 GitHub Pages📦
+          uses: actions/upload-pages-artifact@v3
+          with:
+            path: .vitepress/dist-ghpages
+            
+        - name: 保存产物到 artifacts 分支📦
+          run: |
+            git config --global user.name "GitHub Actions"
+            git config --global user.email "actions@github.com"
 
-      - name: 保存服务器版本到 artifacts 分支
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          
-          # 更可靠的分支检查方式
-          if git ls-remote --exit-code --heads origin artifacts; then
-            echo "检出已有的 artifacts 分支"
-            git fetch origin artifacts
-            git checkout artifacts
-            git rm -rf .
-          else
-            echo "创建新的 artifacts 分支"
-            git checkout --orphan artifacts
-          fi
-          
-          # 复制构建产物并检查
-          echo "正在复制构建产物..."
-          cp -rv .vitepress/dist/* .
-          
-          echo "提交变更..."
-          git add .
-          git commit -m "Update artifacts (Build $GITHUB_RUN_ID)"
-          
-          echo "推送变更..."
-          git push origin artifacts --force
+            if ! git fetch origin artifacts 2>/dev/null; then
+              echo "创建新的artifacts分支"
+              git checkout --orphan artifacts
+              git rm -rf .
+            else
+              echo "检出现有的artifacts分支"
+              git checkout artifacts
+              git rm -rf .
+            fi
 
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: 部署到 GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+            cp -r .vitepress/dist/* .
+            git add .
+            git commit -m "Update artifacts from production branch (Build $GITHUB_RUN_ID)"
+            git push origin artifacts --force
+
+  # 部署任务
+    deploy:
+        environment:
+          name: github-pages
+          url: ${{ steps.deployment.outputs.page_url }}
+        needs: build
+        runs-on: ubuntu-latest
+        steps:
+          - name: 部署到 GitHub Pages📦
+            id: deployment
+            uses: actions/deploy-pages@v4

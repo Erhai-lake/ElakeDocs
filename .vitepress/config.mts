@@ -32,7 +32,7 @@ export default withMermaid({
     // 描述
     description: "记录点滴 见证思考 分享成长",
     // 基础路径
-    base: process.env.NODE_ENV === 'production' ? '/ElakeDocs/' : '/',
+    base: process.env.VITEPRESS_BASE || "/",
     // 头部
     head: [
         // Logo

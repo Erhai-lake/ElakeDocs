@@ -9,7 +9,9 @@
         "PictureSHA1": "node PictureSHA1.js",
         "Upload": "git checkout production && git merge master && git pull && git checkout master",
         "dev": "pnpm run PictureSHA1 && pnpm run GitLog && vitepress dev --port 3000",
-        "build": "pnpm run PictureSHA1 && pnpm run GitLog && vitepress build --port 3001",
+        "build": "pnpm run PictureSHA1 && pnpm run GitLog && vitepress build .vitepress",
+        "build:gh": "pnpm run PictureSHA1 && pnpm run GitLog && VITEPRESS_BASE=/ElakeDocs/ vitepress build .vitepress",
+        "build:server": "pnpm run PictureSHA1 && pnpm run GitLog && VITEPRESS_BASE=/ vitepress build .vitepress",
         "preview": "vitepress preview"
     },
     "keywords": [],
