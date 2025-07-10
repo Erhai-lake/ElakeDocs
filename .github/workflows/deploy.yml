@@ -41,16 +41,28 @@ jobs:
 
         - name: 构建项目(GitHub Pages 版本)🚽
           run: |
+            echo "构建 GitHub Pages 版本 (base: /ElakeDocs/)"
             pnpm run build
             mv .vitepress/dist .vitepress/dist-ghpages
+            ls -la .vitepress/dist-ghpages
 
         - name: 构建项目(服务器版本)🚽
           run: |
-            # 临时修改配置为根路径
-            sed -i "s|base: '/ElakeDocs/'|base: '/'|" .vitepress/config.js
-            pnpm run build
+            echo "构建服务器版本 (base: /)"
+            # 备份原始配置
+            cp .vitepress/config.js .vitepress/config.js.bak
+            # 修改配置为根路径
+            sed -i "s|base: '/ElakeDocs/'|base: '/'|g" .vitepress/config.js
+            # 显示修改后的配置确认
+            echo "修改后的配置内容:"
+            grep "base:" .vitepress/config.js || true
+            # 执行构建
+            pnpm run build || (echo "构建失败, 显示错误日志"; cat .vitepress/build.log; exit 1)
             # 恢复原始配置
-            sed -i "s|base: '/'|base: '/ElakeDocs/'|" .vitepress/config.js
+            mv .vitepress/config.js.bak .vitepress/config.js
+            # 确认构建产物
+            echo "构建产物内容:"
+            ls -la .vitepress/dist
 
         - name: 上传到 GitHub Pages📦
           uses: actions/upload-pages-artifact@v3
