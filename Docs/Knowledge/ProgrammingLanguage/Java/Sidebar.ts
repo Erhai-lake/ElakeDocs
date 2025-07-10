@@ -63,6 +63,10 @@ export const JavaSidebar: any[] = [
                 link: "/Docs/Knowledge/ProgrammingLanguage/Java/TypeConversion"
             },
             {
+                text: "输入输出",
+                link: "/Docs/Knowledge/ProgrammingLanguage/Java/InputOutput"
+            },
+            {
                 text: "规范",
                 link: "/Docs/Knowledge/ProgrammingLanguage/Java/Specification"
             }
