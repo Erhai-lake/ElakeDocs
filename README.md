@@ -75,6 +75,7 @@ git push
 
 * `master`: 主分支, 用于存放最新的文档
 * `production`: 构建分支, 当`master`更新到一定体积且稳定时, 将`master`分支合并到`production`分支, 构建出静态页面, 自动构建并部署到`GitHub Pages`供大家访问
+* `artifacts`: 存放构建产物的分支
 
 > [!WARNING]
-> 请不要直接修改`production`分支!
+> 请不要直接修改`production`和`artifacts`分支!
