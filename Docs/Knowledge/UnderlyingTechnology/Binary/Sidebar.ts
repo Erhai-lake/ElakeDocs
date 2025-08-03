@@ -4,15 +4,15 @@ export const BinarySidebar: any[] = [
         items: [
             {
                 text: "前言",
-                link: "/Docs/Knowledge/ProgrammingLanguage/Binary/Binary"
+                link: "/Docs/Knowledge/UnderlyingTechnology/Binary/Binary"
             },
             {
                 text: "二进制与十进制之间的转换",
-                link: "/Docs/Knowledge/ProgrammingLanguage/Binary/ConversionBetweenBinaryAndDecimal"
+                link: "/Docs/Knowledge/UnderlyingTechnology/Binary/ConversionBetweenBinaryAndDecimal"
             },
             {
                 text: "结束",
-                link: "/Docs/Knowledge/ProgrammingLanguage/Binary/End"
+                link: "/Docs/Knowledge/UnderlyingTechnology/Binary/End"
             }
         ]
     }

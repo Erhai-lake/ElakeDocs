@@ -1,19 +1,21 @@
 // 洱海文档
 import { ElakeDocsSidebar } from "../Docs/ElakeDocs/Sidebar"
+
 // 项目文档
 import { ProjectSidebar } from "../Docs/Project/Sidebar"
 //洱海API
 import { ElakeApiSidebar } from "../Docs/Project/ElakeApi/Sidebar"
 // 洱海MC启动核心
 import { ElakeMinecraftLoaderCoreSidebar } from "../Docs/Project/ElakeMinecraftLoaderCore/Sidebar"
+
 // 知识库
 import { KnowledgeSidebar } from "../Docs/Knowledge/Sidebar"
 // 二进制
-import { BinarySidebar } from "../Docs/Knowledge/ProgrammingLanguage/Binary/Sidebar"
+import { BinarySidebar } from "../Docs/Knowledge/UnderlyingTechnology/Binary/Sidebar"
 // 正则表达式
-import { RegularExpressionSidebar } from "../Docs/Knowledge/ProgrammingLanguage/RegularExpression/Sidebar"
+import { RegularExpressionSidebar } from "../Docs/Knowledge/Tools/RegularExpression/Sidebar"
 // Git
-import { GitSidebar } from "../Docs/Knowledge/ProgrammingLanguage/Git/Sidebar"
+import { GitSidebar } from "../Docs/Knowledge/Tools/Git/Sidebar"
 // Python
 import { PythonSidebar } from "../Docs/Knowledge/ProgrammingLanguage/Python/Sidebar"
 // Html5CSS3
@@ -39,11 +41,11 @@ export const Sidebar: any = {
     // 知识库
     "/Docs/Knowledge/": KnowledgeSidebar,
     // 二进制
-    "/Docs/Knowledge/ProgrammingLanguage/Binary/": BinarySidebar,
+    "/Docs/Knowledge/UnderlyingTechnology/Binary/": BinarySidebar,
     // 正则表达式
-    "/Docs/Knowledge/ProgrammingLanguage/RegularExpression/": RegularExpressionSidebar,
+    "/Docs/Knowledge/Tools/RegularExpression/": RegularExpressionSidebar,
     // Git
-    "/Docs/Knowledge/ProgrammingLanguage/Git/": GitSidebar,
+    "/Docs/Knowledge/Tools/Git/": GitSidebar,
     // Python
     "/Docs/Knowledge/ProgrammingLanguage/Python/": PythonSidebar,
     // Html5CSS3

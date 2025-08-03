@@ -30,19 +30,41 @@ const GetGitLog = (File) => {
     try {
         const GitLog = execSync(`git log --pretty=format:"%H%n%s%n%an%n%at%n" --reverse ${File}`)
         const LogLines = GitLog.toString().trim().split("\n")
+        if (LogLines.length === 0) {
+            return [{
+                Sha: "",
+                Name: "",
+                Message: "无历史记录",
+                Time: ""
+            }]
+        }
         const Commits = []
         for (let i = 0; i < LogLines.length; i += 5) {
+            const timestamp = parseInt(LogLines[i + 3], 10)
+            let formattedDate = ""
+            if (!isNaN(timestamp) && timestamp > 0) {
+                try {
+                    formattedDate = new Date(timestamp * 1000).toISOString().split("T")[0]
+                } catch (error) {
+                    console.error(`格式化日期时出错 ${File}:`, error)
+                }
+            }
             Commits.push({
                 Sha: LogLines[i],
                 Name: LogLines[i + 2],
                 Message: LogLines[i + 1],
-                Time: new Date(parseInt(LogLines[i + 3], 10) * 1000).toISOString().split("T")[0]
+                Time: formattedDate
             })
         }
         return Commits
     } catch (Error) {
         console.error(`获取文件GitLog时出错 ${File}:`, Error)
-        return []
+        return [{
+            Sha: "",
+            Name: "",
+            Message: "获取历史记录时出错",
+            Time: ""
+        }]
     }
 }
 

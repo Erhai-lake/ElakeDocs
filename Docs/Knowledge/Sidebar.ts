@@ -7,21 +7,13 @@ export const KnowledgeSidebar: any[] = [
                 link: "/Docs/Knowledge/Knowledge"
             },
             {
+                text: "人机教程-计算机小白",
+                link: "/Docs/Knowledge/HumanMachineTutorial/ComputerBeginner/ComputerBeginner"
+            },
+            {
                 text: "编程语言",
                 collapsed: true,
                 items: [
-                    {
-                        text: "二进制",
-                        link: "/Docs/Knowledge/ProgrammingLanguage/Binary/Binary"
-                    },
-                    {
-                        text: "正则表达式",
-                        link: "/Docs/Knowledge/ProgrammingLanguage/RegularExpression/RegularExpression"
-                    },
-                    {
-                        text: "Git",
-                        link: "/Docs/Knowledge/ProgrammingLanguage/Git/Git"
-                    },
                     {
                         text: "Python",
                         link: "/Docs/Knowledge/ProgrammingLanguage/Python/Python"
@@ -37,6 +29,30 @@ export const KnowledgeSidebar: any[] = [
                     {
                         text: "Java",
                         link: "/Docs/Knowledge/ProgrammingLanguage/Java/Java"
+                    }
+                ]
+            },
+            {
+                text: "工具",
+                collapsed: true,
+                items: [
+                    {
+                        text: "Git",
+                        link: "/Docs/Knowledge/Tools/Git/Git"
+                    },
+                    {
+                        text: "正则表达式",
+                        link: "/Docs/Knowledge/Tools/RegularExpression/RegularExpression"
+                    }
+                ]
+            },
+            {
+                text: "底层技术",
+                collapsed: true,
+                items: [
+                    {
+                        text: "二进制",
+                        link: "/Docs/Knowledge/UnderlyingTechnology/Binary/Binary"
                     }
                 ]
             },

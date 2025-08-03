@@ -1,16 +1,16 @@
 export const Navbar = [
-    // {
-    //     text: "洱海官网",
-    //     link: "//www.elake.top"
-    // },
-    // {
-    //     text: "洱海云盘",
-    //     link: "//alist.elake.top"
-    // },
-    // {
-    //     text: "服务监控",
-    //     link: "//ping.elake.top"
-    // },
+    {
+        text: "洱海官网",
+        link: "//www.elake.top"
+    },
+    {
+        text: "洱海云盘",
+        link: "//alist.elake.top"
+    },
+    {
+        text: "服务监控",
+        link: "//ping.elake.top"
+    },
     {
         text: "GitHub",
         items: [
@@ -42,7 +42,7 @@ export const Navbar = [
         items: [
             {
                 text: "洱海",
-                link: "mailto:fuzixuan0714_0826@163.com"
+                link: "mailto:erhai.lake.0714@gmail.com"
             },
             {
                 text: "柒月",
