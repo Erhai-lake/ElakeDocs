@@ -10,6 +10,8 @@ import { ElakeMinecraftLoaderCoreSidebar } from "../Docs/Project/ElakeMinecraftL
 
 // 知识库
 import { KnowledgeSidebar } from "../Docs/Knowledge/Sidebar"
+// 人机教程-计算机小白
+import { HumanMachineTutorialSidebar } from "../Docs/Knowledge/HumanMachineTutorial/Sidebar"
 // 二进制
 import { BinarySidebar } from "../Docs/Knowledge/UnderlyingTechnology/Binary/Sidebar"
 // 正则表达式
@@ -40,6 +42,8 @@ export const Sidebar: any = {
     "/Docs/Project/ElakeMinecraftLoaderCore/": ElakeMinecraftLoaderCoreSidebar,
     // 知识库
     "/Docs/Knowledge/": KnowledgeSidebar,
+    // 人机教程-计算机小白
+    "/Docs/Knowledge/HumanMachineTutorial/": HumanMachineTutorialSidebar,
     // 二进制
     "/Docs/Knowledge/UnderlyingTechnology/Binary/": BinarySidebar,
     // 正则表达式

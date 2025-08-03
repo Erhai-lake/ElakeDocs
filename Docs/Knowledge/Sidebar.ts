@@ -8,7 +8,7 @@ export const KnowledgeSidebar: any[] = [
             },
             {
                 text: "人机教程-计算机小白",
-                link: "/Docs/Knowledge/HumanMachineTutorial/ComputerBeginner/ComputerBeginner"
+                link: "/Docs/Knowledge/HumanMachineTutorial/HumanMachineTutorial"
             },
             {
                 text: "编程语言",
