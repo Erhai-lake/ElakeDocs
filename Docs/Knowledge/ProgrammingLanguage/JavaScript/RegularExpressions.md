@@ -1,6 +1,6 @@
 # 正则表达式
 
-不了解正则表达式的, 可以看[正则表达式的文档](/Docs/Knowledge/ProgrammingLanguage/RegularExpression/RegularExpression)
+不了解正则表达式的, 可以看[正则表达式的文档](/Docs/Knowledge/Tools/RegularExpression/RegularExpression)
 
 这里只讲解在JS中, 怎么使用正则表达式
 
