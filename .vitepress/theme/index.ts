@@ -9,6 +9,8 @@ import { live2d } from "./live2d"
 import { enhanceAppWithTabs } from "vitepress-plugin-tabs/client"
 // 折叠面板全局组件
 import FoldingPanel from "./Components/FoldingPanel.vue"
+// 日期时间全局组件
+import DateTime from "./Components/DateTime.vue"
 // 自定义布局
 import Layout from "./Layout.vue"
 import "./index.css"
@@ -19,6 +21,7 @@ export default {
     Layout: Layout,
     async enhanceApp({ app, router, siteData }) {
         app.component("FoldingPanel", FoldingPanel)
+        app.component("DateTime", DateTime)
         enhanceAppWithTabs(app)
         if (Theme.enhanceApp) {
             Theme.enhanceApp({ app, router, siteData })
