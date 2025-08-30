@@ -139,6 +139,11 @@ export const JavaScriptSidebar: any[] = [
                 link: "/Docs/Knowledge/ProgrammingLanguage/JavaScript/EventListening"
             },
             {
+                text: "事件参数传递",
+                link: "/Docs/Knowledge/ProgrammingLanguage/JavaScript/EventParameterPassing"
+
+            },
+            {
                 text: "环境对象",
                 link: "/Docs/Knowledge/ProgrammingLanguage/JavaScript/EnvironmentObject"
             },
