@@ -9,9 +9,9 @@
 1. Git GUI Here
 2. Git Bash Here
 
-一个是Git提供的图形界面工具
+一个是**Git**提供的图形界面工具
 
-另一个是Git提供的命令行工具, 内置了小的Linux指令(可以用CMD)
+另一个是**Git**提供的命令行工具, 内置了小的**Linux**指令(可以用**CMD**)
 
 ## 配置Git
 
