@@ -43,6 +43,10 @@
                     {
                         "text": "正则表达式",
                         "link": "/Docs/Knowledge/Tools/RegularExpression/RegularExpression"
+                    },
+                    {
+                        "text": "Blender",
+                        "link": "/Docs/Knowledge/Tools/Blender/Blender"
                     }
                 ]
             },
