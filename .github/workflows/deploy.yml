@@ -22,19 +22,19 @@ jobs:
           with:
             version: 9
 
-        - name: 使用 node:20🌠
+        - name: 使用 node:25🌠
           uses: actions/setup-node@v2
           with:
-            node-version: 20
+            node-version: 25
 
         - name: 安装 依赖❄
           run: pnpm install
 
         - name: 构建 项目🚽
-          run: pnpm run build
+          run: pnpm run docs:build
 
         - name: 同步到分支🚄
           uses: JamesIves/github-pages-deploy-action@v4
           with:
             branch: artifacts
-            folder: .vitepress/dist
+            folder: docs/.vuepress/dist

@@ -1,11 +1,6 @@
-# 依赖
+.idea
 node_modules
+docs/.vuepress/.cache
+docs/.vuepress/.temp
+docs/.vuepress/dist
 pnpm-lock.yaml
-# 开发服务器缓存
-.vitepress/cache
-# 生产构建
-.vitepress/dist
-# VS Code配置文件
-.vscode/settings.json
-# Git 提交记录
-public/CommitRecords/*
