@@ -1,0 +1,68 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"ed46f5cb-3265-460a-9f40-2ef420918c27\" name=\"更改\" comment=\"chore(ide): 添加IDEA项目配置文件&#10;&#10;- 创建MarsCodeWorkspaceAppSettings.xml配置文件&#10;- 添加VCS版本控制系统配置&#10;- 配置项目根目录的Git映射&#10;- 设置Marscode工作区应用状态参数\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"production\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;Erhai-lake&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;https://github.com/Erhai-lake/ElakeDocs.git&quot;,\n    &quot;accountId&quot;: &quot;2537b02d-8650-4863-a5a9-34a9e694ccff&quot;\n  }\n}</component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;customColor&quot;: &quot;&quot;,\n  &quot;associatedIndex&quot;: 7\n}</component>\n  <component name=\"ProjectId\" id=\"37c2rDIhbz2sxzEh1guGoDGD6Lr\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"autoscrollFromSource\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n    <option name=\"showVisibilityIcons\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\n    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,\n    &quot;npm.docs:dev-clean.executor&quot;: &quot;Run&quot;,\n    &quot;npm.docs:dev.executor&quot;: &quot;Run&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RunManager\" selected=\"npm.docs:dev\">\n    <configuration name=\"docs:dev-clean\" type=\"js.build_tools.npm\" temporary=\"true\" nameIsGenerated=\"true\">\n      <package-json value=\"$PROJECT_DIR$/package.json\" />\n      <command value=\"run\" />\n      <scripts>\n        <script value=\"docs:dev-clean\" />\n      </scripts>\n      <node-interpreter value=\"project\" />\n      <envs />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"docs:dev\" type=\"js.build_tools.npm\" temporary=\"true\" nameIsGenerated=\"true\">\n      <package-json value=\"$PROJECT_DIR$/package.json\" />\n      <command value=\"run\" />\n      <scripts>\n        <script value=\"docs:dev\" />\n      </scripts>\n      <node-interpreter value=\"project\" />\n      <envs />\n      <method v=\"2\" />\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"npm.docs:dev-clean\" />\n        <item itemvalue=\"npm.docs:dev\" />\n        <item itemvalue=\"npm.docs:dev\" />\n        <item itemvalue=\"npm.docs:dev-clean\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.29346.143\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"默认任务\">\n      <changelist id=\"ed46f5cb-3265-460a-9f40-2ef420918c27\" name=\"更改\" comment=\"\" />\n      <created>1767188237689</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1767188237689</updated>\n      <workItem from=\"1767188239702\" duration=\"1369000\" />\n      <workItem from=\"1767189630305\" duration=\"810000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"docs(readme): 更新文档说明&#10;&#10;- 移除VS Code调试配置相关说明&#10;- 修正主要分支描述的标点符号&#10;- 统一文档格式和语句结尾的句号\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1767189213716</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1767189213717</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"chore(config): 移除 .idea 目录的忽略规则&#10;&#10;- 从 .gitignore 文件中删除 .idea 目录的忽略规则&#10;- 保持其他配置项不变\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1767189690955</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1767189690955</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"chore(ide): 添加IDEA项目配置文件&#10;&#10;- 创建MarsCodeWorkspaceAppSettings.xml配置文件&#10;- 添加VCS版本控制系统配置&#10;- 配置项目根目录的Git映射&#10;- 设置Marscode工作区应用状态参数\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1767189708122</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1767189708122</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"4\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"docs(readme): 更新文档说明&#10;&#10;- 移除VS Code调试配置相关说明&#10;- 修正主要分支描述的标点符号&#10;- 统一文档格式和语句结尾的句号\" />\n    <MESSAGE value=\"chore(config): 移除 .idea 目录的忽略规则&#10;&#10;- 从 .gitignore 文件中删除 .idea 目录的忽略规则&#10;- 保持其他配置项不变\" />\n    <MESSAGE value=\"chore(ide): 添加IDEA项目配置文件&#10;&#10;- 创建MarsCodeWorkspaceAppSettings.xml配置文件&#10;- 添加VCS版本控制系统配置&#10;- 配置项目根目录的Git映射&#10;- 设置Marscode工作区应用状态参数\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"chore(ide): 添加IDEA项目配置文件&#10;&#10;- 创建MarsCodeWorkspaceAppSettings.xml配置文件&#10;- 添加VCS版本控制系统配置&#10;- 配置项目根目录的Git映射&#10;- 设置Marscode工作区应用状态参数\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 9ae807c32869b3ce8871aef1b6c98e9fd414cde7)
++++ b/.idea/workspace.xml	(date 1770132577059)
+@@ -1,7 +1,8 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="ed46f5cb-3265-460a-9f40-2ef420918c27" name="更改" comment="chore(ide): 添加IDEA项目配置文件&#10;&#10;- 创建MarsCodeWorkspaceAppSettings.xml配置文件&#10;- 添加VCS版本控制系统配置&#10;- 配置项目根目录的Git映射&#10;- 设置Marscode工作区应用状态参数">
++    <list default="true" id="ed46f5cb-3265-460a-9f40-2ef420918c27" name="更改" comment="...">
++      <change beforePath="$PROJECT_DIR$/.idea/MarsCodeWorkspaceAppSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MarsCodeWorkspaceAppSettings.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -80,9 +81,10 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="npm.docs:dev" />
++        <item itemvalue="npm.docs:dev-clean" />
+         <item itemvalue="npm.docs:dev-clean" />
+         <item itemvalue="npm.docs:dev" />
+-        <item itemvalue="npm.docs:dev" />
+         <item itemvalue="npm.docs:dev-clean" />
+       </list>
+     </recent_temporary>
+@@ -90,7 +92,7 @@
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.29346.143" />
++        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.30387.83" />
+       </set>
+     </attachedChunks>
+   </component>
+@@ -103,6 +105,7 @@
+       <updated>1767188237689</updated>
+       <workItem from="1767188239702" duration="1369000" />
+       <workItem from="1767189630305" duration="810000" />
++      <workItem from="1770132150615" duration="289000" />
+     </task>
+     <task id="LOCAL-00001" summary="docs(readme): 更新文档说明&#10;&#10;- 移除VS Code调试配置相关说明&#10;- 修正主要分支描述的标点符号&#10;- 统一文档格式和语句结尾的句号">
+       <option name="closed" value="true" />
+Index: .idea/MarsCodeWorkspaceAppSettings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"com.codeverse.userSettings.MarscodeWorkspaceAppSettingsState\">\n    <option name=\"progress\" value=\"0.88\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/MarsCodeWorkspaceAppSettings.xml b/.idea/MarsCodeWorkspaceAppSettings.xml
+--- a/.idea/MarsCodeWorkspaceAppSettings.xml	(revision 9ae807c32869b3ce8871aef1b6c98e9fd414cde7)
++++ b/.idea/MarsCodeWorkspaceAppSettings.xml	(date 1770132174216)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="com.codeverse.userSettings.MarscodeWorkspaceAppSettingsState">
+-    <option name="progress" value="0.88" />
++    <option name="progress" value="1.0" />
+   </component>
+ </project>
+\ No newline at end of file

@@ -1,0 +1,37 @@
+---
+home: true
+pageLayout: home
+config:
+  - type: doc-hero
+    forceDark: true
+    hero:
+      name: 洱海文档
+      text: 记录思考 分享成长
+      tagline: 项目笔记 | 开发文档 | 灵感急诊室 | 脑溢血急救中心
+      image: /images/logo.svg
+      actions:
+        - theme: brand
+          text: 项目文档
+          link: /project/index
+        - theme: brand
+          text: 知识库
+          link: /knowledge/index
+        - theme: alt
+          text: 洱海文档
+          link: /elake_docs/user_terms
+  - type: features
+    forceDark: true
+    features:
+      - title: 维护真的简单
+        icon: 🛠️
+        details: 使用 Vuepress 作为框架, 只需编辑 Markdown 文件即可撰写内容.
+      - title: 扩展性真的好
+        icon: 🌌
+        details: 集成了多种组件, 帮助丰富分享内容的可读性与专业性.
+      - title: 栓条狗都会写
+        icon: 🐶
+        details: 文档的编写方式和组件的使用方式, 都有文档介绍(教你怎么写文档的文档).
+      - title: 光速访问
+        icon: 🚀
+        details: 采用静态 HTML 实现快速的页面初次加载, 使用客户端路由实现快速的页面切换导航.
+---

@@ -1,0 +1,40 @@
+name: 构建文档
+# 触发条件
+on:
+  push:
+    branches: [production]  # 当代码推送到 production 分支时触发
+  workflow_dispatch:    # 允许在 GitHub Actions 页面手动触发
+# 权限设置
+permissions:
+  contents: write     # 读取仓库内容
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+        - name: 切换分支🀄
+          uses: actions/checkout@v4
+          with:
+            fetch-depth: 0
+
+        - name: 使用 pnpm☂
+          uses: pnpm/action-setup@v3
+          with:
+            version: 9
+
+        - name: 使用 node:25🌠
+          uses: actions/setup-node@v2
+          with:
+            node-version: 25
+
+        - name: 安装 依赖❄
+          run: pnpm install
+
+        - name: 构建 项目🚽
+          run: pnpm run docs:build
+
+        - name: 同步到分支🚄
+          uses: JamesIves/github-pages-deploy-action@v4
+          with:
+            branch: artifacts
+            folder: docs/.vuepress/dist
