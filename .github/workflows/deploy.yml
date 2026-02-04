@@ -2,7 +2,7 @@ name: 构建文档
 # 触发条件
 on:
   push:
-    branches: [production]  # 当代码推送到 production 分支时触发
+    branches: [master]  # 当代码推送到 master 分支时触发
   workflow_dispatch:    # 允许在 GitHub Actions 页面手动触发
 # 权限设置
 permissions:
@@ -36,5 +36,5 @@ jobs:
         - name: 同步到分支🚄
           uses: JamesIves/github-pages-deploy-action@v4
           with:
-            branch: artifacts
+            branch: production
             folder: docs/.vuepress/dist
