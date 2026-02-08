@@ -43,32 +43,9 @@ typescript也有对应的类型定义:
 
 内置的翻译方法有4个:
 
-1. `generatorCategory`: 翻译生成器分类.
-2. `generator`: 翻译生成器.
-3. `processorCategory`: 翻译处理器分类.
-4. `processor`: 翻译处理器.
+* 翻译生成器分类: [`translateGeneratorCategory`](../i18n#翻译生成器分类)
+* 翻译生成器: [`translateGenerator`](../i18n#翻译生成器)
+* 翻译处理器分类: [`translateProcessorCategory`](../i18n#翻译处理器分类)
+* 翻译处理器: [`translateProcessor`](../i18n#翻译处理器)
 
-你也可以自己通过 [i18n](../i18n) 中的方法来实现翻译.
-
-你可能会用到的示例:
-
-```javascript
-import mock, {mockTranslate} from "@erhai_lake/mock-service"
-
-// 翻译表
-const TRANSLATE_TABLE = mock.getTranslateTable()
-
-// 翻译某生成器分类的所有生成器
-const GENERATORS = mock.getGeneratorCategory("string").generators.getAllGenerator()
-const TRANSLATED_GENERATORS = GENERATORS.map((generator) => {
-	return mockTranslate.generator(generator, TRANSLATE_TABLE)
-})
-console.log(TRANSLATED_GENERATORS)
-
-// 翻译某生成器
-const GENERATOR = mock.getGeneratorCategory("string").generators.getGenerator("nanoid")
-const TRANSLATED_GENERATOR = mockTranslate.generator(GENERATOR, TRANSLATE_TABLE)
-console.log(TRANSLATED_GENERATOR)
-```
-
-其他翻译方法也差不多的, 就不重复写了.
+具体请查看 [i18n](../i18n) 中的方法自己实现翻译.

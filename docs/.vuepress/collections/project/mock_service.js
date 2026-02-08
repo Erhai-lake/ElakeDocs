@@ -68,7 +68,8 @@ export const mock_service = defineCollection({
 				"generate_template",
 				"extract_templates",
 				"template_generate_data",
-				"resolve_template"
+				"resolve_template",
+				"object_resolve"
 			]
 		},
 		{
