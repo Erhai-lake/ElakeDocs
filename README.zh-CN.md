@@ -4,13 +4,13 @@
 
 ## Install
 
-```sh
+```shell
 pnpm i
 ```
 
 ## Usage
 
-```sh
+```shell
 # 启动开发服务
 pnpm docs:dev
 # 构建生产包

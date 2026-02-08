@@ -654,21 +654,21 @@ export default config
 还配备了自动识别图标的功能
 
 ::: code-tabs
-@tab pnpm
+@tab:active pnpm
 
-```sh
+```shell
 pnpm i
 ```
 
 @tab yarn
 
-```sh
+```shell
 yarn
 ```
 
 @tab npm
 
-```sh
+```shell
 npm install
 ```
 

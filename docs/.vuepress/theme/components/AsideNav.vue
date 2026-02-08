@@ -18,7 +18,7 @@ const locale = computed(() => locales[lang.value])
 			<span class="link-text">{{ locale.star }}</span>
 			<span class="vpi-arrow-right"/>
 		</VPLink>
-		<VPLink class="link" no-icon href="https://github.com/Erhai-lake/ElakeDocs/issues/new/choose">
+		<VPLink class="link" no-icon href="https://github.com/Erhai-lake/ElakeDocs/issues">
 			<VPIcon name="octicon:issue-opened-16"/>
 			<span class="link-text">{{ locale.issue }}</span>
 			<span class="vpi-arrow-right"/>

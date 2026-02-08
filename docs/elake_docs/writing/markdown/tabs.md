@@ -78,7 +78,7 @@ npm 应该与 Node.js 被一同安装.
 
 @tab pnpm
 
-```sh
+```shell
 corepack enable
 corepack use pnpm@8
 ```
@@ -94,7 +94,7 @@ npm 应该与 Node.js 被一同安装.
 
 @tab pnpm
 
-```sh
+```shell
 corepack enable
 corepack use pnpm@8
 ```

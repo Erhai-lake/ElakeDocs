@@ -5,6 +5,7 @@ export const project = defineCollection({
 	dir: "project",
 	title: "项目文档",
 	sidebar: [
-		"index"
+		"index",
+		"mock_service/index"
 	]
 })

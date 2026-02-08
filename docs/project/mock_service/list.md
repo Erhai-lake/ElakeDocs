@@ -1,0 +1,48 @@
+---
+title: 列表
+createTime: 2026/02/08 15:42:25
+---
+
+## 方法列表
+
+* 重载: `reload`
+* 某生成器分类新增处理器(批量): [`addProcessorCategoryToGeneratorCategory`](custom/processor_to_generator#某生成器分类新增处理器-批量)
+* 某生成器分类移除处理器(批量): [`removeProcessorCategoryFromGeneratorCategory`](custom/processor_to_generator#某生成器分类移除处理器-批量)
+* 某生成器新增处理器: [`addProcessorCategoryToGenerator`](custom/processor_to_generator#某生成器新增处理器)
+* 某生成器移除处理器: [`removeProcessorCategoryFromGenerator`](custom/processor_to_generator#某生成器移除处理器)
+* 设置语言: [`setLocale`](./i18n#设置主语言)
+* 单独设置回退语言: [`setFallbackLocale`](./i18n#单独设置回退语言)
+* 获取当前语言: [`getLocale`](./i18n#获取当前语言)
+* 获取当前回退语言: [`getFallbackLocale`](./i18n#获取当前回退语言)
+* 调用内部翻译: [`translate`](./i18n#调用翻译)
+* 获取翻译表: [`getTranslateTable`](./i18n#获取翻译表)
+* 获取所有分类: [`getAllGeneratorCategory`](./get_original/generator_category#获取所有生成器分类)
+* 获取某生成器分类: [`getGeneratorCategory`](./get_original/generator_category#获取某生成器分类)
+* 获取某生成器分类下的所有生成器: [`getAllGenerators`](./get_original/generator#获取某分类所有生成器)
+* 获取某生成器: [`getGenerator`](./get_original/generator#获取某生成器)
+* 获取所有处理器分类: [`getAllProcessorCategory`](./get_original/processor_category#获取所有处理器分类)
+* 获取某处理器分类: [`getProcessorCategory`](./get_original/processor_category#获取某处理器分类)
+* 获取某处理器分类下的所有处理器: [`getAllProcessors`](./get_original/processor#获取所有处理器)
+* 获取某处理器: [`getProcessor`](./get_original/processor#获取某处理器)
+* 获取某生成器下的所有处理器: [`getGeneratorAllProcessor`](./get_original/generator_processor#获取某生成器所有处理器)
+* 获取某生成器下的某处理器: [`getGeneratorProcessor`](./get_original/generator_processor#获取某生成器中的某处理器)
+* 获取所有生成器分类信息: [`getAllGeneratorCategoryInfo`](./get_info/generator_category#获取所有生成器分类信息)
+* 获取某生成器分类信息: [`getGeneratorCategoryInfo`](./get_info/generator_category#获取某生成器分类信息)
+* 获取某生成器分类下的所有生成器信息: [`getAllGeneratorsInfo`](./get_info/generator#获取某分类所有生成器信息)
+* 获取某生成器信息: [`getGeneratorInfo`](./get_info/generator#获取某生成器信息)
+* 获取生成器信息组: [`getGeneratorGroups`](./get_info_groups/generator_groups)
+* 获取所有处理器分类信息: [`getAllProcessorCategoryInfo`](./get_info/processor_category#获取所有处理器分类信息)
+* 获取某处理器分类信息: [`getProcessorCategoryInfo`](./get_info/processor_category#获取某处理器分类信息)
+* 获取某处理器分类下的所有处理器信息: [`getAllProcessorsInfo`](./get_info/processor#获取所有处理器信息)
+* 获取某处理器信息: [`getProcessorInfo`](./get_info/processor#获取某处理器信息)
+* 获取某生成器下的所有处理器信息: [`getGeneratorAllProcessorInfo`](./get_info/generator_processor#获取某生成器所有处理器信息)
+* 获取某生成器下的某处理器信息: [`getGeneratorProcessorInfo`](./get_info/generator_processor#获取某生成器中的某处理器信息)
+* 获取处理器信息组: [`getProcessorGroups`](./get_info_groups/processor_groups)
+* 获取某生成器的处理器信息组: [`getGeneratorProcessorGroups`](./get_info_groups/generator_processor_groups)
+* 调用生成器生成: [`generateData`](./generator_processor/generator)
+* 应用处理器: [`applyProcessor`](./generator_processor/processor#applyprocessor)
+* 应用处理器2: [`applyProcessor2`](./generator_processor/processor#applyprocessor2)
+* 生成模板: [`generateTemplate`](./template/generate_template)
+* 从字符串中提取所有模板: [`extractTemplates`](./template/extract_templates)
+* 生成数据: [`templateGenerateData`](./template/template_generate_data)
+* 解析模板字符串中的所有模板: [`resolveTemplate`](./template/resolve_template)
