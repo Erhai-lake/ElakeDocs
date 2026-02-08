@@ -1,49 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed46f5cb-3265-460a-9f40-2ef420918c27" name="更改" comment="chore(workflow): 调整部署配置和分支策略&#10;&#10;- 将触发部署的分支从 production 改为 master&#10;- 更新部署动作的目标分支从 artifacts 改为 production&#10;- 修改 README 中的分支合并流程，使用 dev 分支进行开发&#10;- 更新分支说明文档，明确 dev、master 和 production 分支职责&#10;- 调整分支保护警告，防止直接修改 master 和 production 分支">
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/collections/project/mock_service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/custom/generator_registry.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/custom/i18n_registry.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/custom/integration.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/custom/principle.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/custom/processor_registry.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/custom/processor_to_generator.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/generator_processor/generator.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/generator_processor/processor.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/get_info/generator.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/get_info/generator_category.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/get_info/generator_processor.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/get_info/processor.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/get_info/processor_category.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/get_info_groups/generator_groups.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/get_info_groups/generator_processor_groups.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/get_info_groups/processor_groups.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/get_original/expand.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/get_original/generator.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/get_original/generator_category.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/get_original/generator_processor.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/get_original/processor.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/get_original/processor_category.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/i18n.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/import.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/list.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/param.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/template/extract_templates.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/template/generate_template.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/template/resolve_template.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/template/template.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/template/template_generate_data.md" afterDir="false" />
+    <list default="true" id="ed46f5cb-3265-460a-9f40-2ef420918c27" name="更改" comment="新增项目文档 Erhai-lake/mock-service">
+      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/other/reload.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.zh-CN.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.zh-CN.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/collections/project.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/collections/project/project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/plume.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/plume.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/theme/components/AsideNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/theme/components/AsideNav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/elake_docs/writing/markdown/code.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/elake_docs/writing/markdown/code.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/elake_docs/writing/markdown/tabs.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/elake_docs/writing/markdown/tabs.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/project/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/collections/project/mock_service.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/collections/project/mock_service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/project/mock_service/list.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project/mock_service/list.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +130,7 @@
       <workItem from="1770132150615" duration="289000" />
       <workItem from="1770189875733" duration="27000" />
       <workItem from="1770215777449" duration="23008000" />
-      <workItem from="1770364689708" duration="35950000" />
+      <workItem from="1770364689708" duration="37758000" />
     </task>
     <task id="LOCAL-00001" summary="docs(readme): 更新文档说明&#10;&#10;- 移除VS Code调试配置相关说明&#10;- 修正主要分支描述的标点符号&#10;- 统一文档格式和语句结尾的句号">
       <option name="closed" value="true" />
@@ -210,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770193267324</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="新增项目文档 Erhai-lake/mock-service">
+      <option name="closed" value="true" />
+      <created>1770539940695</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1770539940695</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,15 +192,12 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="FILTERS">
+              <option name="COLUMN_ID_WIDTH">
                 <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/master" />
-                      </list>
-                    </value>
-                  </entry>
+                  <entry key="Table.Default.Author.ColumnIdWidth" value="97" />
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="129" />
+                  <entry key="Table.Default.Hash.ColumnIdWidth" value="73" />
+                  <entry key="Table.GitHub.CommitStatus.ColumnIdWidth" value="51" />
                 </map>
               </option>
             </State>
@@ -244,6 +211,7 @@
     <MESSAGE value="chore(config): 移除 .idea 目录的忽略规则&#10;&#10;- 从 .gitignore 文件中删除 .idea 目录的忽略规则&#10;- 保持其他配置项不变" />
     <MESSAGE value="chore(ide): 添加IDEA项目配置文件&#10;&#10;- 创建MarsCodeWorkspaceAppSettings.xml配置文件&#10;- 添加VCS版本控制系统配置&#10;- 配置项目根目录的Git映射&#10;- 设置Marscode工作区应用状态参数" />
     <MESSAGE value="chore(workflow): 调整部署配置和分支策略&#10;&#10;- 将触发部署的分支从 production 改为 master&#10;- 更新部署动作的目标分支从 artifacts 改为 production&#10;- 修改 README 中的分支合并流程，使用 dev 分支进行开发&#10;- 更新分支说明文档，明确 dev、master 和 production 分支职责&#10;- 调整分支保护警告，防止直接修改 master 和 production 分支" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(workflow): 调整部署配置和分支策略&#10;&#10;- 将触发部署的分支从 production 改为 master&#10;- 更新部署动作的目标分支从 artifacts 改为 production&#10;- 修改 README 中的分支合并流程，使用 dev 分支进行开发&#10;- 更新分支说明文档，明确 dev、master 和 production 分支职责&#10;- 调整分支保护警告，防止直接修改 master 和 production 分支" />
+    <MESSAGE value="新增项目文档 Erhai-lake/mock-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增项目文档 Erhai-lake/mock-service" />
   </component>
 </project>

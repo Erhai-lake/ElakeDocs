@@ -84,6 +84,15 @@ export const mock_service = defineCollection({
 				"integration",
 				"processor_to_generator"
 			]
+		},
+		{
+			text: "其他",
+			prefix: "other/",
+			icon: "material-symbols:docs-outline",
+			collapsed: false,
+			items: [
+				"reload"
+			]
 		}
 	]
 })
