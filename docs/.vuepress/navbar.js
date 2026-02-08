@@ -11,7 +11,7 @@ export default defineNavbarConfig([
 			},
 			{
 				text: "洱海云盘",
-				link: "https://alist.elake.top"
+				link: "https://open.elake.top"
 			},
 			{
 				text: "服务监控",
