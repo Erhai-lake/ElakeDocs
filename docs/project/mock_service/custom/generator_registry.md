@@ -210,4 +210,6 @@ console.log(mock.templateGenerateData('{{$test.testFn2(min=100,max=200)}}'))
 
 具体怎么优化就交给各位开发者自己了.
 
+## 贡献
+
 有好的建议/生成器/处理器, 也可以通过[issue](https://github.com/Erhai-lake/mock-service/issues)告诉我.

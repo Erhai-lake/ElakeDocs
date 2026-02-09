@@ -98,6 +98,22 @@ console.log(mock.translate("processors.test.test.title"))
 
 :::
 
+## 关于占位符
+
+如果你需要占位符, 可以写为:
+
+```json
+{
+	"error": {
+		"unsupportedDate": "不支持的日期时间格式: {{format}}"
+	}
+}
+```
+
+调用时只需要按照 [Error 错误返回](./error) 中的示例, 传入占位符参数即可.
+
+## 贡献
+
 目前英文翻译是**gemini 3**生成的, 如有错误, 或者更好的翻译.
 
 可以通过[issue](https://github.com/Erhai-lake/mock-service/issues)告诉我.

@@ -17,3 +17,9 @@ createTime: 2026/02/08 17:09:15
 * `removeProcessorCategoryFromGenerator`
 
 也就是说, 如果你有使用以上方法, 需要在重载后, 重新运行!
+
+```javascript
+import mock from "@erhai_lake/mock-service"
+
+mock.reload()
+```

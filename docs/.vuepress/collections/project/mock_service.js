@@ -82,8 +82,9 @@ export const mock_service = defineCollection({
 				"generator_registry",
 				"processor_registry",
 				"i18n_registry",
+				"error",
 				"integration",
-				"processor_to_generator"
+				"processor_to_generator",
 			]
 		},
 		{

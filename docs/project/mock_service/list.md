@@ -6,6 +6,7 @@ createTime: 2026/02/08 15:42:25
 ## 方法列表
 
 * 重载: [`reload`](./other/reload)
+* 切换错误输出: [`switchErrorOutput`](./other/switchErrorOutput)
 * 某生成器分类新增处理器(批量): [`addProcessorCategoryToGeneratorCategory`](custom/processor_to_generator#某生成器分类新增处理器-批量)
 * 某生成器分类移除处理器(批量): [`removeProcessorCategoryFromGeneratorCategory`](custom/processor_to_generator#某生成器分类移除处理器-批量)
 * 某生成器新增处理器: [`addProcessorCategoryToGenerator`](custom/processor_to_generator#某生成器新增处理器)

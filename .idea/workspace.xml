@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed46f5cb-3265-460a-9f40-2ef420918c27" name="更改" comment="更新项目文档和链接配置&#10;&#10;* 将 mock-service 项目版本从 0.0.1 更新为 0.0.2&#10;* 修改洱海云盘链接从 alist.elake.top 到 open.elake.top&#10;* 删除 README.zh-CN.md 文件中的项目说明内容">
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/template/object_resolve.md" afterDir="false" />
+    <list default="true" id="ed46f5cb-3265-460a-9f40-2ef420918c27" name="更改" comment="修改文档">
+      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/custom/error.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/other/switchErrorOutput.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/collections/project/mock_service.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/collections/project/mock_service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/project/mock_service/get_original/expand.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project/mock_service/get_original/expand.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/project/mock_service/custom/generator_registry.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project/mock_service/custom/generator_registry.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/project/mock_service/custom/i18n_registry.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project/mock_service/custom/i18n_registry.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/project/mock_service/custom/processor_registry.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project/mock_service/custom/processor_registry.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/project/mock_service/i18n.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project/mock_service/i18n.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/project/mock_service/list.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project/mock_service/list.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/project/mock_service/other/reload.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project/mock_service/other/reload.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +137,8 @@
       <workItem from="1770132150615" duration="289000" />
       <workItem from="1770189875733" duration="27000" />
       <workItem from="1770215777449" duration="23008000" />
-      <workItem from="1770364689708" duration="45562000" />
+      <workItem from="1770364689708" duration="46400000" />
+      <workItem from="1770652702739" duration="1134000" />
     </task>
     <task id="LOCAL-00001" summary="docs(readme): 更新文档说明&#10;&#10;- 移除VS Code调试配置相关说明&#10;- 修正主要分支描述的标点符号&#10;- 统一文档格式和语句结尾的句号">
       <option name="closed" value="true" />
@@ -199,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770546269849</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="修改文档">
+      <option name="closed" value="true" />
+      <created>1770575899415</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1770575899415</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,6 +247,7 @@
     <MESSAGE value="修改项目文档 Erhai-lake/mock-service" />
     <MESSAGE value="更新项目文档和链接配置&#10;&#10;* 将 mock-service 项目版本从 0.0.1 更新为 0.0.2&#10;* 修改洱海云盘链接从 alist.elake.top 到 open.elake.top&#10;* 删除 README.zh-CN.md 文件中的项目说明内容&#10;* 修正项目文档的提交注释描述" />
     <MESSAGE value="更新项目文档和链接配置&#10;&#10;* 将 mock-service 项目版本从 0.0.1 更新为 0.0.2&#10;* 修改洱海云盘链接从 alist.elake.top 到 open.elake.top&#10;* 删除 README.zh-CN.md 文件中的项目说明内容" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新项目文档和链接配置&#10;&#10;* 将 mock-service 项目版本从 0.0.1 更新为 0.0.2&#10;* 修改洱海云盘链接从 alist.elake.top 到 open.elake.top&#10;* 删除 README.zh-CN.md 文件中的项目说明内容" />
+    <MESSAGE value="修改文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改文档" />
   </component>
 </project>
