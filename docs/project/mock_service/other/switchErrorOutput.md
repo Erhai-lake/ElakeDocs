@@ -15,9 +15,9 @@ createTime: 2026/02/09 23:59:14
 import mock from "@erhai_lake/mock-service"
 
 mock.switchErrorOutput(false)
-console.log(mock.applyProcessor("date", "format", "202308sas1512as3456"))
+console.log(mock.applyGlobalProcessor("format", "202308sas1512as3456"))
 // 不支持的日期时间格式: 202308sas1512as3456
-// date.format:202308sas1512as3456:undefined
+// global.format:202308sas1512as3456:undefined
 console.log(mock.templateGenerateData("{{$lorem.paragraph(min=10,max=9)}}"))
 // max 参数必须大于或等于 min 参数
 // lorem.paragraph:{"min":10,"max":9}

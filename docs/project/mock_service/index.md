@@ -5,7 +5,7 @@ createTime: 2026/02/04 22:39:32
 
 ## 简介
 
-**mock-service**是一个用于生成模拟数据的 JavaScript 库.
+**mock-service**是一个用于生成模拟数据, 支持变量, 模板的 JavaScript 库.
 
 它提供了丰富的生成器, 以及对应的处理器, 可以帮助开发人员快速生成符合要求的模拟数据.
 
@@ -38,8 +38,8 @@ const UUIDV7 = mock.generateData("string", "uuid", {version: "v7"})
 console.log(UUIDV7)
 
 // 处理器使用
-console.log(mock.applyProcessor("encodingDecoding", "sha", UUIDV7))
-console.log(mock.applyProcessor("encodingDecoding", "sha", UUIDV7, "SHA512"))
+console.log(mock.applyGlobalProcessor("sha", UUIDV7))
+console.log(mock.applyGlobalProcessor("sha", UUIDV7, "SHA512"))
 
 // 通过模板调用
 console.log(mock.templateGenerateData("{{$string.uuid}}"))

@@ -86,11 +86,11 @@ const mock = createMockService({
 })
 
 // 调用处理器
-console.log(mock.applyProcessor("test", "testFn1", "测试"))
+console.log(mock.applyGlobalProcessor("testFn1", "测试"))
 // 测试|Test|测试
-console.log(mock.applyProcessor("test", "testFn2", "测试", "1145"))
+console.log(mock.applyGlobalProcessor("testFn2", "测试", "1145"))
 // 测试|1145|测试
-console.log(mock.applyProcessor("test", "testFn3", "测试", {min: 100, max: 200}))
+console.log(mock.applyGlobalProcessor("testFn3", "测试", {min: 100, max: 200}))
 // 测试|158|测试
 ```
 
@@ -177,11 +177,11 @@ const MOCK_SERVICE_OPTIONS: mockServiceOptions = {
 const mock = createMockService(MOCK_SERVICE_OPTIONS)
 
 // 调用处理器
-console.log(mock.applyProcessor("test", "testFn1", "测试"))
+console.log(mock.applyGlobalProcessor("testFn1", "测试"))
 // 测试|Test|测试
-console.log(mock.applyProcessor("test", "testFn2", "测试", "1145"))
+console.log(mock.applyGlobalProcessor("testFn2", "测试", "1145"))
 // 测试|1145|测试
-console.log(mock.applyProcessor("test", "testFn3", "测试", {min: 100, max: 200}))
+console.log(mock.applyGlobalProcessor("testFn3", "测试", {min: 100, max: 200}))
 // 测试|158|测试
 ```
 

@@ -73,6 +73,16 @@ export const mock_service = defineCollection({
 			]
 		},
 		{
+			text: "变量",
+			prefix: "var/",
+			icon: "material-symbols:docs-outline",
+			collapsed: false,
+			items: [
+				"function",
+				"generator"
+			]
+		},
+		{
 			text: "自定义",
 			prefix: "custom/",
 			icon: "material-symbols:docs-outline",
@@ -82,6 +92,7 @@ export const mock_service = defineCollection({
 				"generator_registry",
 				"processor_registry",
 				"i18n_registry",
+				"context",
 				"error",
 				"integration",
 				"processor_to_generator",
