@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed46f5cb-3265-460a-9f40-2ef420918c27" name="更改" comment="修改文档">
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/generator_processor/custom_expression.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/new_features.md" afterDir="false" />
+    <list default="true" id="ed46f5cb-3265-460a-9f40-2ef420918c27" name="更改" comment="修改mock文档(自定义表达式)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/collections/project/mock_service.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/collections/project/mock_service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/project/mock_service/list.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project/mock_service/list.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/project/mock_service/template/template.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project/mock_service/template/template.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/project/mock_service/custom/generator_registry.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project/mock_service/custom/generator_registry.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/project/mock_service/custom/integration.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project/mock_service/custom/integration.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/project/mock_service/custom/processor_registry.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project/mock_service/custom/processor_registry.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/project/mock_service/generator_processor/generator.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project/mock_service/generator_processor/generator.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/project/mock_service/generator_processor/processor.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project/mock_service/generator_processor/processor.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +135,7 @@
       <workItem from="1770215777449" duration="23008000" />
       <workItem from="1770364689708" duration="46400000" />
       <workItem from="1770652702739" duration="3667000" />
-      <workItem from="1770829910005" duration="8156000" />
+      <workItem from="1770829910005" duration="10091000" />
     </task>
     <task id="LOCAL-00001" summary="docs(readme): 更新文档说明&#10;&#10;- 移除VS Code调试配置相关说明&#10;- 修正主要分支描述的标点符号&#10;- 统一文档格式和语句结尾的句号">
       <option name="closed" value="true" />
@@ -225,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770833107584</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="修改mock文档(自定义表达式)">
+      <option name="closed" value="true" />
+      <created>1770912061577</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1770912061577</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +269,7 @@
     <MESSAGE value="更新项目文档和链接配置&#10;&#10;* 将 mock-service 项目版本从 0.0.1 更新为 0.0.2&#10;* 修改洱海云盘链接从 alist.elake.top 到 open.elake.top&#10;* 删除 README.zh-CN.md 文件中的项目说明内容&#10;* 修正项目文档的提交注释描述" />
     <MESSAGE value="更新项目文档和链接配置&#10;&#10;* 将 mock-service 项目版本从 0.0.1 更新为 0.0.2&#10;* 修改洱海云盘链接从 alist.elake.top 到 open.elake.top&#10;* 删除 README.zh-CN.md 文件中的项目说明内容" />
     <MESSAGE value="修改文档" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改文档" />
+    <MESSAGE value="修改mock文档(自定义表达式)" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改mock文档(自定义表达式)" />
   </component>
 </project>

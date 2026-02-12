@@ -57,7 +57,7 @@ console.log(mock.resolveTemplate("Hello there, your username is {{$string.nanoid
 ## 添加到项目
 
 ::: caution
-目前项目版本为 [0.0.2].
+目前项目还在早期版本中.
 
 还没上传至 npm 仓库, npm 导入方法暂时无效.
 

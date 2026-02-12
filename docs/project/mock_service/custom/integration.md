@@ -93,7 +93,8 @@ export const registerTestFn2 = (CATEGORY: any): void => {
 			}
 		],
 		processors: ["string", "encodingDecoding", "testProc"],
-		generate(a = PARAMS.a): string {
+		generate(params: Partial<params> = {}): string {
+			const {a} = {...PARAMS, ...params}
 			return a + a
 		}
 	})
@@ -203,7 +204,8 @@ export const registerTestFn2 = (CATEGORY: any): void => {
 				default: PARAMS.a
 			}
 		],
-		apply(value: string, a = PARAMS.a): string {
+		apply(value: string, params: Partial<params> = {}): string {
+			const {a} = {...PARAMS, ...params}
 			return value + "|" + a + "|" + value
 		}
 	})

@@ -42,7 +42,8 @@ const processorTestCategory = (processorRegistry) => {
 				default: "测试测试"
 			}
 		],
-		apply(value, a = "测试测试") {
+		apply(value, params = {a: "测试测试"}): string {
+			const {a} = params
 			return value + "|" + a + "|" + value
 		}
 	})
@@ -132,7 +133,8 @@ const processorTestCategory = (processorRegistry: processorCategoryRegistry) => 
 				default: "测试测试"
 			}
 		],
-		apply(value: string, a = "测试测试"): string {
+		apply(value: string, params = {a: "测试测试"}): string {
+			const {a} = params
 			return value + "|" + a + "|" + value
 		}
 	})

@@ -44,7 +44,8 @@ const generatorTestCategory = (categoryRegistry) => {
 			}
 		],
 		processors: ["string", "encodingDecoding"],
-		generate(a = "测试测试") {
+		generate(params = {a: "测试测试"}) {
+			const {a} = params
 			return a + a
 		}
 	})
@@ -142,7 +143,8 @@ const generatorTestCategory = (categoryRegistry: generatorCategoryRegistry) => {
 			}
 		],
 		processors: ["string", "encodingDecoding"],
-		generate(a = "测试测试"): string {
+		generate(params = {a: "测试测试"}): string {
+			const {a} = params
 			return a + a
 		}
 	})
