@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed46f5cb-3265-460a-9f40-2ef420918c27" name="更改" comment="修改文档">
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/custom/context.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/var/function.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/var/generator.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/generator_processor/custom_expression.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/project/mock_service/new_features.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/collections/project/mock_service.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/collections/project/mock_service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/project/mock_service/custom/processor_registry.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project/mock_service/custom/processor_registry.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/project/mock_service/generator_processor/processor.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project/mock_service/generator_processor/processor.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/project/mock_service/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project/mock_service/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/project/mock_service/list.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project/mock_service/list.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/project/mock_service/other/switchErrorOutput.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project/mock_service/other/switchErrorOutput.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/project/mock_service/template/template.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/project/mock_service/template/template.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,7 +135,7 @@
       <workItem from="1770215777449" duration="23008000" />
       <workItem from="1770364689708" duration="46400000" />
       <workItem from="1770652702739" duration="3667000" />
-      <workItem from="1770829910005" duration="3160000" />
+      <workItem from="1770829910005" duration="8156000" />
     </task>
     <task id="LOCAL-00001" summary="docs(readme): 更新文档说明&#10;&#10;- 移除VS Code调试配置相关说明&#10;- 修正主要分支描述的标点符号&#10;- 统一文档格式和语句结尾的句号">
       <option name="closed" value="true" />
@@ -222,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770653951983</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="修改文档">
+      <option name="closed" value="true" />
+      <created>1770833107584</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1770833107584</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

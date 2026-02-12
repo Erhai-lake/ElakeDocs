@@ -7,6 +7,7 @@ export const mock_service = defineCollection({
 	sidebar: [
 		"index",
 		"import",
+		"new_features",
 		"i18n",
 		"param",
 		"list",

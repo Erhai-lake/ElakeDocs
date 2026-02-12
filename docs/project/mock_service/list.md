@@ -51,6 +51,7 @@ createTime: 2026/02/08 15:42:25
 * 调用生成器生成: [`generateData`](./generator_processor/generator)
 * 应用处理器: [`applyGlobalProcessor`](./generator_processor/processor#applyprocessor)
 * 应用处理器2: [`applyProcessor`](./generator_processor/processor#applyprocessor2)
+* 自定义表达式: [`customExpression`](./generator_processor/custom_expression)
 * 生成模板: [`generateTemplate`](./template/generate_template)
 * 从字符串中提取所有模板: [`extractTemplates`](./template/extract_templates)
 * 生成数据: [`templateGenerateData`](./template/template_generate_data)
