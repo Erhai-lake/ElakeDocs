@@ -59,9 +59,7 @@ console.log(mock.resolveTemplate("Hello there, your username is {{$string.nanoid
 ::: caution
 目前项目还在早期版本中.
 
-还没上传至 npm 仓库, npm 导入方法暂时无效.
-
-可以通过手动导入的方式体验.
+可能有不少问题, 更新也比较1缓慢(学生), 欢迎反馈.
 :::
 
 ### npm 导入
