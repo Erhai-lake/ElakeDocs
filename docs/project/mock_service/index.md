@@ -15,6 +15,8 @@ createTime: 2026/02/04 22:39:32
 
 <RepoCard repo="Erhai-lake/mock-service" fullname/>
 
+[npm 包](https://www.npmjs.com/package/@erhai_lake/mock-service)
+
 ## 一些使用例子
 
 ```javascript
@@ -59,7 +61,7 @@ console.log(mock.resolveTemplate("Hello there, your username is {{$string.nanoid
 ::: caution
 目前项目还在早期版本中.
 
-可能有不少问题, 更新也比较1缓慢(学生), 欢迎反馈.
+可能有不少问题, 更新也比较缓慢(学生), 欢迎反馈.
 :::
 
 ### npm 导入

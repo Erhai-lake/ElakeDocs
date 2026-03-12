@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed46f5cb-3265-460a-9f40-2ef420918c27" name="更改" comment="修改mock文档(生成器/处理器, 单参数传递方式与多参数统一)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ed46f5cb-3265-460a-9f40-2ef420918c27" name="更改" comment="更新mock服务文档说明" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,7 +110,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.30387.83" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.31033.133" />
       </set>
     </attachedChunks>
   </component>
@@ -132,6 +130,7 @@
       <workItem from="1770652702739" duration="3667000" />
       <workItem from="1770829910005" duration="12357000" />
       <workItem from="1771943262794" duration="1103000" />
+      <workItem from="1772966387410" duration="287000" />
     </task>
     <task id="LOCAL-00001" summary="docs(readme): 更新文档说明&#10;&#10;- 移除VS Code调试配置相关说明&#10;- 修正主要分支描述的标点符号&#10;- 统一文档格式和语句结尾的句号">
       <option name="closed" value="true" />
@@ -237,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770916214135</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="更新mock服务文档说明">
+      <option name="closed" value="true" />
+      <created>1772966626042</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1772966626043</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,6 +282,8 @@
     <MESSAGE value="修改文档" />
     <MESSAGE value="修改mock文档(自定义表达式)" />
     <MESSAGE value="修改mock文档(生成器/处理器, 单参数传递方式与多参数统一)" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改mock文档(生成器/处理器, 单参数传递方式与多参数统一)" />
+    <MESSAGE value="docs(mock): 更新mock服务文档说明&#10;&#10;- 修改项目状态说明，更新关于npm导入的描述&#10;- 更新警告提示内容，反映当前开发阶段的问题和反馈渠道&#10;- 移除过时的手动导入说明&#10;- 修正文档中的语法和表述问题" />
+    <MESSAGE value="更新mock服务文档说明" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新mock服务文档说明" />
   </component>
 </project>
