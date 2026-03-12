@@ -131,6 +131,7 @@
       <workItem from="1770829910005" duration="12357000" />
       <workItem from="1771943262794" duration="1103000" />
       <workItem from="1772966387410" duration="287000" />
+      <workItem from="1773331523618" duration="111000" />
     </task>
     <task id="LOCAL-00001" summary="docs(readme): 更新文档说明&#10;&#10;- 移除VS Code调试配置相关说明&#10;- 修正主要分支描述的标点符号&#10;- 统一文档格式和语句结尾的句号">
       <option name="closed" value="true" />
@@ -244,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772966626043</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="更新mock服务文档说明">
+      <option name="closed" value="true" />
+      <created>1773331622291</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1773331622292</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
