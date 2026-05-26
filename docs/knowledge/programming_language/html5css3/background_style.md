@@ -49,7 +49,7 @@ div {
 div {
 	width: 500px;
 	height: 500px;
-	background-image: url("assets/304ba504f27b147a71e00dd072a6be3dbb43138e.gif");
+	background-image: url("https://elake-halo.oss-cn-shanghai.aliyuncs.com/748142AF-AFD0-4C1E-B642-06859DB7949F.png");
 	border: 1px solid black;
 }
 ```
@@ -86,7 +86,7 @@ div {
 div {
 	width: 500px;
 	height: 500px;
-	background-image: url("assets/304ba504f27b147a71e00dd072a6be3dbb43138e.gif");
+	background-image: url("https://elake-halo.oss-cn-shanghai.aliyuncs.com/748142AF-AFD0-4C1E-B642-06859DB7949F.png");
     background-repeat: no-repeat;
     border: 1px solid black;
 }
@@ -129,7 +129,7 @@ div {
 div {
 	width: 500px;
 	height: 500px;
-	background-image: url("assets/304ba504f27b147a71e00dd072a6be3dbb43138e.gif");
+	background-image: url("https://elake-halo.oss-cn-shanghai.aliyuncs.com/748142AF-AFD0-4C1E-B642-06859DB7949F.png");
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	border: 1px solid black;
@@ -172,7 +172,7 @@ div {
 div {
 	width: 500px;
 	height: 500px;
-	background-image: url("assets/304ba504f27b147a71e00dd072a6be3dbb43138e.gif");
+	background-image: url("https://elake-halo.oss-cn-shanghai.aliyuncs.com/748142AF-AFD0-4C1E-B642-06859DB7949F.png");
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-size: contain;
@@ -205,7 +205,7 @@ div {
 div {
 	width: 500px;
 	height: 500px;
-	background-image: url("assets/304ba504f27b147a71e00dd072a6be3dbb43138e.gif");
+	background-image: url("https://elake-halo.oss-cn-shanghai.aliyuncs.com/748142AF-AFD0-4C1E-B642-06859DB7949F.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	border: 1px solid black;
@@ -235,7 +235,7 @@ div {
 div {
 	width: 500px;
 	height: 500px;
-	background: url("assets/304ba504f27b147a71e00dd072a6be3dbb43138e.gif") no-repeat 100% 100%/100% 100%;
+	background: url("https://elake-halo.oss-cn-shanghai.aliyuncs.com/748142AF-AFD0-4C1E-B642-06859DB7949F.png") no-repeat 100% 100%/100% 100%;
 	border: 1px solid black;
 }
 ```

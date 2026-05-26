@@ -17,7 +17,7 @@ createTime: 2024/10/02 14:53:08
 		IMG.style.height = "100px"
     }
 </script>
-<img src="assets/304ba504f27b147a71e00dd072a6be3dbb43138e.gif" width="700" alt="img">
+<img src="https://elake-halo.oss-cn-shanghai.aliyuncs.com/748142AF-AFD0-4C1E-B642-06859DB7949F.png" width="700" alt="img">
 <button onclick="modification()">修改样式</button>
 ```
 :::

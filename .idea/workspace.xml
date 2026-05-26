@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed46f5cb-3265-460a-9f40-2ef420918c27" name="更改" comment="更新mock服务文档说明" />
+    <list default="true" id="ed46f5cb-3265-460a-9f40-2ef420918c27" name="更改" comment="更新mock服务文档说明">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/knowledge/programming_language/html5css3/animation.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/knowledge/programming_language/html5css3/animation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/knowledge/programming_language/html5css3/assets/304ba504f27b147a71e00dd072a6be3dbb43138e.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/knowledge/programming_language/html5css3/background_style.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/knowledge/programming_language/html5css3/background_style.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/knowledge/programming_language/html5css3/display_mode.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/knowledge/programming_language/html5css3/display_mode.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/knowledge/programming_language/html5css3/plane_conversion.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/knowledge/programming_language/html5css3/plane_conversion.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/knowledge/programming_language/html5css3/position.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/knowledge/programming_language/html5css3/position.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/knowledge/programming_language/html5css3/transition_easing.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/knowledge/programming_language/html5css3/transition_easing.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/knowledge/programming_language/html5css3/vertical_alignment.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/knowledge/programming_language/html5css3/vertical_alignment.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/knowledge/programming_language/javascript/operation_element_attributes.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/knowledge/programming_language/javascript/operation_element_attributes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/knowledge/programming_language/javascript/operation_element_style.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/knowledge/programming_language/javascript/operation_element_style.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +122,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.31033.133" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.32098.39" />
       </set>
     </attachedChunks>
   </component>
@@ -132,6 +144,8 @@
       <workItem from="1771943262794" duration="1103000" />
       <workItem from="1772966387410" duration="287000" />
       <workItem from="1773331523618" duration="111000" />
+      <workItem from="1773331778538" duration="455000" />
+      <workItem from="1779782873947" duration="657000" />
     </task>
     <task id="LOCAL-00001" summary="docs(readme): 更新文档说明&#10;&#10;- 移除VS Code调试配置相关说明&#10;- 修正主要分支描述的标点符号&#10;- 统一文档格式和语句结尾的句号">
       <option name="closed" value="true" />
@@ -253,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773331622292</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="更新mock服务文档说明">
+      <option name="closed" value="true" />
+      <created>1773331816304</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1773331816304</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

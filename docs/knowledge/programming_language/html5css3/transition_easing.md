@@ -22,7 +22,7 @@ createTime: 2024/10/02 14:53:07
 :::code-tabs
 @tab:active HTML
 ```html
-<img src="assets/304ba504f27b147a71e00dd072a6be3dbb43138e.gif" alt="img">
+<img src="https://elake-halo.oss-cn-shanghai.aliyuncs.com/748142AF-AFD0-4C1E-B642-06859DB7949F.png" alt="img">
 ```
 
 @tab CSS
